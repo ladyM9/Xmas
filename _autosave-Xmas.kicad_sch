@@ -1471,107 +1471,6 @@
 				)
 			)
 		)
-		(symbol "BornaLibrary:R1206"
-			(pin_numbers hide)
-			(pin_names hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R?"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "VALUE"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Borna KiCAD Library:R1206"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R1206_0_1"
-				(rectangle
-					(start -2.032 0.762)
-					(end 2.032 -0.762)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R1206_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 1.7)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 1.7)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "BornaLibrary:S2B-PH-SM4-TB"
 			(pin_numbers hide)
 			(pin_names
@@ -12587,7 +12486,7 @@
 		)
 	)
 	(symbol
-		(lib_id "BornaLibrary:R1206")
+		(lib_id "BornaLibrary:R0603")
 		(at 248.92 109.22 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12614,7 +12513,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "BornaKiCad:R1206"
+		(property "Footprint" "BornaKiCad:R0603"
 			(at 252.73 109.22 0)
 			(effects
 				(font
