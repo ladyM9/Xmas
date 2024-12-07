@@ -5,6 +5,120 @@
 	(uuid "22282c2a-7002-48ef-a0be-1cd1232be417")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Borna KiCAD Library:C1206"
+			(pin_numbers hide)
+			(pin_names hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C?"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "VALUE"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Borna KiCAD Library:C1206"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C1206_0_1"
+				(polyline
+					(pts
+						(xy -0.762 -2.032) (xy -0.762 2.032)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -2.032) (xy 0.762 2.032)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C1206_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.8)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.8)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "BornaLibrary:AO3401A"
 			(pin_numbers hide)
 			(pin_names hide)
@@ -12621,7 +12735,7 @@
 		)
 	)
 	(symbol
-		(lib_id "BornaLibrary:C0603")
+		(lib_id "Borna KiCAD Library:C1206")
 		(at 142.24 139.7 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12637,7 +12751,7 @@
 				)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "10u"
 			(at 143.51 143.51 0)
 			(effects
 				(font
@@ -12645,8 +12759,8 @@
 				)
 			)
 		)
-		(property "Footprint" "BornaKiCad:C0603"
-			(at 147.32 138.43 0)
+		(property "Footprint" "Borna KiCAD Library:C1206"
+			(at 147.32 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
