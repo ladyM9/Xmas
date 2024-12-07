@@ -120,27 +120,25 @@
 	(net 38 "Net-(LED8-DO)")
 	(net 39 "Net-(Q1-G)")
 	(net 40 "Net-(LED10-DI)")
-	(net 41 "unconnected-(SW2-PadPAD)")
-	(net 42 "Net-(LED10-DO)")
-	(net 43 "Net-(LED11-DO)")
-	(net 44 "unconnected-(LED12-DO-Pad1)")
-	(net 45 "Net-(CONN2-CC1)")
-	(net 46 "Net-(CONN2-CC2)")
-	(net 47 "unconnected-(CONN2-SBU2-PadB8)")
-	(net 48 "unconnected-(CONN2-SBU1-PadA8)")
-	(net 49 "unconnected-(IC2-STDBY-Pad6)")
-	(net 50 "Net-(IC2-CHRG)")
-	(net 51 "Net-(LED13-K)")
-	(net 52 "unconnected-(SW1-PadPAD)")
-	(footprint "BornaKiCad:TSA007A1518B03"
+	(net 41 "Net-(LED10-DO)")
+	(net 42 "Net-(LED11-DO)")
+	(net 43 "unconnected-(LED12-DO-Pad1)")
+	(net 44 "Net-(CONN2-CC1)")
+	(net 45 "Net-(CONN2-CC2)")
+	(net 46 "unconnected-(CONN2-SBU2-PadB8)")
+	(net 47 "unconnected-(CONN2-SBU1-PadA8)")
+	(net 48 "unconnected-(IC2-STDBY-Pad6)")
+	(net 49 "Net-(IC2-CHRG)")
+	(net 50 "Net-(LED13-K)")
+	(footprint "Borna KiCAD Library:TSA007A1518B03"
 		(layer "F.Cu")
 		(uuid "100c44fb-088c-4e61-b823-2c1ef0d7cd81")
 		(at 147.15 115.3 -60)
 		(property "Reference" "SW1"
-			(at -1.253461 -2.628942 -60)
+			(at -0.100001 -11 -60)
 			(unlocked yes)
 			(layer "User.1")
-			(uuid "512bd980-5092-4274-bcc6-d3c97201c15d")
+			(uuid "07de9279-3fdc-4100-bec3-f7b9c6845f99")
 			(effects
 				(font
 					(size 1 1)
@@ -152,7 +150,7 @@
 			(at 0 10.4 -60)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "ab88f5e3-a3f6-4b52-bcf2-1a05f0330af9")
+			(uuid "fc212fe8-0335-4a23-bd68-92f77ef069a2")
 			(effects
 				(font
 					(size 1 1)
@@ -160,12 +158,12 @@
 				)
 			)
 		)
-		(property "Footprint" "BornaKiCad:TSA007A1518B03"
+		(property "Footprint" "Borna KiCAD Library:TSA007A1518B03"
 			(at 0 9.4 -60)
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "8a699469-ad03-4b08-90fa-ffa4d77ad318")
+			(uuid "c629b741-153d-49da-890c-ec8bd94d927a")
 			(effects
 				(font
 					(size 1 1)
@@ -178,7 +176,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "fb0b13fb-f780-403f-b455-d0c21883779b")
+			(uuid "a7f2c8da-b934-4c74-837d-94fabcc25d4e")
 			(effects
 				(font
 					(size 1 1)
@@ -191,7 +189,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "4717b9b6-716b-42b2-ae0f-771079478e1d")
+			(uuid "dccc11ac-4b81-40cf-ab36-6cba08ac58da")
 			(effects
 				(font
 					(size 1 1)
@@ -211,7 +209,7 @@
 				(type default)
 			)
 			(layer "F.SilkS")
-			(uuid "a5211586-f8d0-4d2b-a8ad-1bbfe1464e36")
+			(uuid "88856337-2ee1-456e-b346-0eed24074d92")
 		)
 		(fp_line
 			(start -1.675 0.999999)
@@ -221,7 +219,7 @@
 				(type default)
 			)
 			(layer "F.SilkS")
-			(uuid "e57ce9fe-47a2-405f-904c-062aaa3af338")
+			(uuid "9288e302-09e5-45f0-bdce-5df4496a7ecd")
 		)
 		(fp_line
 			(start 1.675 1.675001)
@@ -231,7 +229,7 @@
 				(type default)
 			)
 			(layer "F.SilkS")
-			(uuid "cda2f28f-5fb2-47c4-a543-2d62c8b82727")
+			(uuid "753f264e-5730-40d2-a65a-371759f8530b")
 		)
 		(fp_line
 			(start 0 0.2)
@@ -241,7 +239,7 @@
 				(type default)
 			)
 			(layer "F.SilkS")
-			(uuid "0a657201-8cdd-45d1-9393-3d56ab9ef1b4")
+			(uuid "23a7e19b-2aa0-4930-bd5a-07f9a7367ad9")
 		)
 		(fp_line
 			(start 0 0.2)
@@ -251,7 +249,7 @@
 				(type default)
 			)
 			(layer "F.SilkS")
-			(uuid "9e64eff5-e4d0-4c2d-8ccc-c807274449a5")
+			(uuid "2bae822a-0c04-43b7-98c1-dfb60def869d")
 		)
 		(fp_line
 			(start -1.675001 -1)
@@ -261,7 +259,7 @@
 				(type default)
 			)
 			(layer "F.SilkS")
-			(uuid "173851fe-483b-4f38-903f-155501023f1a")
+			(uuid "6f646be1-0fc2-4563-ad67-facecf1fc72b")
 		)
 		(fp_line
 			(start 0 -0.2)
@@ -271,7 +269,7 @@
 				(type default)
 			)
 			(layer "F.SilkS")
-			(uuid "0d765f55-8f01-41ca-9963-129e6268c4b5")
+			(uuid "9d0f5d69-3401-438f-985c-9c6d9c2650de")
 		)
 		(fp_line
 			(start -1.675 -1.675001)
@@ -281,7 +279,7 @@
 				(type default)
 			)
 			(layer "F.SilkS")
-			(uuid "0ab9b042-ca46-45f9-b98f-de20839d18db")
+			(uuid "f815d4a1-946c-476d-9995-7c18e2ad30e3")
 		)
 		(fp_line
 			(start 1.675001 -1.675)
@@ -291,13 +289,13 @@
 				(type default)
 			)
 			(layer "F.SilkS")
-			(uuid "f84da457-4dbc-4159-a806-027738dcf1dd")
+			(uuid "dc63c053-7c60-4737-969a-a26eb44dcd4b")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 11.9 -60)
 			(unlocked yes)
 			(layer "F.Fab")
-			(uuid "318d114f-ae3a-42ea-b7a3-08ad2a30e7c5")
+			(uuid "3fb508ad-3288-405d-b4b0-ba5355381155")
 			(effects
 				(font
 					(size 1 1)
@@ -313,7 +311,7 @@
 			(pinfunction "SW1")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "446e5c98-e6e9-4f60-a486-cf105a7041ff")
+			(uuid "05a28429-368e-484a-a87b-2a0e2da85ba3")
 		)
 		(pad "1" smd rect
 			(at 1.95 -0.999999 300)
@@ -323,7 +321,7 @@
 			(pinfunction "SW1")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "fd370995-301b-4589-aaf5-f387194a0aed")
+			(uuid "01de5ef3-6884-4758-bc76-3fe1c55440e8")
 		)
 		(pad "2" smd rect
 			(at -1.95 0.999999 300)
@@ -333,7 +331,7 @@
 			(pinfunction "SW2")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "d40d7952-0b0b-4f4c-8412-86382f74f6b3")
+			(uuid "ba7e7add-b8ac-4ba6-a788-d825f62336e1")
 		)
 		(pad "2" smd rect
 			(at 1.950001 1 300)
@@ -343,29 +341,29 @@
 			(pinfunction "SW2")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "94a20a22-b34d-4182-b4f3-7c253733a7c9")
+			(uuid "76db73e0-adca-4bee-8753-9a248f90cdcb")
 		)
 		(pad "PAD" smd rect
 			(at 0 -1.5 300)
 			(size 0.7 0.25)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 52 "unconnected-(SW1-PadPAD)")
+			(net 23 "GND")
 			(pinfunction "PAD")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "d5834fc8-3d9a-49be-80da-5f0d71eb0257")
+			(uuid "d99667ac-eb48-4a08-962e-d5f17d78cd84")
 		)
 		(pad "PAD" smd rect
 			(at 0 1.5 300)
 			(size 0.7 0.25)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 52 "unconnected-(SW1-PadPAD)")
+			(net 23 "GND")
 			(pinfunction "PAD")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "a32c366a-a0fc-49ac-9e17-07b3e8ca04e1")
+			(uuid "2afb7046-e0f8-437b-8811-87f9b5556021")
 		)
-		(model "C:/Users/Borna/Documents/KiCad/BornaKiCadLibrary/3D models/YTSA007A0151803B.step"
+		(model "${KICAD_BORNA_3D_DIR}/YTSA007A0151803B.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -377,7 +375,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:WS2812B-2020"
+	(footprint "Borna KiCAD Library:WS2812B-2020"
 		(layer "F.Cu")
 		(uuid "47cadadf-4ca8-447f-9135-eeaaf9246400")
 		(at 145 90)
@@ -405,7 +403,7 @@
 				)
 			)
 		)
-		(property "Footprint" "BornaKiCad:WS2812B-2020"
+		(property "Footprint" "Borna KiCAD Library:WS2812B-2020"
 			(at 0 2.3 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -581,7 +579,7 @@
 			(thermal_bridge_angle 45)
 			(uuid "8a568863-399f-486e-8a61-6b49192d8f31")
 		)
-		(model "C:/Users/Borna/Documents/KiCad/BornaKiCadLibrary/3D models/WS2812B-2020.STEP"
+		(model "${KICAD_BORNA_3D_DIR}/WS2812B-2020.STEP"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -593,7 +591,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:WS2812B-2020"
+	(footprint "Borna KiCAD Library:WS2812B-2020"
 		(layer "F.Cu")
 		(uuid "6415fc3c-c94a-42ff-b4bc-2e888df1452b")
 		(at 130 90)
@@ -621,7 +619,7 @@
 				)
 			)
 		)
-		(property "Footprint" "BornaKiCad:WS2812B-2020"
+		(property "Footprint" "Borna KiCAD Library:WS2812B-2020"
 			(at 0 2.3 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -797,7 +795,7 @@
 			(thermal_bridge_angle 45)
 			(uuid "763325f7-ed36-4113-949a-b33cc39808e6")
 		)
-		(model "C:/Users/Borna/Documents/KiCad/BornaKiCadLibrary/3D models/WS2812B-2020.STEP"
+		(model "${KICAD_BORNA_3D_DIR}/WS2812B-2020.STEP"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -809,7 +807,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:WS2812B-2020"
+	(footprint "Borna KiCAD Library:WS2812B-2020"
 		(layer "F.Cu")
 		(uuid "6500bb25-1c24-4804-a308-471e02d5bcd3")
 		(at 105 110)
@@ -837,7 +835,7 @@
 				)
 			)
 		)
-		(property "Footprint" "BornaKiCad:WS2812B-2020"
+		(property "Footprint" "Borna KiCAD Library:WS2812B-2020"
 			(at 0 2.3 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1013,7 +1011,7 @@
 			(thermal_bridge_angle 45)
 			(uuid "2e956ecf-1da9-487e-93ef-5bee58abeddb")
 		)
-		(model "C:/Users/Borna/Documents/KiCad/BornaKiCadLibrary/3D models/WS2812B-2020.STEP"
+		(model "${KICAD_BORNA_3D_DIR}/WS2812B-2020.STEP"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1025,7 +1023,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:WS2812B-2020"
+	(footprint "Borna KiCAD Library:WS2812B-2020"
 		(layer "F.Cu")
 		(uuid "6d341db9-b789-4ad0-b710-616ce7ccf706")
 		(at 145 100)
@@ -1054,7 +1052,7 @@
 				)
 			)
 		)
-		(property "Footprint" "BornaKiCad:WS2812B-2020"
+		(property "Footprint" "Borna KiCAD Library:WS2812B-2020"
 			(at 0 2.3 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1194,7 +1192,7 @@
 			(at -0.915 -0.55)
 			(size 0.7 0.7)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 43 "Net-(LED11-DO)")
+			(net 42 "Net-(LED11-DO)")
 			(pinfunction "DO")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
@@ -1214,7 +1212,7 @@
 			(at 0.915 0.55)
 			(size 0.7 0.7)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 42 "Net-(LED10-DO)")
+			(net 41 "Net-(LED10-DO)")
 			(pinfunction "DI")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
@@ -1230,7 +1228,7 @@
 			(thermal_bridge_angle 45)
 			(uuid "3f484781-23e6-44c0-9fbd-9f3cb2621a8f")
 		)
-		(model "C:/Users/Borna/Documents/KiCad/BornaKiCadLibrary/3D models/WS2812B-2020.STEP"
+		(model "${KICAD_BORNA_3D_DIR}/WS2812B-2020.STEP"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1242,7 +1240,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:WS2812B-2020"
+	(footprint "Borna KiCAD Library:WS2812B-2020"
 		(layer "F.Cu")
 		(uuid "6d45c0fe-22eb-4574-9627-69459d7d0d78")
 		(at 137.5 110)
@@ -1270,7 +1268,7 @@
 				)
 			)
 		)
-		(property "Footprint" "BornaKiCad:WS2812B-2020"
+		(property "Footprint" "Borna KiCAD Library:WS2812B-2020"
 			(at 0 2.3 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1410,7 +1408,7 @@
 			(at -0.915 -0.55)
 			(size 0.7 0.7)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 44 "unconnected-(LED12-DO-Pad1)")
+			(net 43 "unconnected-(LED12-DO-Pad1)")
 			(pinfunction "DO")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
@@ -1430,7 +1428,7 @@
 			(at 0.915 0.55)
 			(size 0.7 0.7)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 43 "Net-(LED11-DO)")
+			(net 42 "Net-(LED11-DO)")
 			(pinfunction "DI")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
@@ -1446,7 +1444,7 @@
 			(thermal_bridge_angle 45)
 			(uuid "f6f44803-b7dd-456e-b7cf-3bf2f98e77b3")
 		)
-		(model "C:/Users/Borna/Documents/KiCad/BornaKiCadLibrary/3D models/WS2812B-2020.STEP"
+		(model "${KICAD_BORNA_3D_DIR}/WS2812B-2020.STEP"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1458,7 +1456,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:WS2812B-2020"
+	(footprint "Borna KiCAD Library:WS2812B-2020"
 		(layer "F.Cu")
 		(uuid "8173684c-ee45-4f91-b3a8-654044fe845d")
 		(at 120 81)
@@ -1486,7 +1484,7 @@
 				)
 			)
 		)
-		(property "Footprint" "BornaKiCad:WS2812B-2020"
+		(property "Footprint" "Borna KiCAD Library:WS2812B-2020"
 			(at 0 2.3 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1662,7 +1660,7 @@
 			(thermal_bridge_angle 45)
 			(uuid "1b92a776-d800-4dfa-97a0-03d0ebc58c31")
 		)
-		(model "C:/Users/Borna/Documents/KiCad/BornaKiCadLibrary/3D models/WS2812B-2020.STEP"
+		(model "${KICAD_BORNA_3D_DIR}/WS2812B-2020.STEP"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1674,7 +1672,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:WS2812B-2020"
+	(footprint "Borna KiCAD Library:WS2812B-2020"
 		(layer "F.Cu")
 		(uuid "a493eac0-f1e8-4dbe-9626-759fd60da484")
 		(at 120 110)
@@ -1702,7 +1700,7 @@
 				)
 			)
 		)
-		(property "Footprint" "BornaKiCad:WS2812B-2020"
+		(property "Footprint" "Borna KiCAD Library:WS2812B-2020"
 			(at 0 2.3 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -1878,7 +1876,7 @@
 			(thermal_bridge_angle 45)
 			(uuid "9f6fa6c2-0b02-4e16-be4d-a91f6bf17f09")
 		)
-		(model "C:/Users/Borna/Documents/KiCad/BornaKiCadLibrary/3D models/WS2812B-2020.STEP"
+		(model "${KICAD_BORNA_3D_DIR}/WS2812B-2020.STEP"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1890,7 +1888,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:WS2812B-2020"
+	(footprint "Borna KiCAD Library:WS2812B-2020"
 		(layer "F.Cu")
 		(uuid "be3e5672-40cf-484a-be24-1c6a0741e666")
 		(at 112.5 100)
@@ -1918,7 +1916,7 @@
 				)
 			)
 		)
-		(property "Footprint" "BornaKiCad:WS2812B-2020"
+		(property "Footprint" "Borna KiCAD Library:WS2812B-2020"
 			(at 0 2.3 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2094,7 +2092,7 @@
 			(thermal_bridge_angle 45)
 			(uuid "e56a9464-0fd5-4018-8497-b51d593709b4")
 		)
-		(model "C:/Users/Borna/Documents/KiCad/BornaKiCadLibrary/3D models/WS2812B-2020.STEP"
+		(model "${KICAD_BORNA_3D_DIR}/WS2812B-2020.STEP"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2106,7 +2104,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:WS2812B-2020"
+	(footprint "Borna KiCAD Library:WS2812B-2020"
 		(layer "F.Cu")
 		(uuid "ee0c27b8-d51d-4575-bdc8-19054e45f30c")
 		(at 105 81)
@@ -2134,7 +2132,7 @@
 				)
 			)
 		)
-		(property "Footprint" "BornaKiCad:WS2812B-2020"
+		(property "Footprint" "Borna KiCAD Library:WS2812B-2020"
 			(at 0 2.3 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2310,7 +2308,7 @@
 			(thermal_bridge_angle 45)
 			(uuid "bec8c6af-c9f9-47bf-94fc-a0225d51b7d9")
 		)
-		(model "C:/Users/Borna/Documents/KiCad/BornaKiCadLibrary/3D models/WS2812B-2020.STEP"
+		(model "${KICAD_BORNA_3D_DIR}/WS2812B-2020.STEP"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2322,7 +2320,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:TSA007A1518B03"
+	(footprint "Borna KiCAD Library:TSA007A1518B03"
 		(layer "F.Cu")
 		(uuid "ef748417-3fb1-43db-b534-37d34c0cf95d")
 		(at 102.85 115.3 60)
@@ -2350,7 +2348,7 @@
 				)
 			)
 		)
-		(property "Footprint" "BornaKiCad:TSA007A1518B03"
+		(property "Footprint" "Borna KiCAD Library:TSA007A1518B03"
 			(at 0 9.4 60)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2539,7 +2537,7 @@
 			(at 0 -1.5 60)
 			(size 0.7 0.25)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 41 "unconnected-(SW2-PadPAD)")
+			(net 23 "GND")
 			(pinfunction "PAD")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
@@ -2549,13 +2547,13 @@
 			(at 0 1.5 60)
 			(size 0.7 0.25)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 41 "unconnected-(SW2-PadPAD)")
+			(net 23 "GND")
 			(pinfunction "PAD")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
 			(uuid "e775e911-6b58-4ce5-878a-e55f2fb12e4a")
 		)
-		(model "C:/Users/Borna/Documents/KiCad/BornaKiCadLibrary/3D models/YTSA007A0151803B.step"
+		(model "${KICAD_BORNA_3D_DIR}/YTSA007A0151803B.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2567,7 +2565,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:WS2812B-2020"
+	(footprint "Borna KiCAD Library:WS2812B-2020"
 		(layer "F.Cu")
 		(uuid "f25b32d4-0581-4233-b195-52b71ea8b2c8")
 		(at 130 100)
@@ -2595,7 +2593,7 @@
 				)
 			)
 		)
-		(property "Footprint" "BornaKiCad:WS2812B-2020"
+		(property "Footprint" "Borna KiCAD Library:WS2812B-2020"
 			(at 0 2.3 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2735,7 +2733,7 @@
 			(at -0.915 -0.55)
 			(size 0.7 0.7)
 			(layers "F.Cu" "F.Paste" "F.Mask")
-			(net 42 "Net-(LED10-DO)")
+			(net 41 "Net-(LED10-DO)")
 			(pinfunction "DO")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
@@ -2771,7 +2769,7 @@
 			(thermal_bridge_angle 45)
 			(uuid "48457ceb-bad8-4358-8732-bec23ef1d9d7")
 		)
-		(model "C:/Users/Borna/Documents/KiCad/BornaKiCadLibrary/3D models/WS2812B-2020.STEP"
+		(model "${KICAD_BORNA_3D_DIR}/WS2812B-2020.STEP"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2783,7 +2781,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:WS2812B-2020"
+	(footprint "Borna KiCAD Library:WS2812B-2020"
 		(layer "F.Cu")
 		(uuid "f9512d14-c316-423c-8b30-2672e0fc5437")
 		(at 112.5 90)
@@ -2811,7 +2809,7 @@
 				)
 			)
 		)
-		(property "Footprint" "BornaKiCad:WS2812B-2020"
+		(property "Footprint" "Borna KiCAD Library:WS2812B-2020"
 			(at 0 2.3 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2987,7 +2985,7 @@
 			(thermal_bridge_angle 45)
 			(uuid "eda0bca6-a5af-48d2-a447-646f772cdfe2")
 		)
-		(model "C:/Users/Borna/Documents/KiCad/BornaKiCadLibrary/3D models/WS2812B-2020.STEP"
+		(model "${KICAD_BORNA_3D_DIR}/WS2812B-2020.STEP"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -2999,7 +2997,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:WS2812B-2020"
+	(footprint "Borna KiCAD Library:WS2812B-2020"
 		(layer "F.Cu")
 		(uuid "fceb4815-92d9-4461-8a93-a470941dd15f")
 		(at 137.5 81)
@@ -3027,7 +3025,7 @@
 				)
 			)
 		)
-		(property "Footprint" "BornaKiCad:WS2812B-2020"
+		(property "Footprint" "Borna KiCAD Library:WS2812B-2020"
 			(at 0 2.3 0)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -3191,7 +3189,7 @@
 			(thermal_bridge_angle 45)
 			(uuid "f1874ed6-0a56-4222-9e3e-f2d7ae434a1f")
 		)
-		(model "C:/Users/Borna/Documents/KiCad/BornaKiCadLibrary/3D models/WS2812B-2020.STEP"
+		(model "${KICAD_BORNA_3D_DIR}/WS2812B-2020.STEP"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3203,7 +3201,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:R0603"
+	(footprint "Borna KiCAD Library:R0603"
 		(layer "B.Cu")
 		(uuid "0143aa1b-8ed8-4d89-aec4-9113a432e03a")
 		(at 145.2 110.4 90)
@@ -3232,7 +3230,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:R0603"
+		(property "Footprint" "Borna KiCAD Library:R0603"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -3398,7 +3396,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:TSSOP20"
+	(footprint "Borna KiCAD Library:TSSOP20"
 		(layer "B.Cu")
 		(uuid "019e4b8f-99c1-4ad0-ab43-f55ec2f19dc2")
 		(at 116.7 83.75 180)
@@ -3406,7 +3404,7 @@
 			(at 0 -4.1 0)
 			(unlocked yes)
 			(layer "User.1")
-			(uuid "5362dc2c-b98f-4df3-bebb-ed64ae2cde24")
+			(uuid "3b55fb80-ab01-4ef1-b070-d8889db1bc45")
 			(effects
 				(font
 					(size 1 1)
@@ -3418,7 +3416,7 @@
 			(at 0 -5.6 0)
 			(unlocked yes)
 			(layer "B.Fab")
-			(uuid "028e057d-42f9-415c-a287-457fc5b878f5")
+			(uuid "788e6614-ee57-4119-bf43-cf56e104ca7a")
 			(effects
 				(font
 					(size 1 1)
@@ -3427,12 +3425,12 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:TSSOP20"
+		(property "Footprint" "Borna KiCAD Library:TSSOP20"
 			(at 0 -4.6 0)
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "5cc297e0-f040-462b-8560-f10a060b04ed")
+			(uuid "4e4804ef-4276-431b-bf14-3dc5ef1df7a4")
 			(effects
 				(font
 					(size 1 1)
@@ -3446,7 +3444,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "9a82cc07-cd29-4cb4-8c9c-9ab886d476be")
+			(uuid "0f086ab9-fbcf-49b5-a66a-3a8f17c3a14b")
 			(effects
 				(font
 					(size 1 1)
@@ -3460,7 +3458,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "fd7d7826-4027-4baa-b62e-62d982ecd2fd")
+			(uuid "ec366976-f880-49a7-847e-0678faca18cb")
 			(effects
 				(font
 					(size 1 1)
@@ -3481,7 +3479,7 @@
 				(type default)
 			)
 			(layer "B.SilkS")
-			(uuid "c686d76c-8e60-4621-94b8-6361a2333299")
+			(uuid "7e7763de-69a8-4cab-abae-70a335c5d96c")
 		)
 		(fp_line
 			(start 2.2 -3.25)
@@ -3491,7 +3489,7 @@
 				(type default)
 			)
 			(layer "B.SilkS")
-			(uuid "31dcf89f-1fd7-41dc-a334-4b1b1f676d0c")
+			(uuid "23a919b3-2096-4ade-bca0-d604961d0e62")
 		)
 		(fp_line
 			(start -2.2 3.25)
@@ -3501,7 +3499,7 @@
 				(type default)
 			)
 			(layer "B.SilkS")
-			(uuid "9aba0b8c-3665-4740-a828-5a047431d4a5")
+			(uuid "e8e23bf6-2a96-4860-a38a-c7543cec3a2d")
 		)
 		(fp_line
 			(start -2.2 -3.25)
@@ -3511,7 +3509,7 @@
 				(type default)
 			)
 			(layer "B.SilkS")
-			(uuid "132bcf37-d606-4e76-9692-b09e9e02a5f0")
+			(uuid "176d5263-71b6-469c-ba1b-175b98677d47")
 		)
 		(fp_line
 			(start -2.8 3.3)
@@ -3521,7 +3519,7 @@
 				(type default)
 			)
 			(layer "B.SilkS")
-			(uuid "8880d234-7b36-48bf-ace4-9edb38299802")
+			(uuid "b3cb5068-e5e0-45c8-9e65-26ce4ac8d14c")
 		)
 		(fp_line
 			(start -2.9 3.2)
@@ -3531,7 +3529,7 @@
 				(type default)
 			)
 			(layer "B.SilkS")
-			(uuid "ef2f96f0-599e-4213-acbb-5e632d65179f")
+			(uuid "e8b1e1ff-a1b5-40c8-8fe1-cd9da438f858")
 		)
 		(fp_line
 			(start -3 3.3)
@@ -3541,7 +3539,7 @@
 				(type default)
 			)
 			(layer "B.SilkS")
-			(uuid "2a57583b-66e9-493f-be59-81a13b346727")
+			(uuid "8819cbeb-1854-4065-86c5-efc62990cead")
 		)
 		(fp_circle
 			(center -1.8 2.9)
@@ -3552,13 +3550,13 @@
 			)
 			(fill none)
 			(layer "B.SilkS")
-			(uuid "0f1b7d53-348e-4a83-96c4-6b89a6bea86a")
+			(uuid "77788094-3bb5-4085-8352-ba2eecbedc62")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -7.1 0)
 			(unlocked yes)
 			(layer "B.Fab")
-			(uuid "9b8b320a-1d6a-4415-bba7-0c2a30da2d68")
+			(uuid "a4f2176f-ed72-4fce-8035-ebfb77b64945")
 			(effects
 				(font
 					(size 1 1)
@@ -3575,7 +3573,7 @@
 			(pinfunction "PB7")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "087d6d77-d2b8-4e8c-a52b-0a647979e1a4")
+			(uuid "e0d18b24-184d-4965-88f0-6b42c0e91405")
 		)
 		(pad "2" smd rect
 			(at -2.875 2.275 180)
@@ -3585,7 +3583,7 @@
 			(pinfunction "PC14")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "315d7cba-f422-4490-a922-e52260e60487")
+			(uuid "ce10fc16-530c-49e5-9691-d8f2b70c7f64")
 		)
 		(pad "3" smd rect
 			(at -2.875 1.625 180)
@@ -3595,7 +3593,7 @@
 			(pinfunction "PC15")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "05e76e1e-3479-4d79-9e34-3f1c9392c570")
+			(uuid "d153571b-a0e6-44b5-8a47-80ecb8a7c64c")
 		)
 		(pad "4" smd rect
 			(at -2.875 0.975 180)
@@ -3605,7 +3603,7 @@
 			(pinfunction "VDD")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "adf85b0e-8041-4806-9719-7d0b42ac943c")
+			(uuid "ac70bf6e-2dd1-45c8-888f-59af9ddbdb89")
 		)
 		(pad "5" smd rect
 			(at -2.875 0.325 180)
@@ -3615,7 +3613,7 @@
 			(pinfunction "VSS")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "06e5e2fe-2ac4-4528-a4d8-6f188c831f6f")
+			(uuid "6a690a26-f98a-4910-afde-fb6e4fcdd125")
 		)
 		(pad "6" smd rect
 			(at -2.875 -0.325 180)
@@ -3625,7 +3623,7 @@
 			(pinfunction "NRST")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "6b64f886-e3cd-42e6-9389-ccd82018f989")
+			(uuid "b335ca2b-937f-43f2-906b-17e5fe464c59")
 		)
 		(pad "7" smd rect
 			(at -2.875 -0.975 180)
@@ -3635,7 +3633,7 @@
 			(pinfunction "PA0")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "535f0d3a-8f46-4375-b5aa-5094efc11537")
+			(uuid "2f9f62d7-7967-4724-afb4-67b00f581e17")
 		)
 		(pad "8" smd rect
 			(at -2.875 -1.625 180)
@@ -3645,7 +3643,7 @@
 			(pinfunction "PA1")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "2cbf1eb3-5bae-4aca-83ef-c61133373e29")
+			(uuid "bb90baa0-9819-467d-80fd-e1800340b5bd")
 		)
 		(pad "9" smd rect
 			(at -2.875 -2.275 180)
@@ -3655,7 +3653,7 @@
 			(pinfunction "PA2")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "75c1c092-6c49-4d46-a130-0c09638b5e5c")
+			(uuid "c62bb307-e15e-45ab-af75-bb1f81676e71")
 		)
 		(pad "10" smd rect
 			(at -2.875 -2.925 180)
@@ -3665,7 +3663,7 @@
 			(pinfunction "PA3")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "fdc1ab9d-269c-4efb-ac5b-2578dbd93234")
+			(uuid "e1d19ab1-e2e7-4f16-90f1-e00fbedc35dd")
 		)
 		(pad "11" smd rect
 			(at 2.875 -2.925 180)
@@ -3675,7 +3673,7 @@
 			(pinfunction "PA4")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "7f03e75e-d13f-496f-a08b-4831d2c123a9")
+			(uuid "da96bdfc-911f-4cde-b0cb-995f07598070")
 		)
 		(pad "12" smd rect
 			(at 2.875 -2.275 180)
@@ -3685,7 +3683,7 @@
 			(pinfunction "PA5")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "c34b1544-a9f2-4104-a25c-b92c739df70b")
+			(uuid "64e073ec-e452-49a2-92d6-8e18a26e3cd3")
 		)
 		(pad "13" smd rect
 			(at 2.875 -1.625 180)
@@ -3695,7 +3693,7 @@
 			(pinfunction "PA6")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "eb43009b-0130-4d29-90dd-14048e41b46e")
+			(uuid "67c44507-5384-48a4-9ca1-163bde83d8ff")
 		)
 		(pad "14" smd rect
 			(at 2.875 -0.975 180)
@@ -3705,7 +3703,7 @@
 			(pinfunction "PA7")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "1c670008-a78a-4994-913f-e27eabe9f306")
+			(uuid "24666471-d437-4a83-b94b-8d2fa7ba5328")
 		)
 		(pad "15" smd rect
 			(at 2.875 -0.325 180)
@@ -3715,7 +3713,7 @@
 			(pinfunction "PA8")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "250a78fa-7f97-4da7-b59b-1707b79c415b")
+			(uuid "bcbd819a-32e1-47be-8520-2c7bc3a3e39d")
 		)
 		(pad "16" smd rect
 			(at 2.875 0.325 180)
@@ -3725,7 +3723,7 @@
 			(pinfunction "PA11")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "29658c1c-f8f6-4c00-a809-74dbce51797e")
+			(uuid "605ab0bc-7170-45ae-831c-334d3cb5ddd5")
 		)
 		(pad "17" smd rect
 			(at 2.875 0.975 180)
@@ -3735,7 +3733,7 @@
 			(pinfunction "PA12")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "c71a53b1-21e0-4d4a-b441-b15901c43f50")
+			(uuid "441244ef-ad79-46ab-91c2-849394396ad4")
 		)
 		(pad "18" smd rect
 			(at 2.875 1.625 180)
@@ -3745,7 +3743,7 @@
 			(pinfunction "PA13")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "1dad363a-a24e-430c-944f-b84154e13c54")
+			(uuid "d2856f23-b55f-4ed7-8289-fa565fb48de0")
 		)
 		(pad "19" smd rect
 			(at 2.875 2.275 180)
@@ -3755,7 +3753,7 @@
 			(pinfunction "BOOT0")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "ad5e9e59-44aa-463c-a753-084fbc3b834f")
+			(uuid "6679b99a-c1f8-4fd1-863c-2851981889d3")
 		)
 		(pad "20" smd rect
 			(at 2.875 2.925 180)
@@ -3765,9 +3763,9 @@
 			(pinfunction "PB6")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
-			(uuid "6b05d8fd-8218-4cbd-886b-2e80e319796c")
+			(uuid "b4f4e9e9-f64e-48f2-8113-78f2e2a05dc4")
 		)
-		(model "C:/Users/Borna/Documents/KiCad/BornaKiCadLibrary/3D models/TSSOP20.STEP"
+		(model "${KICAD_BORNA_3D_DIR}/TSSOP20.STEP"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -3779,7 +3777,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:C0603"
+	(footprint "Borna KiCAD Library:C0603"
 		(layer "B.Cu")
 		(uuid "11759099-90ab-4935-9155-547d6388e6d1")
 		(at 141.675 110.825 180)
@@ -3808,7 +3806,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:C0603"
+		(property "Footprint" "Borna KiCAD Library:C0603"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -3962,7 +3960,7 @@
 			(pintype "passive")
 			(uuid "2903c282-a183-4a26-84ea-4e3089d5e7e5")
 		)
-		(model "C:/Users/Borna/Documents/KiCad/BornaKiCadLibrary/3D models/LD031A101GAB2A.STEP"
+		(model "${KICAD_BORNA_3D_DIR}/LD031A101GAB2A.STEP"
 			(offset
 				(xyz 0 -0.45 0.35)
 			)
@@ -3974,7 +3972,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:C0603"
+	(footprint "Borna KiCAD Library:C0603"
 		(layer "B.Cu")
 		(uuid "1f84e53a-150d-4995-979a-ee95b0256b27")
 		(at 107.45 101.86 90)
@@ -4003,7 +4001,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:C0603"
+		(property "Footprint" "Borna KiCAD Library:C0603"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -4157,7 +4155,7 @@
 			(pintype "passive")
 			(uuid "ae79b579-e6f0-4d7f-ba6a-ca0b946d14df")
 		)
-		(model "C:/Users/Borna/Documents/KiCad/BornaKiCadLibrary/3D models/LD031A101GAB2A.STEP"
+		(model "${KICAD_BORNA_3D_DIR}/LD031A101GAB2A.STEP"
 			(offset
 				(xyz 0 -0.45 0.35)
 			)
@@ -4169,7 +4167,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:R0603"
+	(footprint "Borna KiCAD Library:R0603"
 		(layer "B.Cu")
 		(uuid "2a9f33ca-e43d-4637-89de-d94e604eb827")
 		(at 108.25 87.2 -90)
@@ -4199,7 +4197,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:R0603"
+		(property "Footprint" "Borna KiCAD Library:R0603"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -4365,7 +4363,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:C0603"
+	(footprint "Borna KiCAD Library:C0603"
 		(layer "B.Cu")
 		(uuid "37c6717c-ae84-4eb3-afeb-81f85313d5f2")
 		(at 105.2 111.95 180)
@@ -4394,7 +4392,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:C0603"
+		(property "Footprint" "Borna KiCAD Library:C0603"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -4548,7 +4546,7 @@
 			(pintype "passive")
 			(uuid "2d0ac1c2-382c-4583-ad0a-7ef85f4e27e7")
 		)
-		(model "C:/Users/Borna/Documents/KiCad/BornaKiCadLibrary/3D models/LD031A101GAB2A.STEP"
+		(model "${KICAD_BORNA_3D_DIR}/LD031A101GAB2A.STEP"
 			(offset
 				(xyz 0 -0.45 0.35)
 			)
@@ -4560,7 +4558,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:R0603"
+	(footprint "Borna KiCAD Library:R0603"
 		(layer "B.Cu")
 		(uuid "39ba38e1-21d0-416c-aa90-c4aaf85b38ac")
 		(at 128.75 103.2 90)
@@ -4589,7 +4587,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:R0603"
+		(property "Footprint" "Borna KiCAD Library:R0603"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -4731,7 +4729,7 @@
 			(at -0.825 0 90)
 			(size 0.8 0.95)
 			(layers "B.Cu" "B.Paste" "B.Mask")
-			(net 46 "Net-(CONN2-CC2)")
+			(net 45 "Net-(CONN2-CC2)")
 			(pintype "passive")
 			(uuid "c23844ad-1fb1-4021-9254-224f539acf39")
 		)
@@ -4755,7 +4753,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:R0603"
+	(footprint "Borna KiCAD Library:R0603"
 		(layer "B.Cu")
 		(uuid "3c10fe7f-f3f5-4237-8ef2-66bcc6b30856")
 		(at 103.15 109.75)
@@ -4785,7 +4783,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:R0603"
+		(property "Footprint" "Borna KiCAD Library:R0603"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -4939,7 +4937,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:R0603"
+	(footprint "Borna KiCAD Library:R0603"
 		(layer "B.Cu")
 		(uuid "3c77c1cc-0a46-40a4-8289-4640776690b8")
 		(at 122.38 84.37 180)
@@ -4968,7 +4966,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:R0603"
+		(property "Footprint" "Borna KiCAD Library:R0603"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -5134,7 +5132,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:R0603"
+	(footprint "Borna KiCAD Library:R0603"
 		(layer "B.Cu")
 		(uuid "4f162457-b9f0-4539-9d06-c948e9f4c0b6")
 		(at 110.65 81.3)
@@ -5163,7 +5161,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:R0603"
+		(property "Footprint" "Borna KiCAD Library:R0603"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -5329,7 +5327,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:C1206"
+	(footprint "Borna KiCAD Library:C1206"
 		(layer "B.Cu")
 		(uuid "6304fdff-5505-48d8-b2b6-f8e211fedb3f")
 		(at 123.9 80.9 -90)
@@ -5358,7 +5356,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:C1206"
+		(property "Footprint" "Borna KiCAD Library:C1206"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -5512,7 +5510,7 @@
 			(pintype "passive")
 			(uuid "318ee665-01c0-479b-949c-040fd99f003b")
 		)
-		(model "C:/Users/Borna/Documents/KiCad/BornaKiCadLibrary/3D models/LD06ZC225KAB2A(0.STEP"
+		(model "${KICAD_BORNA_3D_DIR}/LD06ZC225KAB2A(0.STEP"
 			(offset
 				(xyz 0 -0.9 0.75)
 			)
@@ -5524,7 +5522,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:C0603"
+	(footprint "Borna KiCAD Library:C0603"
 		(layer "B.Cu")
 		(uuid "6d9d9519-fb90-464c-aac8-ffc7f062ca90")
 		(at 147.2 91.6 90)
@@ -5553,7 +5551,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:C0603"
+		(property "Footprint" "Borna KiCAD Library:C0603"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -5707,7 +5705,7 @@
 			(pintype "passive")
 			(uuid "d2e3120b-dc94-439b-a699-651f7c3ae0d5")
 		)
-		(model "C:/Users/Borna/Documents/KiCad/BornaKiCadLibrary/3D models/LD031A101GAB2A.STEP"
+		(model "${KICAD_BORNA_3D_DIR}/LD031A101GAB2A.STEP"
 			(offset
 				(xyz 0 -0.45 0.35)
 			)
@@ -5719,7 +5717,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:R0603"
+	(footprint "Borna KiCAD Library:R0603"
 		(layer "B.Cu")
 		(uuid "733d9cc0-a32b-4e96-a54b-98bfc140da54")
 		(at 143.2 101.6)
@@ -5748,7 +5746,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:R0603"
+		(property "Footprint" "Borna KiCAD Library:R0603"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -5890,7 +5888,7 @@
 			(at -0.825 0)
 			(size 0.8 0.95)
 			(layers "B.Cu" "B.Paste" "B.Mask")
-			(net 50 "Net-(IC2-CHRG)")
+			(net 49 "Net-(IC2-CHRG)")
 			(pintype "passive")
 			(uuid "a459493e-c2c9-4694-b129-d24635a17b8f")
 		)
@@ -5898,7 +5896,7 @@
 			(at 0.825 0)
 			(size 0.8 0.95)
 			(layers "B.Cu" "B.Paste" "B.Mask")
-			(net 51 "Net-(LED13-K)")
+			(net 50 "Net-(LED13-K)")
 			(pintype "passive")
 			(uuid "5ebfb621-06f1-487a-9d02-97a4becb1391")
 		)
@@ -5914,7 +5912,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:C0603"
+	(footprint "Borna KiCAD Library:C0603"
 		(layer "B.Cu")
 		(uuid "734428ee-a681-4f4d-93f2-e7fddaed099b")
 		(at 121.85 81.65 -90)
@@ -5943,7 +5941,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:C0603"
+		(property "Footprint" "Borna KiCAD Library:C0603"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -6085,7 +6083,7 @@
 			(pintype "passive")
 			(uuid "f32ef4bb-1124-49c3-b9de-a831a0185f54")
 		)
-		(model "C:/Users/Borna/Documents/KiCad/BornaKiCadLibrary/3D models/LD031A101GAB2A.STEP"
+		(model "${KICAD_BORNA_3D_DIR}/LD031A101GAB2A.STEP"
 			(offset
 				(xyz 0 -0.45 0.35)
 			)
@@ -6097,7 +6095,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:SOD323"
+	(footprint "Borna KiCAD Library:SOD323"
 		(layer "B.Cu")
 		(uuid "766e2fc4-400e-4a42-bcaa-3a7e56bee55f")
 		(at 139.45 77.54 90)
@@ -6126,7 +6124,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:SOD323"
+		(property "Footprint" "Borna KiCAD Library:SOD323"
 			(at 0 -3.75 -90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -6266,7 +6264,7 @@
 			(thermal_bridge_angle 45)
 			(uuid "44e93a76-812f-4f91-a2bd-81a15ffbd9c4")
 		)
-		(model "C:/Users/Borna/Documents/KiCad/BornaKiCadLibrary/3D models/SOD-323.STEP"
+		(model "${KICAD_BORNA_3D_DIR}/SOD-323.STEP"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -6278,7 +6276,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:SOT-23-3L"
+	(footprint "Borna KiCAD Library:SOT-23-3L"
 		(layer "B.Cu")
 		(uuid "7bc03567-ee1b-4b3f-a294-d6d327440ac1")
 		(at 142.4 86.275 180)
@@ -6307,7 +6305,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:SOT-23-3L"
+		(property "Footprint" "Borna KiCAD Library:SOT-23-3L"
 			(at 0.9 -4.1 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -6433,7 +6431,7 @@
 			(pintype "passive")
 			(uuid "30829799-22e2-4f6b-8291-eabae6269042")
 		)
-		(model "C:/Users/Borna/Documents/KiCad/BornaKiCadLibrary/3D models/SOT-23-3.STEP"
+		(model "${KICAD_BORNA_3D_DIR}/SOT-23-3.STEP"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -6445,7 +6443,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:LED_0603"
+	(footprint "Borna KiCAD Library:LED_0603"
 		(layer "B.Cu")
 		(uuid "7c1e7cb8-46fd-4030-af7b-3067c5d52755")
 		(at 145.6 103.6)
@@ -6474,7 +6472,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:LED_0603"
+		(property "Footprint" "Borna KiCAD Library:LED_0603"
 			(at -0.058 -0.254 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -6677,12 +6675,12 @@
 			(at 0.787 0)
 			(size 0.8 0.95)
 			(layers "B.Cu" "B.Paste" "B.Mask")
-			(net 51 "Net-(LED13-K)")
+			(net 50 "Net-(LED13-K)")
 			(pinfunction "K")
 			(pintype "passive")
 			(uuid "8ac1cd0b-ac79-4533-8e5d-38c5f8a7ef6c")
 		)
-		(model "C:/Users/Borna/Documents/KiCad/BornaKiCadLibrary/3D models/LED_0603.STEP"
+		(model "${KICAD_BORNA_3D_DIR}/LED_0603.STEP"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -6694,7 +6692,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:TYPE-C_16PIN_2MD(073)"
+	(footprint "Borna KiCAD Library:TYPE-C_16PIN_2MD(073)"
 		(layer "B.Cu")
 		(uuid "8110aef6-793b-4c69-a121-6c1586ba9279")
 		(at 130.51 109.14 180)
@@ -6723,7 +6721,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:TYPE-C_16PIN_2MD(073)"
+		(property "Footprint" "Borna KiCAD Library:TYPE-C_16PIN_2MD(073)"
 			(at 0 -5 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -6858,7 +6856,7 @@
 			(at -1.25 3.61 180)
 			(size 0.3 1.14)
 			(layers "B.Cu" "B.Paste" "B.Mask")
-			(net 45 "Net-(CONN2-CC1)")
+			(net 44 "Net-(CONN2-CC1)")
 			(pinfunction "CC1")
 			(pintype "passive")
 			(uuid "033dfc6f-4196-4e39-9a3c-5ad4df4b0f82")
@@ -6885,7 +6883,7 @@
 			(at 1.25 3.61 180)
 			(size 0.3 1.14)
 			(layers "B.Cu" "B.Paste" "B.Mask")
-			(net 48 "unconnected-(CONN2-SBU1-PadA8)")
+			(net 47 "unconnected-(CONN2-SBU1-PadA8)")
 			(pinfunction "SBU1")
 			(pintype "passive")
 			(uuid "9ed22cea-e3c3-496b-b06c-baf78e6deca6")
@@ -6930,7 +6928,7 @@
 			(at 1.75 3.61 180)
 			(size 0.3 1.14)
 			(layers "B.Cu" "B.Paste" "B.Mask")
-			(net 46 "Net-(CONN2-CC2)")
+			(net 45 "Net-(CONN2-CC2)")
 			(pinfunction "CC2")
 			(pintype "passive")
 			(uuid "3f18dd9c-c250-4114-bf38-d55f9bc610fa")
@@ -6957,7 +6955,7 @@
 			(at -1.75 3.61 180)
 			(size 0.3 1.14)
 			(layers "B.Cu" "B.Paste" "B.Mask")
-			(net 47 "unconnected-(CONN2-SBU2-PadB8)")
+			(net 46 "unconnected-(CONN2-SBU2-PadB8)")
 			(pinfunction "SBU2")
 			(pintype "passive")
 			(uuid "63851cdb-40f6-4324-83d2-0a5ffd868053")
@@ -7028,7 +7026,7 @@
 			(thermal_bridge_angle 45)
 			(uuid "df5fba81-fa7c-4aa6-bfb5-6191a197e87f")
 		)
-		(model "C:/Users/Borna/Documents/KiCad/BornaKiCadLibrary/3D models/CSP-USC16-TR--3DModel-STEP-468060.STEP"
+		(model "${KICAD_BORNA_3D_DIR}/CSP-USC16-TR--3DModel-STEP-468060.STEP"
 			(offset
 				(xyz 0 2.565 0)
 			)
@@ -7040,7 +7038,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:R0603"
+	(footprint "Borna KiCAD Library:R0603"
 		(layer "B.Cu")
 		(uuid "822eda78-2b51-4c13-98cd-83fda97f4d2a")
 		(at 104.85 84.7)
@@ -7069,7 +7067,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:R0603"
+		(property "Footprint" "Borna KiCAD Library:R0603"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -7235,7 +7233,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:R0603"
+	(footprint "Borna KiCAD Library:R0603"
 		(layer "B.Cu")
 		(uuid "83776eca-f836-4e50-ba58-6bbe0644f6e4")
 		(at 147.65 109.975 90)
@@ -7264,7 +7262,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:R0603"
+		(property "Footprint" "Borna KiCAD Library:R0603"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -7430,7 +7428,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:TP-1_5mm"
+	(footprint "Borna KiCAD Library:TP-1_5mm"
 		(layer "B.Cu")
 		(uuid "87d2acd4-c68f-475f-9ba0-e639bb6d4703")
 		(at 107.25 77.8 -90)
@@ -7459,7 +7457,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:TP-1_5mm"
+		(property "Footprint" "Borna KiCAD Library:TP-1_5mm"
 			(at 0 -0.5 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -7528,7 +7526,7 @@
 			(uuid "e97e4c96-9118-4336-a14f-ea4d815f6e2c")
 		)
 	)
-	(footprint "BornaKiCad:C0603"
+	(footprint "Borna KiCAD Library:C0603"
 		(layer "B.Cu")
 		(uuid "90475a03-cb9d-4d52-ac20-80e3c8c4ffe5")
 		(at 137.6 111.8)
@@ -7557,7 +7555,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:C0603"
+		(property "Footprint" "Borna KiCAD Library:C0603"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -7699,7 +7697,7 @@
 			(pintype "passive")
 			(uuid "c0b19e0d-0516-4e87-8f70-6a9df24cfd27")
 		)
-		(model "C:/Users/Borna/Documents/KiCad/BornaKiCadLibrary/3D models/LD031A101GAB2A.STEP"
+		(model "${KICAD_BORNA_3D_DIR}/LD031A101GAB2A.STEP"
 			(offset
 				(xyz 0 -0.45 0.35)
 			)
@@ -7711,12 +7709,12 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:JST_S2B-PH-SM4-TB"
+	(footprint "Borna KiCAD Library:JST_S2B-PH-SM4-TB"
 		(layer "B.Cu")
 		(uuid "90fc31a3-2efb-4df0-9ef4-874d9a84cc54")
 		(at 113 110.1 180)
 		(property "Reference" "CONN1"
-			(at 0 8 360)
+			(at 0 8 0)
 			(layer "User.1")
 			(uuid "81e6afc0-10fc-442c-8a73-ec1c4547c3be")
 			(effects
@@ -7727,7 +7725,7 @@
 			)
 		)
 		(property "Value" "S2B-PH-SM4-TB"
-			(at 0 -2.75 360)
+			(at 0 -2.75 0)
 			(layer "B.Fab")
 			(uuid "4ffd8ea1-463c-48d0-86b5-3e0614ea8627")
 			(effects
@@ -7738,7 +7736,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:JST_S2B-PH-SM4-TB"
+		(property "Footprint" "Borna KiCAD Library:JST_S2B-PH-SM4-TB"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -7858,7 +7856,7 @@
 			(solder_mask_margin 0.102)
 			(uuid "62724c7e-0907-440e-96ab-90f6adb0506e")
 		)
-		(model "C:/Users/Borna/Documents/KiCad/BornaKiCadLibrary/3D models/S2B-PH-SM4-TB.step"
+		(model "${KICAD_BORNA_3D_DIR}/S2B-PH-SM4-TB.step"
 			(offset
 				(xyz 0 7.25 0)
 			)
@@ -7870,7 +7868,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:EMSOP"
+	(footprint "Borna KiCAD Library:EMSOP"
 		(layer "B.Cu")
 		(uuid "a4b6bb75-1e2c-4f9e-868b-92540a7381b3")
 		(at 141.6 105.875 90)
@@ -7899,7 +7897,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:EMSOP"
+		(property "Footprint" "Borna KiCAD Library:EMSOP"
 			(at 0 -1.3 -90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -8092,7 +8090,7 @@
 			(at 2.2 -0.325 90)
 			(size 1.4 0.45)
 			(layers "B.Cu" "B.Paste" "B.Mask")
-			(net 49 "unconnected-(IC2-STDBY-Pad6)")
+			(net 48 "unconnected-(IC2-STDBY-Pad6)")
 			(pinfunction "STDBY")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
@@ -8102,7 +8100,7 @@
 			(at 2.2 0.325 90)
 			(size 1.4 0.45)
 			(layers "B.Cu" "B.Paste" "B.Mask")
-			(net 50 "Net-(IC2-CHRG)")
+			(net 49 "Net-(IC2-CHRG)")
 			(pinfunction "CHRG")
 			(pintype "passive")
 			(thermal_bridge_angle 45)
@@ -8125,7 +8123,7 @@
 			(thermal_bridge_angle 45)
 			(uuid "344cda66-c0f8-4407-a806-5c76b288702d")
 		)
-		(model "C:/Users/Borna/Documents/KiCad/BornaKiCadLibrary/3D models/TP4056M-MSOP8.step"
+		(model "${KICAD_BORNA_3D_DIR}/TP4056M-MSOP8.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -8137,7 +8135,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:R0603"
+	(footprint "Borna KiCAD Library:R0603"
 		(layer "B.Cu")
 		(uuid "b170c013-73da-4147-8adf-40eac7a9372c")
 		(at 145.525 106.7 -90)
@@ -8166,7 +8164,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:R0603"
+		(property "Footprint" "Borna KiCAD Library:R0603"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -8332,7 +8330,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:TP-1_5mm"
+	(footprint "Borna KiCAD Library:TP-1_5mm"
 		(layer "B.Cu")
 		(uuid "b43232e5-0784-486b-8c56-6cd9b0bda43b")
 		(at 114.75 77.8 -90)
@@ -8361,7 +8359,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:TP-1_5mm"
+		(property "Footprint" "Borna KiCAD Library:TP-1_5mm"
 			(at 0 -0.5 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -8430,7 +8428,7 @@
 			(uuid "eba98e65-ab80-4511-97e4-66205ee29d4f")
 		)
 	)
-	(footprint "BornaKiCad:C0603"
+	(footprint "Borna KiCAD Library:C0603"
 		(layer "B.Cu")
 		(uuid "b474e0a7-d584-4370-babb-3a96d2998960")
 		(at 142.6 112.75)
@@ -8459,7 +8457,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:C0603"
+		(property "Footprint" "Borna KiCAD Library:C0603"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -8613,7 +8611,7 @@
 			(pintype "passive")
 			(uuid "b428004e-a135-4523-99da-d922701140c8")
 		)
-		(model "C:/Users/Borna/Documents/KiCad/BornaKiCadLibrary/3D models/LD031A101GAB2A.STEP"
+		(model "${KICAD_BORNA_3D_DIR}/LD031A101GAB2A.STEP"
 			(offset
 				(xyz 0 -0.45 0.35)
 			)
@@ -8625,7 +8623,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:TP-1_5mm"
+	(footprint "Borna KiCAD Library:TP-1_5mm"
 		(layer "B.Cu")
 		(uuid "b6350412-68a9-4325-9060-859b49cd9c9e")
 		(at 109.75 77.8 -90)
@@ -8654,7 +8652,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:TP-1_5mm"
+		(property "Footprint" "Borna KiCAD Library:TP-1_5mm"
 			(at 0 -0.5 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -8723,7 +8721,7 @@
 			(uuid "ce27ae49-4ee4-4fc0-aaa2-9f3656cbaac9")
 		)
 	)
-	(footprint "BornaKiCad:C0603"
+	(footprint "Borna KiCAD Library:C0603"
 		(layer "B.Cu")
 		(uuid "bcc44539-09b3-4bdf-b68e-fb46702de2cc")
 		(at 136.93 77.66 90)
@@ -8752,7 +8750,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:C0603"
+		(property "Footprint" "Borna KiCAD Library:C0603"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -8906,7 +8904,7 @@
 			(pintype "passive")
 			(uuid "13d1742c-dfb2-45ee-8726-71259f50ab37")
 		)
-		(model "C:/Users/Borna/Documents/KiCad/BornaKiCadLibrary/3D models/LD031A101GAB2A.STEP"
+		(model "${KICAD_BORNA_3D_DIR}/LD031A101GAB2A.STEP"
 			(offset
 				(xyz 0 -0.45 0.35)
 			)
@@ -8918,7 +8916,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:C0603"
+	(footprint "Borna KiCAD Library:C0603"
 		(layer "B.Cu")
 		(uuid "be466220-a825-4049-91cb-17603e6763a8")
 		(at 137.225 84.775 -90)
@@ -8947,7 +8945,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:C0603"
+		(property "Footprint" "Borna KiCAD Library:C0603"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -9101,7 +9099,7 @@
 			(pintype "passive")
 			(uuid "dd298790-f8a9-46cc-bf9e-e70b11238b43")
 		)
-		(model "C:/Users/Borna/Documents/KiCad/BornaKiCadLibrary/3D models/LD031A101GAB2A.STEP"
+		(model "${KICAD_BORNA_3D_DIR}/LD031A101GAB2A.STEP"
 			(offset
 				(xyz 0 -0.45 0.35)
 			)
@@ -9113,7 +9111,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:R0603"
+	(footprint "Borna KiCAD Library:R0603"
 		(layer "B.Cu")
 		(uuid "c6f9ce4e-6e4c-4f48-bd2f-67da34376a13")
 		(at 134.3 85.6)
@@ -9142,7 +9140,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:R0603"
+		(property "Footprint" "Borna KiCAD Library:R0603"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -9317,7 +9315,7 @@
 		(property "Reference" "C3"
 			(at 0 1.82 90)
 			(layer "User.1")
-			(uuid "c2433e71-ff60-453e-bea5-12d13962f60c")
+			(uuid "3f641896-d239-4eb6-a2da-759d9b2f07b0")
 			(effects
 				(font
 					(size 1 1)
@@ -9328,7 +9326,7 @@
 		(property "Value" "10u"
 			(at 0 -1.82 90)
 			(layer "B.Fab")
-			(uuid "1e9cb2dc-77a2-400c-8cec-2a503a455d62")
+			(uuid "49577bb8-4fef-4767-9dab-23b69a3cf588")
 			(effects
 				(font
 					(size 1 1)
@@ -9342,7 +9340,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "0b1b66d4-93c8-43bc-9119-7dbe0d1d125b")
+			(uuid "e6be9a62-f571-4209-a337-7e13997d1952")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9356,7 +9354,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "1dedf824-f326-40e7-b7c1-84db1bf65067")
+			(uuid "3708bc97-b06d-4239-ad50-be7486b5756a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9370,7 +9368,7 @@
 			(unlocked yes)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "8ccb0cf0-2f42-4c0b-aafa-e368c0822b47")
+			(uuid "dc099827-5b00-47b5-a435-765101fb4895")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9391,7 +9389,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "be679285-a69e-461f-9298-231029d14759")
+			(uuid "4e3f6d13-7a6c-4742-ba74-4d662abc3db4")
 		)
 		(fp_line
 			(start 1.6 0.8)
@@ -9401,7 +9399,7 @@
 				(type solid)
 			)
 			(layer "B.SilkS")
-			(uuid "927bac0b-7f7f-4019-8a60-ab9fdd7c0599")
+			(uuid "71323ab0-1247-427c-8de2-adb261a1cd7b")
 		)
 		(fp_line
 			(start 2.28 -1.12)
@@ -9411,7 +9409,7 @@
 				(type solid)
 			)
 			(layer "B.CrtYd")
-			(uuid "020cea41-ca21-4fe6-8fdd-ea6fcfe14faf")
+			(uuid "6f34320f-a745-4c2f-b484-b9dcd26a8aac")
 		)
 		(fp_line
 			(start -2.28 -1.12)
@@ -9421,7 +9419,7 @@
 				(type solid)
 			)
 			(layer "B.CrtYd")
-			(uuid "476e20ad-31b0-4126-99d6-84f957885265")
+			(uuid "0308b181-ce36-4e7d-9fcf-76ebe0e0d448")
 		)
 		(fp_line
 			(start 2.28 1.12)
@@ -9431,7 +9429,7 @@
 				(type solid)
 			)
 			(layer "B.CrtYd")
-			(uuid "143e6628-888c-4054-a0c4-f9c7eaf703aa")
+			(uuid "9df4fc08-e7a5-4a73-8b4a-319d9fafd01c")
 		)
 		(fp_line
 			(start -2.28 1.12)
@@ -9441,7 +9439,7 @@
 				(type solid)
 			)
 			(layer "B.CrtYd")
-			(uuid "1b0486d3-99e1-4838-9c0e-d04eb365fcca")
+			(uuid "200c1702-2335-415c-a1ef-0f81ed350f0b")
 		)
 		(fp_line
 			(start 1.6 -0.8)
@@ -9451,7 +9449,7 @@
 				(type solid)
 			)
 			(layer "B.Fab")
-			(uuid "3ad37d4b-62d0-4d69-96da-4b081a787752")
+			(uuid "54824dbe-e21b-41f3-8acb-7c56e8d2d668")
 		)
 		(fp_line
 			(start -1.6 0.8)
@@ -9461,12 +9459,12 @@
 				(type solid)
 			)
 			(layer "B.Fab")
-			(uuid "74ebbb9f-a73c-4162-8cc4-12a0e0b96b1c")
+			(uuid "e7c87be9-d858-4db2-b286-6a51b1bee2ff")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 0 -3 90)
 			(layer "B.Fab")
-			(uuid "4b9220bd-45c6-42c7-9270-82d9d6c896e7")
+			(uuid "34af1d8f-443f-4e89-b513-7fdeeea07dfa")
 			(effects
 				(font
 					(size 0.8 0.8)
@@ -9481,7 +9479,7 @@
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(net 23 "GND")
 			(pintype "passive")
-			(uuid "4bb87e4e-6921-459d-b2a8-2faf19739c52")
+			(uuid "724602db-ffda-4118-a789-2dcd7c25a002")
 		)
 		(pad "2" smd rect
 			(at 1.4625 0 90)
@@ -9489,9 +9487,9 @@
 			(layers "B.Cu" "B.Paste" "B.Mask")
 			(net 6 "VDD")
 			(pintype "passive")
-			(uuid "0babda3d-dd0b-41e3-b5a7-a6b3a531c157")
+			(uuid "2fea64a1-35db-47e3-bd9f-f6c4ee163f16")
 		)
-		(model "C:/Users/Borna/Documents/KiCad/BornaKiCadLibrary/3D models/LD06ZC225KAB2A(0.STEP"
+		(model "${KICAD_BORNA_3D_DIR}/LD06ZC225KAB2A(0.STEP"
 			(offset
 				(xyz 0 -0.9 0.75)
 			)
@@ -9503,7 +9501,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:TP-1_5mm"
+	(footprint "Borna KiCAD Library:TP-1_5mm"
 		(layer "B.Cu")
 		(uuid "d18c3466-e923-4d64-9d7d-94d3bbb0302d")
 		(at 104.75 77.8 -90)
@@ -9532,7 +9530,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:TP-1_5mm"
+		(property "Footprint" "Borna KiCAD Library:TP-1_5mm"
 			(at 0 -0.5 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -9601,7 +9599,7 @@
 			(uuid "77b6b1d5-a8d1-40be-9693-fdc18ebd0418")
 		)
 	)
-	(footprint "BornaKiCad:SOT-23-3L"
+	(footprint "Borna KiCAD Library:SOT-23-3L"
 		(layer "B.Cu")
 		(uuid "dc055221-86db-49ad-ab84-50433d3f4409")
 		(at 105.15 87.2 -90)
@@ -9630,7 +9628,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:SOT-23-3L"
+		(property "Footprint" "Borna KiCAD Library:SOT-23-3L"
 			(at 0.9 -4.1 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -9756,7 +9754,7 @@
 			(pintype "passive")
 			(uuid "dbe5b49b-673b-42db-9471-7d13e58f1893")
 		)
-		(model "C:/Users/Borna/Documents/KiCad/BornaKiCadLibrary/3D models/SOT-23-3.STEP"
+		(model "${KICAD_BORNA_3D_DIR}/SOT-23-3.STEP"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -9768,7 +9766,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:TP-1_5mm"
+	(footprint "Borna KiCAD Library:TP-1_5mm"
 		(layer "B.Cu")
 		(uuid "de4cee6e-1342-4c8b-beda-d26e40a57a90")
 		(at 112.25 77.8 -90)
@@ -9797,7 +9795,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:TP-1_5mm"
+		(property "Footprint" "Borna KiCAD Library:TP-1_5mm"
 			(at 0 -0.5 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -9866,7 +9864,7 @@
 			(uuid "0e4c6520-05b6-4755-b324-c8554c2a3785")
 		)
 	)
-	(footprint "BornaKiCad:MTL-7525"
+	(footprint "Borna KiCAD Library:MTL-7525"
 		(layer "B.Cu")
 		(uuid "e68f7a13-3141-41c0-9a10-efb8333c7a2f")
 		(at 144.9 79.8 180)
@@ -9895,7 +9893,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:MTL-7525"
+		(property "Footprint" "Borna KiCAD Library:MTL-7525"
 			(at 0 -3.5 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -10068,7 +10066,7 @@
 			(thermal_bridge_angle 45)
 			(uuid "04afb0a0-64e9-4eb2-b810-66b408588163")
 		)
-		(model "C:/Users/Borna/Documents/KiCad/BornaKiCadLibrary/3D models/CMT-7525-80-SMT-TR.step"
+		(model "${KICAD_BORNA_3D_DIR}/CMT-7525-80-SMT-TR.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -10080,7 +10078,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:R0603"
+	(footprint "Borna KiCAD Library:R0603"
 		(layer "B.Cu")
 		(uuid "eeeb391f-d6ec-4cba-9405-0a95a2b7edfa")
 		(at 132.625 79.45 180)
@@ -10109,7 +10107,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:R0603"
+		(property "Footprint" "Borna KiCAD Library:R0603"
 			(at 0 0 0)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -10275,7 +10273,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:R0603"
+	(footprint "Borna KiCAD Library:R0603"
 		(layer "B.Cu")
 		(uuid "ef3a5da1-f8de-4557-aea8-a5d7931ab5c9")
 		(at 139.23 84.88 -90)
@@ -10304,7 +10302,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:R0603"
+		(property "Footprint" "Borna KiCAD Library:R0603"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -10470,7 +10468,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:R0603"
+	(footprint "Borna KiCAD Library:R0603"
 		(layer "B.Cu")
 		(uuid "f52389bb-9636-4c6d-939a-a1e8e181391f")
 		(at 132.3 103.25)
@@ -10499,7 +10497,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:R0603"
+		(property "Footprint" "Borna KiCAD Library:R0603"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -10641,7 +10639,7 @@
 			(at -0.825 0)
 			(size 0.8 0.95)
 			(layers "B.Cu" "B.Paste" "B.Mask")
-			(net 45 "Net-(CONN2-CC1)")
+			(net 44 "Net-(CONN2-CC1)")
 			(pintype "passive")
 			(uuid "c348e669-ccf6-4404-8fc8-c4373ba526ed")
 		)
@@ -10665,7 +10663,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:C0603"
+	(footprint "Borna KiCAD Library:C0603"
 		(layer "B.Cu")
 		(uuid "f96745bc-0c40-4b9e-90f4-0bac495e8bc8")
 		(at 104.95 83.05)
@@ -10694,7 +10692,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:C0603"
+		(property "Footprint" "Borna KiCAD Library:C0603"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -10848,7 +10846,7 @@
 			(pintype "passive")
 			(uuid "9d3124a2-7f6c-439d-91ac-29808bb36b57")
 		)
-		(model "C:/Users/Borna/Documents/KiCad/BornaKiCadLibrary/3D models/LD031A101GAB2A.STEP"
+		(model "${KICAD_BORNA_3D_DIR}/LD031A101GAB2A.STEP"
 			(offset
 				(xyz 0 -0.45 0.35)
 			)
@@ -10860,7 +10858,7 @@
 			)
 		)
 	)
-	(footprint "BornaKiCad:C0603"
+	(footprint "Borna KiCAD Library:C0603"
 		(layer "B.Cu")
 		(uuid "fb1d612f-5359-4fa4-87e7-d0cf66858b66")
 		(at 145.875 86.025 90)
@@ -10889,7 +10887,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Footprint" "BornaKiCad:C0603"
+		(property "Footprint" "Borna KiCAD Library:C0603"
 			(at 0 0 -90)
 			(unlocked yes)
 			(layer "B.Fab")
@@ -11043,7 +11041,7 @@
 			(pintype "passive")
 			(uuid "91fe1376-b7e4-482e-bbaf-6f6d6af23388")
 		)
-		(model "C:/Users/Borna/Documents/KiCad/BornaKiCadLibrary/3D models/LD031A101GAB2A.STEP"
+		(model "${KICAD_BORNA_3D_DIR}/LD031A101GAB2A.STEP"
 			(offset
 				(xyz 0 -0.45 0.35)
 			)
@@ -15357,7 +15355,7 @@
 		(end 145.915 100.55)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 42)
+		(net 41)
 		(uuid "405b2e21-097a-42d3-a008-0e27a46feb79")
 	)
 	(segment
@@ -15365,7 +15363,7 @@
 		(end 129.085 96.915)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 42)
+		(net 41)
 		(uuid "57955e9a-a917-4839-9c68-fead68cb9edb")
 	)
 	(segment
@@ -15373,7 +15371,7 @@
 		(end 148.5 99.5)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 42)
+		(net 41)
 		(uuid "6528ba9d-3529-4406-bd52-6ddf9e60a2a0")
 	)
 	(segment
@@ -15381,7 +15379,7 @@
 		(end 148 96.5)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 42)
+		(net 41)
 		(uuid "7e08b3ee-3880-4607-af97-4f1ae6b728b0")
 	)
 	(segment
@@ -15389,7 +15387,7 @@
 		(end 129.5 96.5)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 42)
+		(net 41)
 		(uuid "a8fd1707-3e83-4402-a9f6-4523b8658c4b")
 	)
 	(segment
@@ -15397,7 +15395,7 @@
 		(end 148.5 97)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 42)
+		(net 41)
 		(uuid "bec76b4e-d0bb-43b8-a299-0fb2776aba60")
 	)
 	(segment
@@ -15405,7 +15403,7 @@
 		(end 147.45 100.55)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 42)
+		(net 41)
 		(uuid "d8622925-041b-429f-a208-4c25be5b3600")
 	)
 	(segment
@@ -15413,7 +15411,7 @@
 		(end 142 100)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 43)
+		(net 42)
 		(uuid "0440a191-da37-4eb7-b744-844410a55255")
 	)
 	(segment
@@ -15421,7 +15419,7 @@
 		(end 147.5 102.5)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 43)
+		(net 42)
 		(uuid "0b274cc7-3d8b-419a-9dee-8e22e0f92f3f")
 	)
 	(segment
@@ -15429,7 +15427,7 @@
 		(end 147.85 110.05)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 43)
+		(net 42)
 		(uuid "28a5cd55-1732-4241-ac84-28385b065848")
 	)
 	(segment
@@ -15437,7 +15435,7 @@
 		(end 147.85 102.85)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 43)
+		(net 42)
 		(uuid "4e67e041-b487-4c41-a53a-169727d9faf6")
 	)
 	(segment
@@ -15445,7 +15443,7 @@
 		(end 142.5 102.5)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 43)
+		(net 42)
 		(uuid "7c4d238a-03d1-4fda-9bf1-ae90f45aefde")
 	)
 	(segment
@@ -15453,7 +15451,7 @@
 		(end 142.5 110.55)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 43)
+		(net 42)
 		(uuid "9ad232a6-0a58-4bc8-9d7f-6a26c58b131c")
 	)
 	(segment
@@ -15461,7 +15459,7 @@
 		(end 144.085 99.45)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 43)
+		(net 42)
 		(uuid "9e8b7b95-322d-4b71-8189-83e1849e67b6")
 	)
 	(segment
@@ -15469,7 +15467,7 @@
 		(end 145.9 112)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 43)
+		(net 42)
 		(uuid "c1563a86-a440-4123-b8ce-15e968563a6c")
 	)
 	(segment
@@ -15477,7 +15475,7 @@
 		(end 142 102)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 43)
+		(net 42)
 		(uuid "d65cd1c0-069b-49b2-876c-2154a550b9f9")
 	)
 	(segment
@@ -15485,7 +15483,7 @@
 		(end 142.55 99.45)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 43)
+		(net 42)
 		(uuid "da5d9027-7f27-426b-976e-fe8d99242453")
 	)
 	(segment
@@ -15493,7 +15491,7 @@
 		(end 143.95 112)
 		(width 0.2)
 		(layer "F.Cu")
-		(net 43)
+		(net 42)
 		(uuid "f2f1f264-2bad-42b3-b0a1-d7bb72ad166a")
 	)
 	(segment
@@ -15501,7 +15499,7 @@
 		(end 131.76 105.53)
 		(width 0.2)
 		(layer "B.Cu")
-		(net 45)
+		(net 44)
 		(uuid "6a6d1dfe-9560-4e44-812c-2d40892413f3")
 	)
 	(segment
@@ -15509,7 +15507,7 @@
 		(end 131.76 103.535)
 		(width 0.2)
 		(layer "B.Cu")
-		(net 45)
+		(net 44)
 		(uuid "f4ec9cd3-608f-42c9-9862-10e79ef7dbcf")
 	)
 	(segment
@@ -15517,7 +15515,7 @@
 		(end 128.76 105.53)
 		(width 0.2)
 		(layer "B.Cu")
-		(net 46)
+		(net 45)
 		(uuid "ab5eaac2-ab02-41db-9e2f-6a739def6f19")
 	)
 	(segment
@@ -15525,7 +15523,7 @@
 		(end 128.75 105.52)
 		(width 0.2)
 		(layer "B.Cu")
-		(net 46)
+		(net 45)
 		(uuid "b3dc6107-0013-49d6-aa40-b5e3d0be2bb6")
 	)
 	(segment
@@ -15533,7 +15531,7 @@
 		(end 141.925 102.05)
 		(width 0.2)
 		(layer "B.Cu")
-		(net 50)
+		(net 49)
 		(uuid "5d3e13b5-159f-432e-a91a-6473b5776c65")
 	)
 	(segment
@@ -15541,7 +15539,7 @@
 		(end 142.375 101.6)
 		(width 0.2)
 		(layer "B.Cu")
-		(net 50)
+		(net 49)
 		(uuid "af83e947-d374-4436-b7ea-ab8cf808ba1f")
 	)
 	(segment
@@ -15549,7 +15547,7 @@
 		(end 146.387 103.6)
 		(width 0.2)
 		(layer "B.Cu")
-		(net 51)
+		(net 50)
 		(uuid "57bf5600-aa6c-4061-b2a8-e3d6d5494f65")
 	)
 	(segment
@@ -15557,7 +15555,7 @@
 		(end 144.387 101.6)
 		(width 0.2)
 		(layer "B.Cu")
-		(net 51)
+		(net 50)
 		(uuid "e9f9e754-f59a-4c3e-b055-c7f11d68f485")
 	)
 	(zone

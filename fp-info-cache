@@ -1,4 +1,4 @@
-23931587886438444
+23931588256588983
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -672,14 +672,14 @@ TYPE-C_16PIN_2MD(073)
 20
 17
 Borna KiCAD Library
-WS2812B-1313
-
-
-0
-0
-0
-Borna KiCAD Library
 WS2812B-2020
+
+
+0
+4
+4
+Borna KiCAD Library
+WS2812E-1313
 
 
 0
