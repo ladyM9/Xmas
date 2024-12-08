@@ -161,7 +161,791 @@
 				)
 			)
 		)
-		(symbol "Borna KiCAD Library:C1206"
+		(symbol "Borna KiCAD Library:TP-1_5mm"
+			(pin_numbers hide)
+			(pin_names hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 -1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Footprint" "Borna KiCAD Library:TP-1_5mm"
+				(at 0 -3.302 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TP-1_5mm_1_1"
+				(circle
+					(center -2.54 0)
+					(radius 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at 1.27 0 180)
+					(length 2.54)
+					(name "TP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "BornaKiCadLibrary:AO3401A"
+			(pin_numbers hide)
+			(pin_names hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 1.524 -3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "AO3401A"
+				(at 3.556 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Borna KiCAD Library:SOT-23-3L"
+				(at -0.254 -12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "C5224202"
+				(at -0.254 -14.478 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "AO3401A_0_1"
+				(circle
+					(center -0.889 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.286 0) (xy -5.08 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.286 1.905) (xy -2.286 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -1.27) (xy -1.778 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 0.508) (xy -1.778 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.286) (xy -1.778 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 0) (xy -1.778 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 1.778) (xy 0.762 1.778) (xy 0.762 -1.778) (xy -1.778 -1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.254 0) (xy -1.27 0.381) (xy -1.27 -0.381) (xy -0.254 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 -0.508) (xy 0.381 -0.381) (xy 1.143 -0.381) (xy 1.27 -0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -0.381) (xy 0.381 0.254) (xy 1.143 0.254) (xy 0.762 -0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "AO3401A_1_1"
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "BornaKiCadLibrary:BAT20JFILM"
+			(pin_names hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0.762 -2.286 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "BAT20JFILM"
+				(at 0.762 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Borna KiCAD Library:SOD323"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "BAT20JFILM_1_1"
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0 1.27) (xy 0 -1.27) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(arc
+					(start 1.016 1.524)
+					(mid 0.8364 1.4496)
+					(end 0.762 1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.27 -1.27)
+					(mid 1.3444 -1.4496)
+					(end 1.524 -1.524)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.27 1.27)
+					(mid 1.1956 1.4496)
+					(end 1.016 1.524)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 1.524 -1.524)
+					(mid 1.7036 -1.4496)
+					(end 1.778 -1.27)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -2.54 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "BornaKiCadLibrary:BZCN_TSA007A1518B03"
+			(pin_numbers hide)
+			(pin_names hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 0 4.064 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "BZCN_TSA007A1518B03"
+				(at 0 2.286 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Borna KiCAD Library:TSA007A1518B03"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "C2888419"
+				(at 0 -3.048 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "BZCN_TSA007A1518B03_0_1"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy -2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0.635)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.635 0) (xy 2.54 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "BZCN_TSA007A1518B03_1_1"
+				(polyline
+					(pts
+						(xy -2.54 1.27) (xy -2.54 -1.27) (xy 2.54 -1.27) (xy 2.54 1.27) (xy -2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -3.81 0 0)
+					(length 1.27)
+					(name "SW1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "SW2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -1.27 0)
+					(length 0)
+					(name "PAD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "PAD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "BornaKiCadLibrary:C0603"
+			(pin_numbers hide)
+			(pin_names hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C?"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "VALUE"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Borna KiCAD Library:C0603"
+				(at 1.27 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C0603_0_1"
+				(polyline
+					(pts
+						(xy -0.762 -2.032) (xy -0.762 2.032)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 -2.032) (xy 0.762 2.032)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C0603_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.8)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.8)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "BornaKiCadLibrary:C1206"
 			(pin_numbers hide)
 			(pin_names hide)
 			(exclude_from_sim no)
@@ -275,7 +1059,776 @@
 				)
 			)
 		)
-		(symbol "Borna KiCAD Library:STM32C011F6"
+		(symbol "BornaKiCadLibrary:CJ3400"
+			(pin_numbers hide)
+			(pin_names hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 1.524 -4.572 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "CJ3400"
+				(at 3.302 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Borna KiCAD Library:SOT-23-3L"
+				(at 0 -7.874 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "C19019"
+				(at -0.254 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "CJ3400_0_1"
+				(circle
+					(center -0.889 0)
+					(radius 2.794)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.286 0) (xy -5.08 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.286 1.905) (xy -2.286 -1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -1.27) (xy -1.778 -2.286)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 0.508) (xy -1.778 -0.508)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.286) (xy -1.778 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.54) (xy 0 0) (xy -1.778 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -1.778) (xy 0.762 -1.778) (xy 0.762 1.778) (xy -1.778 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 0) (xy -0.508 0.381) (xy -0.508 -0.381) (xy -1.524 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 0.508) (xy 0.381 0.381) (xy 1.143 0.381) (xy 1.27 0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.381) (xy 0.381 -0.254) (xy 1.143 -0.254) (xy 0.762 0.381)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 1.778)
+					(radius 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "CJ3400_1_1"
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 5.08 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "BornaKiCadLibrary:LED_0603"
+			(pin_numbers hide)
+			(pin_names hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "LED"
+				(at 0 -1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at -0.508 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Borna KiCAD Library:LED_0603"
+				(at -0.508 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at -0.508 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at -0.508 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0603_0_1"
+				(polyline
+					(pts
+						(xy -1.27 0) (xy -0.508 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.762 0.762) (xy 0.762 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.762 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.508 0.762) (xy -0.508 -0.762) (xy 0.762 0) (xy -0.508 0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.254 1.016) (xy 0.254 1.524) (xy 0 1.524) (xy 0.254 1.524) (xy 0.254 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0.254 0.762) (xy 0.762 1.27) (xy 0.508 1.27) (xy 0.762 1.27) (xy 0.762 1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_0603_1_1"
+				(pin passive line
+					(at -2.54 0 0)
+					(length 1.27)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 0 180)
+					(length 1.27)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "BornaKiCadLibrary:MLT-7525"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.002)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SPK"
+				(at 0 -4.572 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MLT-7525"
+				(at 3.81 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Borna KiCAD Library:MTL-7525"
+				(at 0.254 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MLT-7525_1_1"
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy 1.27 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0 -2.54) (xy 1.27 -2.54) (xy 2.54 -3.81) (xy 2.54 3.81) (xy 1.27 2.54) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -2.54 1.27 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -2.54 -1.27 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "BornaKiCadLibrary:R0603"
+			(pin_numbers hide)
+			(pin_names hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R?"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "VALUE"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Borna KiCAD Library:R0603"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R0603_0_1"
+				(rectangle
+					(start -2.032 0.762)
+					(end 2.032 -0.762)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R0603_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 1.7)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.7)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "BornaKiCadLibrary:S2B-PH-SM4-TB"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.002)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "CONN"
+				(at 1.778 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "S2B-PH-SM4-TB"
+				(at 0.254 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Borna KiCAD Library:JST_S2B-PH-SM4-TB"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "S2B-PH-SM4-TB_1_1"
+				(rectangle
+					(start 0 2.54)
+					(end 5.08 -2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -2.54 1.27 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -2.54 -1.27 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 -2.54 0)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "PAD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "BornaKiCadLibrary:STM32C011F6"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -696,1574 +2249,7 @@
 				)
 			)
 		)
-		(symbol "Borna KiCAD Library:AO3401A"
-			(pin_numbers hide)
-			(pin_names hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Q"
-				(at 1.524 -3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "AO3401A"
-				(at 3.556 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Borna KiCAD Library:SOT-23-3L"
-				(at -0.254 -12.7 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "C5224202"
-				(at -0.254 -14.478 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "AO3401A_0_1"
-				(circle
-					(center -0.889 0)
-					(radius 2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.286 0) (xy -5.08 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.286 1.905) (xy -2.286 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -1.27) (xy -1.778 -2.286)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 0.508) (xy -1.778 -0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 2.286) (xy -1.778 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.54) (xy 0 0) (xy -1.778 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 1.778) (xy 0.762 1.778) (xy 0.762 -1.778) (xy -1.778 -1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.254 0) (xy -1.27 0.381) (xy -1.27 -0.381) (xy -0.254 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 -0.508) (xy 0.381 -0.381) (xy 1.143 -0.381) (xy 1.27 -0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -0.381) (xy 0.381 0.254) (xy 1.143 0.254) (xy 0.762 -0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "AO3401A_1_1"
-				(pin input line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "G"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 5.08 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Borna KiCAD Library:BAT20JFILM"
-			(pin_names hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0.762 -2.286 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "BAT20JFILM"
-				(at 0.762 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Borna KiCAD Library:SOD323"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "BAT20JFILM_1_1"
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy 0 1.27) (xy 0 -1.27) (xy 1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(arc
-					(start 1.016 1.524)
-					(mid 0.8364 1.4496)
-					(end 0.762 1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 1.27 -1.27)
-					(mid 1.3444 -1.4496)
-					(end 1.524 -1.524)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 1.27 1.27)
-					(mid 1.1956 1.4496)
-					(end 1.016 1.524)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 1.524 -1.524)
-					(mid 1.7036 -1.4496)
-					(end 1.778 -1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -2.54 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Borna KiCAD Library:BZCN_TSA007A1518B03"
-			(pin_numbers hide)
-			(pin_names hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "SW"
-				(at 0 4.064 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "BZCN_TSA007A1518B03"
-				(at 0 2.286 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Borna KiCAD Library:TSA007A1518B03"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "C2888419"
-				(at 0 -3.048 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "BZCN_TSA007A1518B03_0_1"
-				(polyline
-					(pts
-						(xy -1.27 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 0) (xy 1.27 0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 0) (xy 2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "BZCN_TSA007A1518B03_1_1"
-				(polyline
-					(pts
-						(xy -2.54 1.27) (xy -2.54 -1.27) (xy 2.54 -1.27) (xy 2.54 1.27) (xy -2.54 1.27) (xy -2.54 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at -3.81 0 0)
-					(length 1.27)
-					(name "SW1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 1.27)
-					(name "SW2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -1.27 0)
-					(length 0)
-					(name "PAD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "PAD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Borna KiCAD Library:C0603"
-			(pin_numbers hide)
-			(pin_names hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C?"
-				(at 0 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "VALUE"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Borna KiCAD Library:C0603"
-				(at 1.27 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "C0603_0_1"
-				(polyline
-					(pts
-						(xy -0.762 -2.032) (xy -0.762 2.032)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -2.032) (xy 0.762 2.032)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C0603_1_1"
-				(pin passive line
-					(at -2.54 0 0)
-					(length 1.8)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 0 180)
-					(length 1.8)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Borna KiCAD Library:C1206"
-			(pin_numbers hide)
-			(pin_names hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C?"
-				(at 0 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "VALUE"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Borna KiCAD Library:C1206"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "C1206_0_1"
-				(polyline
-					(pts
-						(xy -0.762 -2.032) (xy -0.762 2.032)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -2.032) (xy 0.762 2.032)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C1206_1_1"
-				(pin passive line
-					(at -2.54 0 0)
-					(length 1.8)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 0 180)
-					(length 1.8)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Borna KiCAD Library:CJ3400"
-			(pin_numbers hide)
-			(pin_names hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Q"
-				(at 1.524 -4.572 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "CJ3400"
-				(at 3.302 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Borna KiCAD Library:SOT-23-3L"
-				(at 0 -7.874 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "C19019"
-				(at -0.254 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "CJ3400_0_1"
-				(circle
-					(center -0.889 0)
-					(radius 2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.286 0) (xy -5.08 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.286 1.905) (xy -2.286 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -1.27) (xy -1.778 -2.286)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 0.508) (xy -1.778 -0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 2.286) (xy -1.778 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.54) (xy 0 0) (xy -1.778 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -1.778) (xy 0.762 -1.778) (xy 0.762 1.778) (xy -1.778 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.524 0) (xy -0.508 0.381) (xy -0.508 -0.381) (xy -1.524 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 0.508) (xy 0.381 0.381) (xy 1.143 0.381) (xy 1.27 0.254)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.381) (xy 0.381 -0.254) (xy 1.143 -0.254) (xy 0.762 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "CJ3400_1_1"
-				(pin input line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "G"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 5.08 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Borna KiCAD Library:LED_0603"
-			(pin_numbers hide)
-			(pin_names hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "LED"
-				(at 0 -1.778 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at -0.508 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Borna KiCAD Library:LED_0603"
-				(at -0.508 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at -0.508 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at -0.508 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "LED_0603_0_1"
-				(polyline
-					(pts
-						(xy -1.27 0) (xy -0.508 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.762) (xy 0.762 -0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy 0.762 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.508 0.762) (xy -0.508 -0.762) (xy 0.762 0) (xy -0.508 0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.254 1.016) (xy 0.254 1.524) (xy 0 1.524) (xy 0.254 1.524) (xy 0.254 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 0.762) (xy 0.762 1.27) (xy 0.508 1.27) (xy 0.762 1.27) (xy 0.762 1.016)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "LED_0603_1_1"
-				(pin passive line
-					(at -2.54 0 0)
-					(length 1.27)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 0 180)
-					(length 1.27)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Borna KiCAD Library:MLT-7525"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0.002)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "SPK"
-				(at 0 -4.572 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "MLT-7525"
-				(at 3.81 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Borna KiCAD Library:MTL-7525"
-				(at 0.254 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "MLT-7525_1_1"
-				(polyline
-					(pts
-						(xy 1.27 2.54) (xy 1.27 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0 -2.54) (xy 1.27 -2.54) (xy 2.54 -3.81) (xy 2.54 3.81) (xy 1.27 2.54) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at -2.54 1.27 0)
-					(length 2.54)
-					(name "+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -2.54 -1.27 0)
-					(length 2.54)
-					(name "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Borna KiCAD Library:R0603"
-			(pin_numbers hide)
-			(pin_names hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R?"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "VALUE"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Borna KiCAD Library:R0603"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R0603_0_1"
-				(rectangle
-					(start -2.032 0.762)
-					(end 2.032 -0.762)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R0603_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 1.7)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 1.7)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Borna KiCAD Library:S2B-PH-SM4-TB"
-			(pin_numbers hide)
-			(pin_names
-				(offset 0.002)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "CONN"
-				(at 1.778 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "S2B-PH-SM4-TB"
-				(at 0.254 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Borna KiCAD Library:JST_S2B-PH-SM4-TB"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "S2B-PH-SM4-TB_1_1"
-				(rectangle
-					(start 0 2.54)
-					(end 3.81 -2.54)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin input line
-					(at -2.54 1.27 0)
-					(length 2.54)
-					(name "+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -2.54 -1.27 0)
-					(length 2.54)
-					(name "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "Borna KiCAD Library:TP-1_5mm"
+		(symbol "BornaKiCadLibrary:TP-1_5mm"
 			(pin_numbers hide)
 			(pin_names hide)
 			(exclude_from_sim no)
@@ -2345,7 +2331,7 @@
 				)
 			)
 		)
-		(symbol "Borna KiCAD Library:TP4056-42"
+		(symbol "BornaKiCadLibrary:TP4056-42"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2550,7 +2536,7 @@
 				)
 			)
 		)
-		(symbol "Borna KiCAD Library:TYPE-C_16PIN_2MD(073)"
+		(symbol "BornaKiCadLibrary:TYPE-C_16PIN_2MD(073)"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -2917,7 +2903,7 @@
 				)
 			)
 		)
-		(symbol "Borna KiCAD Library:WS2812B-2020"
+		(symbol "BornaKiCadLibrary:WS2812B-2020"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -3041,6 +3027,175 @@
 						)
 					)
 					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "BornaLibrary:TPS7A2633DRVR"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TPS7A2633DRVR"
+				(at 0.508 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Borna KiCAD Library:WSON-6"
+				(at -0.254 -8.382 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TPS7A2633DRVR_1_1"
+				(rectangle
+					(start -3.81 5.08)
+					(end 5.08 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 2.54)
+					(name "PG"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 0 0)
+					(length 2.54)
+					(name "EN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 -2.54 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 2.54 0)
+					(length 2.54)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "TP"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3400,7 +3555,7 @@
 		(uuid "063691ab-0605-4328-b19d-93c6dad3ce2e")
 	)
 	(junction
-		(at 43.18 130.81)
+		(at 43.18 146.05)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "08c3fb5f-2ceb-4654-a900-0d6c5aab9912")
@@ -3412,7 +3567,13 @@
 		(uuid "09896a3d-c50e-4266-9ad1-87a4f2bada7e")
 	)
 	(junction
-		(at 49.53 166.37)
+		(at 30.48 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0f50f6a4-4bda-47b4-a182-331924d0cb87")
+	)
+	(junction
+		(at 49.53 181.61)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "11a1b9cf-65d8-4046-919a-7a77bf652aa1")
@@ -3484,13 +3645,13 @@
 		(uuid "69474c0e-8617-4b8d-9170-bec4ae4d15eb")
 	)
 	(junction
-		(at 25.4 139.7)
+		(at 25.4 154.94)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6f97a2bb-5b3b-4716-8349-40ffde8a8b47")
 	)
 	(junction
-		(at 49.53 163.83)
+		(at 49.53 179.07)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "75ee4e9f-b688-4bce-9cf3-e0384fa2f7b9")
@@ -3520,7 +3681,7 @@
 		(uuid "bba4f1c5-fc8e-4e3e-a193-273dae5ae82e")
 	)
 	(junction
-		(at 43.18 128.27)
+		(at 43.18 143.51)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bcb5860f-4ea2-45d2-91d5-4267358cce14")
@@ -3532,13 +3693,13 @@
 		(uuid "c2c06299-6f92-4fac-b3f9-d92f204363ab")
 	)
 	(junction
-		(at 43.18 133.35)
+		(at 43.18 148.59)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c58370f9-9740-4c33-a8be-622774bbeded")
 	)
 	(junction
-		(at 49.53 168.91)
+		(at 49.53 184.15)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ceba9a0f-6bea-419f-aff9-0581839eaf62")
@@ -3556,7 +3717,7 @@
 		(uuid "cfbd5419-7ff6-45cd-9e2f-132487e4d1c7")
 	)
 	(junction
-		(at 49.53 161.29)
+		(at 49.53 176.53)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "da0b497f-c55e-4fc8-ade7-835c6c409b49")
@@ -3601,7 +3762,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 128.27) (xy 55.88 128.27)
+			(xy 43.18 143.51) (xy 55.88 143.51)
 		)
 		(stroke
 			(width 0)
@@ -3621,7 +3782,7 @@
 	)
 	(wire
 		(pts
-			(xy 25.4 139.7) (xy 25.4 140.97)
+			(xy 25.4 154.94) (xy 25.4 156.21)
 		)
 		(stroke
 			(width 0)
@@ -3631,7 +3792,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 143.51) (xy 52.07 146.05)
+			(xy 52.07 158.75) (xy 52.07 161.29)
 		)
 		(stroke
 			(width 0)
@@ -3641,7 +3802,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 158.75) (xy 49.53 158.75)
+			(xy 55.88 173.99) (xy 49.53 173.99)
 		)
 		(stroke
 			(width 0)
@@ -3761,7 +3922,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 147.32) (xy 31.75 139.7)
+			(xy 31.75 162.56) (xy 31.75 154.94)
 		)
 		(stroke
 			(width 0)
@@ -3781,7 +3942,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 130.81) (xy 55.88 130.81)
+			(xy 43.18 146.05) (xy 55.88 146.05)
 		)
 		(stroke
 			(width 0)
@@ -3791,7 +3952,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 157.48) (xy 19.05 157.48)
+			(xy 43.18 172.72) (xy 19.05 172.72)
 		)
 		(stroke
 			(width 0)
@@ -3971,13 +4132,23 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 139.7) (xy 25.4 139.7)
+			(xy 31.75 154.94) (xy 25.4 154.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "24070096-66d6-4945-bd9a-a5dc402a4dbf")
+	)
+	(wire
+		(pts
+			(xy 50.8 111.76) (xy 57.15 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "250df871-57f2-4ecc-b5b3-ab17b0df6531")
 	)
 	(wire
 		(pts
@@ -4071,7 +4242,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 166.37) (xy 49.53 168.91)
+			(xy 49.53 181.61) (xy 49.53 184.15)
 		)
 		(stroke
 			(width 0)
@@ -4101,13 +4272,23 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 135.89) (xy 43.18 135.89)
+			(xy 55.88 151.13) (xy 43.18 151.13)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "307687f7-0007-49ed-9425-a5c68c6801e8")
+	)
+	(wire
+		(pts
+			(xy 36.83 114.3) (xy 30.48 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "320f4a42-8c79-4098-8782-76f4303ce912")
 	)
 	(wire
 		(pts
@@ -4121,7 +4302,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 128.27) (xy 43.18 130.81)
+			(xy 43.18 143.51) (xy 43.18 146.05)
 		)
 		(stroke
 			(width 0)
@@ -4181,7 +4362,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 161.29) (xy 55.88 161.29)
+			(xy 49.53 176.53) (xy 55.88 176.53)
 		)
 		(stroke
 			(width 0)
@@ -4208,6 +4389,16 @@
 			(type default)
 		)
 		(uuid "3dbb2a86-ff12-4b92-bb2f-f426e3db4711")
+	)
+	(wire
+		(pts
+			(xy 50.8 109.22) (xy 57.15 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f144a94-3eb4-46e1-be68-ded97bbdec55")
 	)
 	(wire
 		(pts
@@ -4371,7 +4562,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 151.13) (xy 43.18 157.48)
+			(xy 43.18 166.37) (xy 43.18 172.72)
 		)
 		(stroke
 			(width 0)
@@ -4411,7 +4602,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 146.05) (xy 55.88 146.05)
+			(xy 52.07 161.29) (xy 55.88 161.29)
 		)
 		(stroke
 			(width 0)
@@ -4431,7 +4622,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 148.59) (xy 40.64 148.59)
+			(xy 55.88 163.83) (xy 40.64 163.83)
 		)
 		(stroke
 			(width 0)
@@ -4451,7 +4642,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 138.43) (xy 52.07 138.43)
+			(xy 55.88 153.67) (xy 52.07 153.67)
 		)
 		(stroke
 			(width 0)
@@ -4541,7 +4732,7 @@
 	)
 	(wire
 		(pts
-			(xy 19.05 139.7) (xy 25.4 139.7)
+			(xy 19.05 154.94) (xy 25.4 154.94)
 		)
 		(stroke
 			(width 0)
@@ -4551,7 +4742,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 151.13) (xy 43.18 151.13)
+			(xy 55.88 166.37) (xy 43.18 166.37)
 		)
 		(stroke
 			(width 0)
@@ -4561,7 +4752,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 166.37) (xy 55.88 166.37)
+			(xy 49.53 181.61) (xy 55.88 181.61)
 		)
 		(stroke
 			(width 0)
@@ -4578,6 +4769,16 @@
 			(type default)
 		)
 		(uuid "5e560273-de11-4318-b846-e0f01f023243")
+	)
+	(wire
+		(pts
+			(xy 57.15 111.76) (xy 57.15 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63b94cb7-1340-493d-9e41-88de917e8a2d")
 	)
 	(wire
 		(pts
@@ -4631,7 +4832,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 148.59) (xy 40.64 156.21)
+			(xy 40.64 163.83) (xy 40.64 171.45)
 		)
 		(stroke
 			(width 0)
@@ -4678,6 +4879,16 @@
 			(type default)
 		)
 		(uuid "6cc2e035-7230-4f01-9652-3d5103be5d3c")
+	)
+	(wire
+		(pts
+			(xy 30.48 105.41) (xy 30.48 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d256519-a077-416c-829f-ef114541c438")
 	)
 	(wire
 		(pts
@@ -4881,7 +5092,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 168.91) (xy 55.88 168.91)
+			(xy 49.53 184.15) (xy 55.88 184.15)
 		)
 		(stroke
 			(width 0)
@@ -5031,6 +5242,16 @@
 	)
 	(wire
 		(pts
+			(xy 30.48 114.3) (xy 30.48 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c3395dd-ace9-4132-a724-1456895a0039")
+	)
+	(wire
+		(pts
 			(xy 62.23 74.93) (xy 62.23 85.09)
 		)
 		(stroke
@@ -5121,7 +5342,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 161.29) (xy 49.53 163.83)
+			(xy 49.53 176.53) (xy 49.53 179.07)
 		)
 		(stroke
 			(width 0)
@@ -5138,6 +5359,16 @@
 			(type default)
 		)
 		(uuid "966dff1f-b03b-4c3a-a917-ec8c78eda1d1")
+	)
+	(wire
+		(pts
+			(xy 30.48 109.22) (xy 30.48 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9713e12b-961d-4c78-96fe-ab6746f2f395")
 	)
 	(wire
 		(pts
@@ -5161,6 +5392,16 @@
 	)
 	(wire
 		(pts
+			(xy 36.83 109.22) (xy 30.48 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98fec651-ffd6-48d1-a705-b08d8452bd90")
+	)
+	(wire
+		(pts
 			(xy 62.23 85.09) (xy 67.31 85.09)
 		)
 		(stroke
@@ -5171,13 +5412,23 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 133.35) (xy 43.18 135.89)
+			(xy 43.18 148.59) (xy 43.18 151.13)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "996880eb-1340-4ede-86f2-5fa85d774368")
+	)
+	(wire
+		(pts
+			(xy 57.15 105.41) (xy 57.15 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99b7219c-6b2d-48ad-8de7-0e338f277608")
 	)
 	(wire
 		(pts
@@ -5241,7 +5492,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 168.91) (xy 49.53 173.99)
+			(xy 49.53 184.15) (xy 49.53 189.23)
 		)
 		(stroke
 			(width 0)
@@ -5271,7 +5522,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 163.83) (xy 49.53 166.37)
+			(xy 49.53 179.07) (xy 49.53 181.61)
 		)
 		(stroke
 			(width 0)
@@ -5281,7 +5532,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 140.97) (xy 55.88 140.97)
+			(xy 52.07 156.21) (xy 55.88 156.21)
 		)
 		(stroke
 			(width 0)
@@ -5331,7 +5582,17 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 158.75) (xy 49.53 161.29)
+			(xy 30.48 111.76) (xy 36.83 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad963777-5d2e-40a1-94e4-6b2ddd3d1d5e")
+	)
+	(wire
+		(pts
+			(xy 49.53 173.99) (xy 49.53 176.53)
 		)
 		(stroke
 			(width 0)
@@ -5341,7 +5602,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 163.83) (xy 55.88 163.83)
+			(xy 49.53 179.07) (xy 55.88 179.07)
 		)
 		(stroke
 			(width 0)
@@ -5431,7 +5692,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 120.65) (xy 43.18 128.27)
+			(xy 43.18 135.89) (xy 43.18 143.51)
 		)
 		(stroke
 			(width 0)
@@ -5461,7 +5722,7 @@
 	)
 	(wire
 		(pts
-			(xy 19.05 157.48) (xy 19.05 154.94)
+			(xy 19.05 172.72) (xy 19.05 170.18)
 		)
 		(stroke
 			(width 0)
@@ -5651,7 +5912,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 138.43) (xy 52.07 140.97)
+			(xy 52.07 153.67) (xy 52.07 156.21)
 		)
 		(stroke
 			(width 0)
@@ -5861,7 +6122,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 143.51) (xy 52.07 143.51)
+			(xy 55.88 158.75) (xy 52.07 158.75)
 		)
 		(stroke
 			(width 0)
@@ -5931,7 +6192,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 156.21) (xy 31.75 154.94)
+			(xy 31.75 171.45) (xy 31.75 170.18)
 		)
 		(stroke
 			(width 0)
@@ -5971,7 +6232,7 @@
 	)
 	(wire
 		(pts
-			(xy 19.05 147.32) (xy 19.05 139.7)
+			(xy 19.05 162.56) (xy 19.05 154.94)
 		)
 		(stroke
 			(width 0)
@@ -6091,7 +6352,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 133.35) (xy 55.88 133.35)
+			(xy 43.18 148.59) (xy 55.88 148.59)
 		)
 		(stroke
 			(width 0)
@@ -6161,7 +6422,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 156.21) (xy 31.75 156.21)
+			(xy 40.64 171.45) (xy 31.75 171.45)
 		)
 		(stroke
 			(width 0)
@@ -6181,7 +6442,7 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 130.81) (xy 43.18 133.35)
+			(xy 43.18 146.05) (xy 43.18 148.59)
 		)
 		(stroke
 			(width 0)
@@ -6240,8 +6501,8 @@
 		(uuid "ff79b5fe-7349-4154-9a13-547785d20fb2")
 	)
 	(rectangle
-		(start 13.97 111.76)
-		(end 74.93 179.07)
+		(start 13.97 127)
+		(end 74.93 194.31)
 		(stroke
 			(width 0)
 			(type dash)
@@ -6262,6 +6523,18 @@
 			(type none)
 		)
 		(uuid 848cb04c-2fe1-4b19-b476-1df1fa4eaf6a)
+	)
+	(rectangle
+		(start 12.7 95.25)
+		(end 76.2 125.73)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 9ab51036-6e4f-4af9-8469-8ec1a585d99a)
 	)
 	(rectangle
 		(start 198.12 87.63)
@@ -6371,9 +6644,21 @@
 		)
 		(uuid "8f8b4f99-ae2f-4542-8476-0fed4aeea940")
 	)
+	(text "VOLTAGE REGULATOR"
+		(exclude_from_sim no)
+		(at 43.688 97.79 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "a4bbfa97-9169-47ac-9ac4-28e222db62c7")
+	)
 	(text "USB-C CONNECTOR"
 		(exclude_from_sim no)
-		(at 25.146 115.062 0)
+		(at 25.146 130.302 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6865,7 +7150,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:TP-1_5mm")
+		(lib_id "BornaKiCadLibrary:TP-1_5mm")
 		(at 101.6 36.83 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6890,7 +7175,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:TP-1_5mm"
+		(property "Footprint" "BornaKiCadLibrary:TP-1_5mm"
 			(at 101.6 40.132 0)
 			(effects
 				(font
@@ -6930,7 +7215,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:R0603")
+		(lib_id "BornaKiCadLibrary:R0603")
 		(at 120.65 180.34 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6954,7 +7239,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:R0603"
+		(property "Footprint" "BornaKiCadLibrary:R0603"
 			(at 120.65 184.15 0)
 			(effects
 				(font
@@ -6997,7 +7282,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:WS2812B-2020")
+		(lib_id "BornaKiCadLibrary:WS2812B-2020")
 		(at 144.78 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7021,7 +7306,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:WS2812B-2020"
+		(property "Footprint" "BornaKiCadLibrary:WS2812B-2020"
 			(at 145.034 67.564 0)
 			(effects
 				(font
@@ -7136,7 +7421,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 49.53 173.99 0)
+		(at 49.53 189.23 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7144,7 +7429,7 @@
 		(dnp no)
 		(uuid "0ebb246e-2a2f-4da9-96eb-c06377329c79")
 		(property "Reference" "#PWR013"
-			(at 49.53 180.34 0)
+			(at 49.53 195.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7153,7 +7438,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 49.53 177.546 0)
+			(at 49.53 192.786 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7161,7 +7446,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 49.53 173.99 0)
+			(at 49.53 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7170,7 +7455,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 49.53 173.99 0)
+			(at 49.53 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7179,7 +7464,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 49.53 173.99 0)
+			(at 49.53 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7265,7 +7550,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:C0603")
+		(lib_id "BornaKiCadLibrary:C0603")
 		(at 265.43 139.7 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7292,7 +7577,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:C0603"
+		(property "Footprint" "BornaKiCadLibrary:C0603"
 			(at 270.51 138.43 0)
 			(effects
 				(font
@@ -7335,7 +7620,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:WS2812B-2020")
+		(lib_id "BornaKiCadLibrary:WS2812B-2020")
 		(at 269.24 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7360,7 +7645,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:WS2812B-2020"
+		(property "Footprint" "BornaKiCadLibrary:WS2812B-2020"
 			(at 269.494 67.564 0)
 			(effects
 				(font
@@ -7474,7 +7759,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:WS2812B-2020")
+		(lib_id "BornaKiCadLibrary:WS2812B-2020")
 		(at 198.12 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7499,7 +7784,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:WS2812B-2020"
+		(property "Footprint" "BornaKiCadLibrary:WS2812B-2020"
 			(at 198.374 67.564 0)
 			(effects
 				(font
@@ -7613,7 +7898,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:WS2812B-2020")
+		(lib_id "BornaKiCadLibrary:WS2812B-2020")
 		(at 222.25 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7637,7 +7922,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:WS2812B-2020"
+		(property "Footprint" "BornaKiCadLibrary:WS2812B-2020"
 			(at 222.504 67.564 0)
 			(effects
 				(font
@@ -7751,7 +8036,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:C0603")
+		(lib_id "BornaKiCadLibrary:C0603")
 		(at 29.21 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7775,7 +8060,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:C0603"
+		(property "Footprint" "BornaKiCadLibrary:C0603"
 			(at 30.48 80.01 0)
 			(effects
 				(font
@@ -7884,7 +8169,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 25.4 140.97 0)
+		(at 25.4 156.21 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7892,7 +8177,7 @@
 		(dnp no)
 		(uuid "23f34b67-d85a-48cb-a299-0f5579921df7")
 		(property "Reference" "#PWR015"
-			(at 25.4 147.32 0)
+			(at 25.4 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7901,7 +8186,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 25.4 144.78 0)
+			(at 25.4 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7909,7 +8194,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 25.4 140.97 0)
+			(at 25.4 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7918,7 +8203,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 25.4 140.97 0)
+			(at 25.4 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7927,7 +8212,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 25.4 140.97 0)
+			(at 25.4 156.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8013,7 +8298,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:BAT20JFILM")
+		(lib_id "BornaKiCadLibrary:BAT20JFILM")
 		(at 236.22 120.65 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8039,7 +8324,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:SOD323"
+		(property "Footprint" "BornaKiCadLibrary:SOD323"
 			(at 236.22 120.65 0)
 			(effects
 				(font
@@ -8147,7 +8432,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:C0603")
+		(lib_id "BornaKiCadLibrary:C0603")
 		(at 270.51 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8171,7 +8456,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:C0603"
+		(property "Footprint" "BornaKiCadLibrary:C0603"
 			(at 271.78 33.02 0)
 			(effects
 				(font
@@ -8214,7 +8499,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:WS2812B-2020")
+		(lib_id "BornaKiCadLibrary:WS2812B-2020")
 		(at 223.52 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8239,7 +8524,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:WS2812B-2020"
+		(property "Footprint" "BornaKiCadLibrary:WS2812B-2020"
 			(at 223.774 43.434 0)
 			(effects
 				(font
@@ -8484,7 +8769,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:C0603")
+		(lib_id "BornaKiCadLibrary:C0603")
 		(at 30.48 40.64 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8508,7 +8793,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:C0603"
+		(property "Footprint" "BornaKiCadLibrary:C0603"
 			(at 31.75 45.72 0)
 			(effects
 				(font
@@ -8616,7 +8901,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:C1206")
+		(lib_id "BornaKiCadLibrary:C1206")
 		(at 30.48 29.21 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8640,7 +8925,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:C1206"
+		(property "Footprint" "BornaKiCadLibrary:C1206"
 			(at 30.48 34.29 0)
 			(effects
 				(font
@@ -8748,7 +9033,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:WS2812B-2020")
+		(lib_id "BornaKiCadLibrary:WS2812B-2020")
 		(at 153.67 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8772,7 +9057,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:WS2812B-2020"
+		(property "Footprint" "BornaKiCadLibrary:WS2812B-2020"
 			(at 153.924 43.434 0)
 			(effects
 				(font
@@ -8821,7 +9106,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:R0603")
+		(lib_id "BornaKiCadLibrary:R0603")
 		(at 87.63 135.89 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8845,7 +9130,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:R0603"
+		(property "Footprint" "BornaKiCadLibrary:R0603"
 			(at 91.44 135.89 0)
 			(effects
 				(font
@@ -8888,7 +9173,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:R0603")
+		(lib_id "BornaKiCadLibrary:R0603")
 		(at 110.49 172.72 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8912,7 +9197,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:R0603"
+		(property "Footprint" "BornaKiCadLibrary:R0603"
 			(at 110.49 176.53 0)
 			(effects
 				(font
@@ -9410,7 +9695,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:MLT-7525")
+		(lib_id "BornaKiCadLibrary:MLT-7525")
 		(at 266.7 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9436,7 +9721,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:MTL-7525"
+		(property "Footprint" "BornaKiCadLibrary:MTL-7525"
 			(at 266.954 129.54 0)
 			(effects
 				(font
@@ -9479,7 +9764,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:C0603")
+		(lib_id "BornaKiCadLibrary:C0603")
 		(at 248.92 123.19 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9506,7 +9791,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:C0603"
+		(property "Footprint" "BornaKiCadLibrary:C0603"
 			(at 254 121.92 0)
 			(effects
 				(font
@@ -9549,7 +9834,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:LED_0603")
+		(lib_id "BornaKiCadLibrary:LED_0603")
 		(at 154.94 123.19 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9576,7 +9861,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:LED_0603"
+		(property "Footprint" "BornaKiCadLibrary:LED_0603"
 			(at 154.94 122.682 0)
 			(effects
 				(font
@@ -9619,7 +9904,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:WS2812B-2020")
+		(lib_id "BornaKiCadLibrary:WS2812B-2020")
 		(at 199.39 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9644,7 +9929,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:WS2812B-2020"
+		(property "Footprint" "BornaKiCadLibrary:WS2812B-2020"
 			(at 199.644 43.434 0)
 			(effects
 				(font
@@ -9693,7 +9978,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:R0603")
+		(lib_id "BornaKiCadLibrary:R0603")
 		(at 86.36 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9718,7 +10003,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:R0603"
+		(property "Footprint" "BornaKiCadLibrary:R0603"
 			(at 86.36 82.55 0)
 			(effects
 				(font
@@ -9827,7 +10112,72 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:C0603")
+		(lib_id "power:VDD")
+		(at 30.48 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "687a787b-6c54-4f37-9378-61a32153f18f")
+		(property "Reference" "#PWR059"
+			(at 30.48 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VDD"
+			(at 30.48 101.854 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 30.48 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ca3b3d9e-5bf0-4426-90e0-04c7a5b68d5c")
+		)
+		(instances
+			(project ""
+				(path "/22282c2a-7002-48ef-a0be-1cd1232be417"
+					(reference "#PWR059")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "BornaKiCadLibrary:C0603")
 		(at 223.52 147.32 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9854,7 +10204,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:C0603"
+		(property "Footprint" "BornaKiCadLibrary:C0603"
 			(at 228.6 146.05 0)
 			(effects
 				(font
@@ -9897,7 +10247,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:STM32C011F6")
+		(lib_id "BornaKiCadLibrary:STM32C011F6")
 		(at 59.69 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9921,7 +10271,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:TSSOP20"
+		(property "Footprint" "BornaKiCadLibrary:TSSOP20"
 			(at 59.69 70.866 0)
 			(effects
 				(font
@@ -10043,7 +10393,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:TSA007A1518B03"
+		(property "Footprint" "BornaKiCadLibrary:TSA007A1518B03"
 			(at 29.21 85.09 0)
 			(effects
 				(font
@@ -10089,7 +10439,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:C0603")
+		(lib_id "BornaKiCadLibrary:C0603")
 		(at 71.12 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10113,7 +10463,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:C0603"
+		(property "Footprint" "BornaKiCadLibrary:C0603"
 			(at 72.39 80.01 0)
 			(effects
 				(font
@@ -10156,7 +10506,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:C0603")
+		(lib_id "BornaKiCadLibrary:C0603")
 		(at 273.05 71.12 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10180,7 +10530,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:C0603"
+		(property "Footprint" "BornaKiCadLibrary:C0603"
 			(at 274.32 76.2 0)
 			(effects
 				(font
@@ -10353,7 +10703,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:TP4056-42")
+		(lib_id "BornaKiCadLibrary:TP4056-42")
 		(at 127 132.08 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10378,7 +10728,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:EMSOP"
+		(property "Footprint" "BornaKiCadLibrary:EMSOP"
 			(at 124.46 135.89 0)
 			(effects
 				(font
@@ -10511,7 +10861,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "817c670e-d9e3-4eb8-a9d1-2d5e0fcda3e7")
 		(property "Reference" "#PWR024"
 			(at 41.91 31.75 0)
@@ -10522,8 +10871,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VDD"
-			(at 41.91 22.86 0)
+		(property "Value" "3V3"
+			(at 41.91 24.638 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10635,7 +10984,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:BZCN_TSA007A1518B03")
+		(lib_id "BornaKiCadLibrary:BZCN_TSA007A1518B03")
 		(at 71.12 85.09 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10660,7 +11009,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:TSA007A1518B03"
+		(property "Footprint" "BornaKiCadLibrary:TSA007A1518B03"
 			(at 71.12 85.09 0)
 			(effects
 				(font
@@ -10836,8 +11185,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:TYPE-C_16PIN_2MD(073)")
-		(at 62.23 148.59 0)
+		(lib_id "BornaKiCadLibrary:TYPE-C_16PIN_2MD(073)")
+		(at 62.23 163.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10845,7 +11194,7 @@
 		(dnp no)
 		(uuid "8da1e50b-8814-4ca3-91fb-252b259c611e")
 		(property "Reference" "CONN2"
-			(at 68.58 157.988 90)
+			(at 68.58 173.228 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10855,7 +11204,7 @@
 			)
 		)
 		(property "Value" "TYPE-C_16PIN_2MD(073)"
-			(at 68.834 158.242 90)
+			(at 68.834 173.482 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10863,8 +11212,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:TYPE-C_16PIN_2MD(073)"
-			(at 61.976 178.562 0)
+		(property "Footprint" "BornaKiCadLibrary:TYPE-C_16PIN_2MD(073)"
+			(at 61.976 193.802 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10873,7 +11222,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 60.96 153.67 0)
+			(at 60.96 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10882,7 +11231,7 @@
 			)
 		)
 		(property "Description" "C2765186"
-			(at 61.976 176.53 0)
+			(at 61.976 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10951,7 +11300,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:TP-1_5mm")
+		(lib_id "BornaKiCadLibrary:TP-1_5mm")
 		(at 101.6 33.02 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10976,7 +11325,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:TP-1_5mm"
+		(property "Footprint" "BornaKiCadLibrary:TP-1_5mm"
 			(at 101.6 36.322 0)
 			(effects
 				(font
@@ -11146,7 +11495,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:C0603")
+		(lib_id "BornaKiCadLibrary:C0603")
 		(at 105.41 135.89 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11170,7 +11519,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:C0603"
+		(property "Footprint" "BornaKiCadLibrary:C0603"
 			(at 106.68 140.97 0)
 			(effects
 				(font
@@ -11207,6 +11556,71 @@
 			(project ""
 				(path "/22282c2a-7002-48ef-a0be-1cd1232be417"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 57.15 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9ea6ed1a-7fff-409b-8322-8edf9cbaa179")
+		(property "Reference" "#PWR060"
+			(at 57.15 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "3V3"
+			(at 57.15 101.854 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 57.15 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 57.15 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "63a108aa-9b7d-47fe-acf4-3fe9955e59af")
+		)
+		(instances
+			(project ""
+				(path "/22282c2a-7002-48ef-a0be-1cd1232be417"
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -11278,7 +11692,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:R0603")
+		(lib_id "BornaKiCadLibrary:R0603")
 		(at 43.18 78.74 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11303,7 +11717,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:R0603"
+		(property "Footprint" "BornaKiCadLibrary:R0603"
 			(at 43.18 82.55 0)
 			(effects
 				(font
@@ -11346,8 +11760,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:R0603")
-		(at 31.75 151.13 90)
+		(lib_id "BornaKiCadLibrary:R0603")
+		(at 31.75 166.37 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11356,7 +11770,7 @@
 		(fields_autoplaced yes)
 		(uuid "a1aea357-803c-4cc9-9d2d-7da7c359a933")
 		(property "Reference" "R1"
-			(at 34.29 149.8599 90)
+			(at 34.29 165.0999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11365,7 +11779,7 @@
 			)
 		)
 		(property "Value" "5k1"
-			(at 34.29 152.3999 90)
+			(at 34.29 167.6399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11373,8 +11787,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:R0603"
-			(at 35.56 151.13 0)
+		(property "Footprint" "BornaKiCadLibrary:R0603"
+			(at 35.56 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11383,7 +11797,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 31.75 151.13 0)
+			(at 31.75 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11392,7 +11806,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 31.75 151.13 0)
+			(at 31.75 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11416,7 +11830,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:WS2812B-2020")
+		(lib_id "BornaKiCadLibrary:WS2812B-2020")
 		(at 245.11 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11441,7 +11855,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:WS2812B-2020"
+		(property "Footprint" "BornaKiCadLibrary:WS2812B-2020"
 			(at 245.364 67.564 0)
 			(effects
 				(font
@@ -11490,7 +11904,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:S2B-PH-SM4-TB")
+		(lib_id "BornaKiCadLibrary:S2B-PH-SM4-TB")
 		(at 167.64 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11508,7 +11922,7 @@
 			)
 		)
 		(property "Value" "S2B-PH-SM4-TB"
-			(at 172.72 153.162 90)
+			(at 173.736 153.162 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11516,7 +11930,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:JST_S2B-PH-SM4-TB"
+		(property "Footprint" "BornaKiCadLibrary:JST_S2B-PH-SM4-TB"
 			(at 167.64 137.16 0)
 			(effects
 				(font
@@ -11548,6 +11962,9 @@
 		)
 		(pin "+"
 			(uuid "25a7733a-e108-42bd-9bd1-f055c5a502dc")
+		)
+		(pin "PAD"
+			(uuid "cae7999e-6dec-4fd7-8cd1-f2e4e16d53a0")
 		)
 		(instances
 			(project ""
@@ -11755,7 +12172,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 43.18 120.65 0)
+		(at 43.18 135.89 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11763,7 +12180,7 @@
 		(dnp no)
 		(uuid "a8a3dcfe-13cf-45a7-8769-49b475023c02")
 		(property "Reference" "#PWR014"
-			(at 43.18 124.46 0)
+			(at 43.18 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11772,7 +12189,7 @@
 			)
 		)
 		(property "Value" "VUSB"
-			(at 43.18 117.094 0)
+			(at 43.18 132.334 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11780,7 +12197,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 43.18 120.65 0)
+			(at 43.18 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11789,7 +12206,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 120.65 0)
+			(at 43.18 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11798,7 +12215,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 43.18 120.65 0)
+			(at 43.18 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11819,7 +12236,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:CJ3400")
+		(lib_id "BornaKiCadLibrary:CJ3400")
 		(at 248.92 142.24 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11846,7 +12263,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:SOT-23-3L"
+		(property "Footprint" "BornaKiCadLibrary:SOT-23-3L"
 			(at 248.92 150.114 0)
 			(effects
 				(font
@@ -12022,7 +12439,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:R0603")
+		(lib_id "BornaKiCadLibrary:R0603")
 		(at 147.32 130.81 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12046,7 +12463,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:R0603"
+		(property "Footprint" "BornaKiCadLibrary:R0603"
 			(at 147.32 134.62 0)
 			(effects
 				(font
@@ -12089,7 +12506,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:R0603")
+		(lib_id "BornaKiCadLibrary:R0603")
 		(at 81.28 135.89 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12113,7 +12530,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:R0603"
+		(property "Footprint" "BornaKiCadLibrary:R0603"
 			(at 85.09 135.89 0)
 			(effects
 				(font
@@ -12181,7 +12598,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:TP-1_5mm"
+		(property "Footprint" "BornaKiCadLibrary:TP-1_5mm"
 			(at 101.6 28.702 0)
 			(effects
 				(font
@@ -12221,7 +12638,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:TP-1_5mm")
+		(lib_id "BornaKiCadLibrary:TP-1_5mm")
 		(at 101.6 29.21 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12246,7 +12663,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:TP-1_5mm"
+		(property "Footprint" "BornaKiCadLibrary:TP-1_5mm"
 			(at 101.6 32.512 0)
 			(effects
 				(font
@@ -12286,7 +12703,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:WS2812B-2020")
+		(lib_id "BornaKiCadLibrary:WS2812B-2020")
 		(at 243.84 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12311,7 +12728,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:WS2812B-2020"
+		(property "Footprint" "BornaKiCadLibrary:WS2812B-2020"
 			(at 244.094 43.434 0)
 			(effects
 				(font
@@ -12360,7 +12777,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:TP-1_5mm")
+		(lib_id "BornaKiCadLibrary:TP-1_5mm")
 		(at 101.6 21.59 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12385,7 +12802,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:TP-1_5mm"
+		(property "Footprint" "BornaKiCadLibrary:TP-1_5mm"
 			(at 101.6 24.892 0)
 			(effects
 				(font
@@ -12490,7 +12907,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:R0603")
+		(lib_id "BornaKiCadLibrary:R0603")
 		(at 63.5 31.75 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12514,7 +12931,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:R0603"
+		(property "Footprint" "BornaKiCadLibrary:R0603"
 			(at 63.5 35.56 0)
 			(effects
 				(font
@@ -12557,7 +12974,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:AO3401A")
+		(lib_id "BornaKiCadLibrary:AO3401A")
 		(at 129.54 172.72 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12584,7 +13001,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:SOT-23-3L"
+		(property "Footprint" "BornaKiCadLibrary:SOT-23-3L"
 			(at 129.286 185.42 0)
 			(effects
 				(font
@@ -12695,8 +13112,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:R0603")
-		(at 19.05 151.13 90)
+		(lib_id "BornaKiCadLibrary:R0603")
+		(at 19.05 166.37 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12705,7 +13122,7 @@
 		(fields_autoplaced yes)
 		(uuid "c03bbecf-dd6b-4abb-ba09-1d0dab33121c")
 		(property "Reference" "R2"
-			(at 21.59 149.8599 90)
+			(at 21.59 165.0999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12714,7 +13131,7 @@
 			)
 		)
 		(property "Value" "5k1"
-			(at 21.59 152.3999 90)
+			(at 21.59 167.6399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12722,8 +13139,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:R0603"
-			(at 22.86 151.13 0)
+		(property "Footprint" "BornaKiCadLibrary:R0603"
+			(at 22.86 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12732,7 +13149,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 19.05 151.13 0)
+			(at 19.05 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12741,7 +13158,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 19.05 151.13 0)
+			(at 19.05 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12765,7 +13182,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:R0603")
+		(lib_id "BornaKiCadLibrary:R0603")
 		(at 212.09 142.24 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12790,7 +13207,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:R0603"
+		(property "Footprint" "BornaKiCadLibrary:R0603"
 			(at 212.09 146.05 0)
 			(effects
 				(font
@@ -12833,7 +13250,72 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:WS2812B-2020")
+		(lib_id "power:GND")
+		(at 57.15 119.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c38f5857-5a33-41a3-9c95-fe35c51b3df8")
+		(property "Reference" "#PWR061"
+			(at 57.15 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 57.15 123.444 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 57.15 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 57.15 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "81da9a1b-f305-40d9-970c-174194f6146e")
+		)
+		(instances
+			(project "Xmas"
+				(path "/22282c2a-7002-48ef-a0be-1cd1232be417"
+					(reference "#PWR061")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "BornaKiCadLibrary:WS2812B-2020")
 		(at 176.53 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12858,7 +13340,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:WS2812B-2020"
+		(property "Footprint" "BornaKiCadLibrary:WS2812B-2020"
 			(at 176.784 43.434 0)
 			(effects
 				(font
@@ -12907,7 +13389,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:R0603")
+		(lib_id "BornaKiCadLibrary:R0603")
 		(at 248.92 109.22 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12934,7 +13416,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:R0603"
+		(property "Footprint" "BornaKiCadLibrary:R0603"
 			(at 252.73 109.22 0)
 			(effects
 				(font
@@ -13042,7 +13524,86 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:C1206")
+		(lib_id "BornaLibrary:TPS7A2633DRVR")
+		(at 43.18 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c70580ed-bbfb-434f-9cc1-66ea6ae2546c")
+		(property "Reference" "U1"
+			(at 44.45 105.156 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TPS7A2633DRVR"
+			(at 43.942 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "BornaKiCadLibrary:WSON-6"
+			(at 42.926 120.142 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 43.18 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 43.18 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "TP"
+			(uuid "56f3950b-a3f5-4827-9a16-f0964f25d2c4")
+		)
+		(pin "5"
+			(uuid "654a24ee-792f-452d-8321-3eb49f608f32")
+		)
+		(pin "6"
+			(uuid "71e8ce54-d8b9-4bc3-96bd-dbb8184f48f6")
+		)
+		(pin "1"
+			(uuid "a0c2a2c8-8e53-475b-9e26-f6e267276038")
+		)
+		(pin "3"
+			(uuid "e5ff35b8-aaeb-48fd-a94f-9260f59aca8b")
+		)
+		(pin "4"
+			(uuid "e1faecc7-ad0a-44c7-844a-99eb19043a30")
+		)
+		(instances
+			(project ""
+				(path "/22282c2a-7002-48ef-a0be-1cd1232be417"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "BornaKiCadLibrary:C1206")
 		(at 142.24 139.7 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13066,7 +13627,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:C1206"
+		(property "Footprint" "BornaKiCadLibrary:C1206"
 			(at 147.32 139.7 0)
 			(effects
 				(font
@@ -13103,6 +13664,71 @@
 			(project "Xmas"
 				(path "/22282c2a-7002-48ef-a0be-1cd1232be417"
 					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 30.48 119.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d01a6e4a-df85-4c3d-a307-c7b6625b0bf7")
+		(property "Reference" "#PWR058"
+			(at 30.48 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 30.48 123.444 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 30.48 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dd3473e3-2178-4ef0-a921-59fe0373c0c7")
+		)
+		(instances
+			(project ""
+				(path "/22282c2a-7002-48ef-a0be-1cd1232be417"
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -13174,7 +13800,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:WS2812B-2020")
+		(lib_id "BornaKiCadLibrary:WS2812B-2020")
 		(at 267.97 38.1 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13198,7 +13824,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:WS2812B-2020"
+		(property "Footprint" "BornaKiCadLibrary:WS2812B-2020"
 			(at 268.224 43.434 0)
 			(effects
 				(font
@@ -13508,7 +14134,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:R0603")
+		(lib_id "BornaKiCadLibrary:R0603")
 		(at 100.33 44.45 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13532,7 +14158,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:R0603"
+		(property "Footprint" "BornaKiCadLibrary:R0603"
 			(at 100.33 48.26 0)
 			(effects
 				(font
@@ -13575,7 +14201,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:WS2812B-2020")
+		(lib_id "BornaKiCadLibrary:WS2812B-2020")
 		(at 168.91 62.23 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13600,7 +14226,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:WS2812B-2020"
+		(property "Footprint" "BornaKiCadLibrary:WS2812B-2020"
 			(at 169.164 67.564 0)
 			(effects
 				(font
@@ -13649,7 +14275,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:C0603")
+		(lib_id "BornaKiCadLibrary:C0603")
 		(at 154.94 26.67 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13673,7 +14299,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:C0603"
+		(property "Footprint" "BornaKiCadLibrary:C0603"
 			(at 156.21 31.75 0)
 			(effects
 				(font
@@ -14041,7 +14667,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:C0603")
+		(lib_id "BornaKiCadLibrary:C0603")
 		(at 146.05 55.88 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14065,7 +14691,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:C0603"
+		(property "Footprint" "BornaKiCadLibrary:C0603"
 			(at 147.32 60.96 0)
 			(effects
 				(font
@@ -14108,7 +14734,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Borna KiCAD Library:R0603")
+		(lib_id "BornaKiCadLibrary:R0603")
 		(at 236.22 147.32 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14135,7 +14761,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Borna KiCAD Library:R0603"
+		(property "Footprint" "BornaKiCadLibrary:R0603"
 			(at 240.03 147.32 0)
 			(effects
 				(font
