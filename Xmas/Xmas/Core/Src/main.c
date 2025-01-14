@@ -81,8 +81,8 @@ int main(void)
   HAL_Init();
 
   /* USER CODE BEGIN Init */
-  uint32_t melody_tone[] = {800, 956, 758};
-  uint32_t melody_dur[] = {1000, 1300, 1600};
+ // uint32_t melody_tone[] = {800, 956, 758};
+ // uint32_t melody_dur[] = {1000, 1300, 1600};
   HAL_TIM_PWM_DeInit(&htim1);
   /* USER CODE END Init */
 
@@ -97,23 +97,31 @@ int main(void)
   MX_GPIO_Init();
   MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
-
+  uint16_t melody1[] = {329, 329, 329, 329, 329, 329, 329, 392, 261, 293, 329};
+  uint16_t duration_melody[] = {250, 250, 250, 250, 250, 250, 250, 250, 250, 250, 250};
+  uint16_t brmelody = sizeof(melody1)/sizeof(uint16_t);
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+
+	  htim1.Instance->CCR1 = 50;
 	  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
-	  htim1.Instance->CCR1 = 10;
-	  HAL_Delay(100ULL);
+	  for(int i = 0 ; i < brmelody; i++)
+	  {
+		  melody(&htim1, melody1[i], duration_melody[i]);
+	  }
+
+	  //HAL_Delay(100ULL);
 	  htim1.Instance->CCR1 = 0;
+
 	  HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_1);
 	  HAL_Delay(1000ULL);
-	  for(int i = 0; i < 3; i++)
-	  {
-		  melody(&htim1, melody_tone[i], melody_dur[i]);
-	  }
+
+
+
 
     /* USER CODE END WHILE */
 
@@ -179,9 +187,9 @@ static void MX_TIM1_Init(void)
 
   /* USER CODE END TIM1_Init 1 */
   htim1.Instance = TIM1;
-  htim1.Init.Prescaler = 0;
+  htim1.Init.Prescaler = 479;
   htim1.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim1.Init.Period = 65535;
+  htim1.Init.Period = 50;
   htim1.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim1.Init.RepetitionCounter = 0;
   htim1.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
@@ -260,7 +268,7 @@ static void MX_GPIO_Init(void)
 /* USER CODE BEGIN 4 */
 void melody(TIM_HandleTypeDef *_htim, uint32_t freq, uint32_t duration_melody)
 {
-	uint32_t prescaler = ((HAL_RCC_GetSysClockFreq()/ 10*freq) - 1);
+	uint32_t prescaler = ((HAL_RCC_GetSysClockFreq()/ (50*freq)) - 1);
 
 	uint32_t period = ((HAL_RCC_GetSysClockFreq() / prescaler/freq)-1);
 
@@ -272,11 +280,11 @@ void melody(TIM_HandleTypeDef *_htim, uint32_t freq, uint32_t duration_melody)
 
 	_htim->Instance->CCR1 = duty;
 
-	HAL_TIM_PWM_Start(_htim, TIM_CHANNEL_1);
+	//HAL_TIM_PWM_Start(_htim, TIM_CHANNEL_1);
 
 	HAL_Delay(duration_melody);
 
-	HAL_TIM_PWM_Stop(_htim, TIM_CHANNEL_1);
+	//HAL_TIM_PWM_Stop(_htim, TIM_CHANNEL_1);
 }
 /* USER CODE END 4 */
 
