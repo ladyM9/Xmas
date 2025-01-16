@@ -42,18 +42,26 @@
 /* Private variables ---------------------------------------------------------*/
 
 TIM_HandleTypeDef htim1;
+TIM_HandleTypeDef htim3;
+DMA_HandleTypeDef hdma_tim3_ch1;
 
 /* USER CODE BEGIN PV */
-
+uint16_t TC_event = 0;
+uint16_t HC_event = 0;
+uint32_t *ledbuffer = NULL;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
+static void MX_DMA_Init(void);
+static void MX_TIM3_Init(void);
 static void MX_TIM1_Init(void);
 /* USER CODE BEGIN PFP */
-void melody(TIM_HandleTypeDef *_htim, uint32_t freq, uint32_t duration_melody);
-
+void begin(TIM_HandleTypeDef *_htim, DMA_HandleTypeDef *_hdmaPtr, uint32_t channel, uint32_t num_of_leds, uint32_t pause_Pulse, uint32_t work_Pulse, uint32_t prescaler);
+void led(uint8_t r, uint8_t g, uint8_t b);
+void led_PWM();
+void led_show();
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -95,10 +103,16 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
+  MX_TIM3_Init();
   MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
-  uint16_t melody1[] = {329, 329, 329, 329, 329, 329, 329, 392, 261, 293, 329};
-  uint16_t duration_melody[] = {250, 250, 250, 250, 250, 250, 250, 250, 250, 250, 250};
+  //melody1 is notes of jingle_bells melody  {E4, E4, E4, E4, E4, E4, E4, G4, C4 , D4 , E4, F4, F4, F4, F4, F4, E4, E4, E4, D4, D4, E4, D4, G4}
+  uint16_t melody1[] = {329, 329, 329, 329, 329, 329, 329, 392, 261, 293, 329, 349, 349, 349, 349, 349, 329, 329, 329, 293, 293, 329, 293, 392};
+
+  //duration of melodies
+  uint16_t duration_melody[] = {250, 250, 250, 250, 250, 250, 250, 250, 250, 250, 250, 250, 250, 250, 250, 250, 250, 250, 250, 250, 250, 250, 250, 250};
+
   uint16_t brmelody = sizeof(melody1)/sizeof(uint16_t);
   /* USER CODE END 2 */
 
@@ -112,6 +126,7 @@ int main(void)
 	  for(int i = 0 ; i < brmelody; i++)
 	  {
 		  melody(&htim1, melody1[i], duration_melody[i]);
+
 	  }
 
 	  //HAL_Delay(100ULL);
@@ -249,6 +264,81 @@ static void MX_TIM1_Init(void)
 }
 
 /**
+  * @brief TIM3 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_TIM3_Init(void)
+{
+
+  /* USER CODE BEGIN TIM3_Init 0 */
+
+  /* USER CODE END TIM3_Init 0 */
+
+  TIM_ClockConfigTypeDef sClockSourceConfig = {0};
+  TIM_MasterConfigTypeDef sMasterConfig = {0};
+  TIM_OC_InitTypeDef sConfigOC = {0};
+
+  /* USER CODE BEGIN TIM3_Init 1 */
+
+  /* USER CODE END TIM3_Init 1 */
+  htim3.Instance = TIM3;
+  htim3.Init.Prescaler = 479;
+  htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
+  htim3.Init.Period = 40;
+  htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
+  htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  if (HAL_TIM_Base_Init(&htim3) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sClockSourceConfig.ClockSource = TIM_CLOCKSOURCE_INTERNAL;
+  if (HAL_TIM_ConfigClockSource(&htim3, &sClockSourceConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  if (HAL_TIM_PWM_Init(&htim3) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+  sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+  if (HAL_TIMEx_MasterConfigSynchronization(&htim3, &sMasterConfig) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  sConfigOC.OCMode = TIM_OCMODE_PWM1;
+  sConfigOC.Pulse = 0;
+  sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
+  sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
+  if (HAL_TIM_PWM_ConfigChannel(&htim3, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN TIM3_Init 2 */
+
+  /* USER CODE END TIM3_Init 2 */
+  HAL_TIM_MspPostInit(&htim3);
+
+}
+
+/**
+  * Enable DMA controller clock
+  */
+static void MX_DMA_Init(void)
+{
+
+  /* DMA controller clock enable */
+  __HAL_RCC_DMA1_CLK_ENABLE();
+
+  /* DMA interrupt init */
+  /* DMA1_Channel1_IRQn interrupt configuration */
+  HAL_NVIC_SetPriority(DMA1_Channel1_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA1_Channel1_IRQn);
+
+}
+
+/**
   * @brief GPIO Initialization Function
   * @param None
   * @retval None
@@ -266,7 +356,25 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
-void melody(TIM_HandleTypeDef *_htim, uint32_t freq, uint32_t duration_melody)
+void begin(TIM_HandleTypeDef *_htim, DMA_HandleTypeDef *_hdmaPtr, uint32_t channel, uint32_t *num_of_leds, uint32_t pause_Pulse, uint32_t work_Pulse, uint32_t prescaler)
+{
+	///prvo moras osigurat memoriju odnosno zauzet dio memorije za ledice tj buffer
+	ledBuffer = (uint32_t*)malloc(*num_of_leds * sizeof(uint32_t));
+	//u datasheetu pise da je memorija na pocetku konfigurirana sa svim 0 za reset
+	memset(&ledBuffer, 0, sizeof(uint32_t)*num_of_leds);
+
+	//inicializirat timer
+	__HAL_TIM_SET_PRESCALER(_htim, prescaler);
+	__HAL_TIM_SET_AUTORELOAD(_htim, period);
+
+	//inicijalizacija za DMA
+	HAL_DMA_RegisterCallback(&hdma_tim3_ch1, CallbackID, pCallback);
+	HAL_TIM_PWM_Start(_htim, channel);
+	__HAL_TIM_ENABLE_DMA(_htim, channel);
+
+}
+
+/*void melody(TIM_HandleTypeDef *_htim, uint32_t freq, uint32_t duration_melody)
 {
 	uint32_t prescaler = ((HAL_RCC_GetSysClockFreq()/ (50*freq)) - 1);
 
@@ -286,6 +394,7 @@ void melody(TIM_HandleTypeDef *_htim, uint32_t freq, uint32_t duration_melody)
 
 	//HAL_TIM_PWM_Stop(_htim, TIM_CHANNEL_1);
 }
+*/
 /* USER CODE END 4 */
 
 /**
