@@ -48,7 +48,7 @@ DMA_HandleTypeDef hdma_tim3_ch1;
 /* USER CODE BEGIN PV */
 uint16_t TC_event = 0;
 uint16_t HC_event = 0;
-uint32_t *ledbuffer = NULL;
+uint32_t *ledBuffer = NULL;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -114,6 +114,8 @@ int main(void)
   uint16_t duration_melody[] = {250, 250, 250, 250, 250, 250, 250, 250, 250, 250, 250, 250, 250, 250, 250, 250, 250, 250, 250, 250, 250, 250, 250, 250};
 
   uint16_t brmelody = sizeof(melody1)/sizeof(uint16_t);
+
+  begin(&htim3, &hdma_tim3_ch1, TIM_CHANNEL_1, 12, 12, 5, 2);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -121,6 +123,7 @@ int main(void)
   while (1)
   {
 
+	  /*
 	  htim1.Instance->CCR1 = 50;
 	  HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
 	  for(int i = 0 ; i < brmelody; i++)
@@ -134,7 +137,7 @@ int main(void)
 
 	  HAL_TIM_PWM_Stop(&htim1, TIM_CHANNEL_1);
 	  HAL_Delay(1000ULL);
-
+	*/
 
 
 
@@ -283,9 +286,9 @@ static void MX_TIM3_Init(void)
 
   /* USER CODE END TIM3_Init 1 */
   htim3.Instance = TIM3;
-  htim3.Init.Prescaler = 479;
+  htim3.Init.Prescaler = 5;
   htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim3.Init.Period = 40;
+  htim3.Init.Period = 10;
   htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim3) != HAL_OK)
@@ -345,32 +348,65 @@ static void MX_DMA_Init(void)
   */
 static void MX_GPIO_Init(void)
 {
+  GPIO_InitTypeDef GPIO_InitStruct = {0};
 /* USER CODE BEGIN MX_GPIO_Init_1 */
 /* USER CODE END MX_GPIO_Init_1 */
 
   /* GPIO Ports Clock Enable */
   __HAL_RCC_GPIOA_CLK_ENABLE();
 
+  /*Configure GPIO pin Output Level */
+  HAL_GPIO_WritePin(PERIPH_SUPLLY_GPIO_Port, PERIPH_SUPLLY_Pin, GPIO_PIN_RESET);
+
+  /*Configure GPIO pin : PERIPH_SUPLLY_Pin */
+  GPIO_InitStruct.Pin = PERIPH_SUPLLY_Pin;
+  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_OD;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+  HAL_GPIO_Init(PERIPH_SUPLLY_GPIO_Port, &GPIO_InitStruct);
+
 /* USER CODE BEGIN MX_GPIO_Init_2 */
 /* USER CODE END MX_GPIO_Init_2 */
 }
 
 /* USER CODE BEGIN 4 */
-void begin(TIM_HandleTypeDef *_htim, DMA_HandleTypeDef *_hdmaPtr, uint32_t channel, uint32_t *num_of_leds, uint32_t pause_Pulse, uint32_t work_Pulse, uint32_t prescaler)
+void begin(TIM_HandleTypeDef *_htim, DMA_HandleTypeDef *_hdmaPtr, uint32_t channel, uint32_t num_of_leds, uint32_t pause_Pulse, uint32_t work_Pulse, uint32_t prescaler)
 {
+	uint16_t buffer[25] =
+	{
+			3,3,3,3,3,3,3,3,
+			6,6,6,6,6,6,6,6,
+			3,3,3,3,3,3,3,3,
+			0
+	};
 	///prvo moras osigurat memoriju odnosno zauzet dio memorije za ledice tj buffer
-	ledBuffer = (uint32_t*)malloc(*num_of_leds * sizeof(uint32_t));
+	ledBuffer = (uint32_t*)malloc(num_of_leds * sizeof(uint32_t));
 	//u datasheetu pise da je memorija na pocetku konfigurirana sa svim 0 za reset
-	memset(&ledBuffer, 0, sizeof(uint32_t)*num_of_leds);
+	memset((uint32_t*)ledBuffer, 0, sizeof(uint32_t) * num_of_leds);
 
 	//inicializirat timer
-	__HAL_TIM_SET_PRESCALER(_htim, prescaler);
-	__HAL_TIM_SET_AUTORELOAD(_htim, period);
+	__HAL_TIM_SET_PRESCALER(_htim, 5);
+	__HAL_TIM_SET_AUTORELOAD(_htim, 9);
 
 	//inicijalizacija za DMA
-	HAL_DMA_RegisterCallback(&hdma_tim3_ch1, CallbackID, pCallback);
+//	HAL_DMA_RegisterCallback(&hdma_tim3_ch1, HAL_DMA_XFER_CPLT_CB_ID, 1);
+
+	//_htim->Instance->CCR1 = 3;
+	for(int j = 0 ; j < 12; j++)
+	{
 	HAL_TIM_PWM_Start(_htim, channel);
-	__HAL_TIM_ENABLE_DMA(_htim, channel);
+	for(int i = 0 ; i < 25; i++)
+	{
+		_htim->Instance->CCR1 = buffer[i];
+		while(__HAL_TIM_GET_COUNTER(_htim) < 6);
+	}
+
+	HAL_TIM_PWM_Stop(_htim, channel);
+
+	}
+
+
+//	__HAL_TIM_ENABLE_DMA(_htim, channel);
 
 }
 
