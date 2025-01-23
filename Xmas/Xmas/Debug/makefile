@@ -9,6 +9,7 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include libs/.metadata/.plugins/org.eclipse.cdt.make.core/subdir.mk
 -include libs/subdir.mk
 -include Drivers/STM32C0xx_HAL_Driver/Src/subdir.mk
 -include Core/Startup/subdir.mk
@@ -61,8 +62,8 @@ all: main-build
 main-build: Xmas.elf secondary-outputs
 
 # Tool invocations
-Xmas.elf Xmas.map: $(OBJS) $(USER_OBJS) C:\Users\Borna\Documents\GitHub\XmasMarnia\Xmas\Xmas\STM32C011F6PX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "Xmas.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Users\Borna\Documents\GitHub\XmasMarnia\Xmas\Xmas\STM32C011F6PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Xmas.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Xmas.elf Xmas.map: $(OBJS) $(USER_OBJS) C:\Users\Marina\Documents\GitHub\Xmas\Xmas\Xmas\STM32C011F6PX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "Xmas.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Users\Marina\Documents\GitHub\Xmas\Xmas\Xmas\STM32C011F6PX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Xmas.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

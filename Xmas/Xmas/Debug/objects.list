@@ -19,4 +19,6 @@
 "./Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_rcc_ex.o"
 "./Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_tim.o"
 "./Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_tim_ex.o"
+"./libs/.metadata/.plugins/org.eclipse.cdt.make.core/specs.o"
+"./libs/WS2812B.o"
 "./libs/buzzer.o"

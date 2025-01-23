@@ -1,0 +1,136 @@
+2025-01-17 11:30:43,849 [INFO] Activator:176 - 
+
+
+2025-01-17 11:30:43,849 [INFO] Activator:177 - !SESSION log4j initialized
+2025-01-17 11:30:49,599 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2025-01-17 11:30:58,066 [INFO] ApplicationProperties:184 - Using Application install path: C:\ST\STM32CubeIDE_1.15.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753
+2025-01-17 11:30:58,111 [INFO] DbMcusXml:78 - Set database path to: C:\ST\STM32CubeIDE_1.15.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\/mcu/
+2025-01-17 11:30:58,115 [INFO] ApiDb:274 - Set plugin database path to: C:\ST\STM32CubeIDE_1.15.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\/plugins/boardmanager/
+2025-01-17 11:30:58,117 [WARN] ApiDb:259 - Overriding images path with different value:  => C:\ST\STM32CubeIDE_1.15.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\/plugins/mcufinder/images/
+2025-01-17 11:30:58,134 [INFO] ApiDb:250 - Set database path to: C:\Users\Marina\.stmcufinder\plugins\mcufinder//mcu/
+2025-01-17 11:30:58,137 [INFO] DbMcusAds:125 - Set database path to: C:\Users\Marina\.stmcufinder\plugins\mcufinder//mcu/
+2025-01-17 11:30:58,143 [INFO] CrossReferenceDbSqlite:203 - Set database path to: C:\Users\Marina\.stmcufinder\plugins\mcufinder//mcu/cs/
+2025-01-17 11:30:58,530 [INFO] RulesReader:64 - Compatibility file has been processed (297 Rules)
+2025-01-17 11:30:58,786 [INFO] DbMcusXml:78 - Set database path to: C:\ST\STM32CubeIDE_1.15.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\/mcu/
+2025-01-17 11:30:58,786 [INFO] ApiDb:274 - Set plugin database path to: C:\ST\STM32CubeIDE_1.15.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\/plugins/boardmanager/
+2025-01-17 11:30:58,787 [INFO] ApiDb:261 - Set plugin images path to: C:\ST\STM32CubeIDE_1.15.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\/plugins/mcufinder/images/
+2025-01-17 11:30:58,787 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\Marina\.stmcufinder\plugins\mcufinder/ => C:\Users\Marina\.stmcufinder\plugins\mcufinder
+2025-01-17 11:30:58,788 [INFO] ApiDb:250 - Set database path to: C:\Users\Marina\.stmcufinder\plugins\mcufinder//mcu/
+2025-01-17 11:30:58,788 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\Marina\.stmcufinder\plugins\mcufinder/ => C:\Users\Marina\.stmcufinder\plugins\mcufinder
+2025-01-17 11:30:58,789 [INFO] DbMcusAds:125 - Set database path to: C:\Users\Marina\.stmcufinder\plugins\mcufinder//mcu/
+2025-01-17 11:30:58,789 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\Marina\.stmcufinder\plugins\mcufinder/ => C:\Users\Marina\.stmcufinder\plugins\mcufinder
+2025-01-17 11:30:58,790 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\Marina\.stmcufinder\plugins\mcufinder/ => C:\Users\Marina\.stmcufinder\plugins\mcufinder
+2025-01-17 11:30:58,790 [INFO] CrossReferenceDbSqlite:203 - Set database path to: C:\Users\Marina\.stmcufinder\plugins\mcufinder//mcu/cs/
+2025-01-17 11:30:59,141 [INFO] MainPanel:264 - HeapMemory: 268435456
+2025-01-17 11:30:59,489 [INFO] DbMcusXml:78 - Set database path to: C:\ST\STM32CubeIDE_1.15.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\/mcu/
+2025-01-17 11:30:59,489 [INFO] ApiDb:274 - Set plugin database path to: C:\ST\STM32CubeIDE_1.15.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\/plugins/boardmanager/
+2025-01-17 11:30:59,490 [INFO] ApiDb:261 - Set plugin images path to: C:\ST\STM32CubeIDE_1.15.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753\\db\/plugins/mcufinder/images/
+2025-01-17 11:30:59,491 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\Marina\.stmcufinder\plugins\mcufinder/ => C:\Users\Marina\.stmcufinder\plugins\mcufinder
+2025-01-17 11:30:59,492 [INFO] ApiDb:250 - Set database path to: C:\Users\Marina\.stmcufinder\plugins\mcufinder//mcu/
+2025-01-17 11:30:59,493 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\Marina\.stmcufinder\plugins\mcufinder/ => C:\Users\Marina\.stmcufinder\plugins\mcufinder
+2025-01-17 11:30:59,493 [INFO] DbMcusAds:125 - Set database path to: C:\Users\Marina\.stmcufinder\plugins\mcufinder//mcu/
+2025-01-17 11:30:59,494 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\Marina\.stmcufinder\plugins\mcufinder/ => C:\Users\Marina\.stmcufinder\plugins\mcufinder
+2025-01-17 11:30:59,494 [WARN] DbFile:41 - Overriding database path with different value: C:\Users\Marina\.stmcufinder\plugins\mcufinder/ => C:\Users\Marina\.stmcufinder\plugins\mcufinder
+2025-01-17 11:30:59,495 [INFO] CrossReferenceDbSqlite:203 - Set database path to: C:\Users\Marina\.stmcufinder\plugins\mcufinder//mcu/cs/
+2025-01-17 11:30:59,594 [INFO] ApplicationProperties:184 - Using Application install path: C:\ST\STM32CubeIDE_1.15.1\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.1.202404110753
+2025-01-17 11:30:59,599 [INFO] PluginManage:196 - Search for loadable plugins [exclusion list=, ]
+2025-01-17 11:30:59,604 [INFO] PluginManage:310 - Check plugin analytics
+2025-01-17 11:31:00,953 [INFO] AnalyticsPlugin:253 - Accepted Software Licenses: STM32CubeMX.6.5.0,STM32CubeMX.6.3.0,STM32CubeMX.6.4.0
+2025-01-17 11:31:00,954 [INFO] AnalyticsPlugin:255 - Accepted CMSIS Pack Licenses: 
+2025-01-17 11:31:00,956 [INFO] AnalyticsPlugin:257 - Accepted Firmware Licenses: FW.C0.1.1.0,FW.C0.1.0.0
+2025-01-17 11:31:00,970 [INFO] PluginManage:359 - Loaded plugin analytics (category:tool,tabindex:-1)
+2025-01-17 11:31:00,971 [INFO] PluginManage:310 - Check plugin cadmodel
+2025-01-17 11:31:00,984 [INFO] CADModel:105 - Init CAD model plugin
+2025-01-17 11:31:00,985 [INFO] PluginManage:359 - Loaded plugin cadmodel (category:power,tabindex:5)
+2025-01-17 11:31:00,986 [INFO] PluginManage:310 - Check plugin clock
+2025-01-17 11:31:01,022 [INFO] PluginManage:359 - Loaded plugin clock (category:base,tabindex:2)
+2025-01-17 11:31:01,023 [INFO] PluginManage:310 - Check plugin ddr
+2025-01-17 11:31:01,031 [INFO] PluginManage:359 - Loaded plugin ddr (category:tool,tabindex:6)
+2025-01-17 11:31:01,031 [INFO] PluginManage:310 - Check plugin filemanager
+2025-01-17 11:31:02,699 [INFO] PluginManage:359 - Loaded plugin filemanager (category:base,tabindex:10)
+2025-01-17 11:31:02,700 [INFO] PluginManage:310 - Check plugin ipmanager
+2025-01-17 11:31:02,726 [INFO] PluginManage:359 - Loaded plugin ipmanager (category:base,tabindex:5)
+2025-01-17 11:31:02,782 [INFO] PluginManage:310 - Check plugin lpbam
+2025-01-17 11:31:02,808 [INFO] PluginManage:359 - Loaded plugin lpbam (category:base,tabindex:0)
+2025-01-17 11:31:02,808 [INFO] PluginManage:310 - Check plugin memorymap
+2025-01-17 11:31:02,880 [INFO] PluginManage:359 - Loaded plugin memorymap (category:base,tabindex:4)
+2025-01-17 11:31:02,880 [INFO] PluginManage:310 - Check plugin pinoutandconfiguration
+2025-01-17 11:31:02,909 [INFO] PluginManage:359 - Loaded plugin pinoutandconfiguration (category:base,tabindex:1)
+2025-01-17 11:31:02,909 [INFO] PluginManage:310 - Check plugin pinoutconfig
+2025-01-17 11:31:03,236 [FATAL] PluginManage:371 - Exception caught
+java.lang.reflect.InvocationTargetException: null
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at com.st.microxplorer.plugin.PluginManage.loadPluginJar(PluginManage.java:352) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.plugin.PluginManage.PluginSearch(PluginManage.java:224) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.plugin.PluginManage.PluginDiscovery(PluginManage.java:67) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.maingui.MainPanel.initialization(MainPanel.java:316) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.maingui.AppletMainFrameCubeIde.init(AppletMainFrameCubeIde.java:242) ~[STM32CubeMX.jar:?]
+	at com.st.stm32cube.common.mx.core.CubeMxInstance.<init>(CubeMxInstance.java:117) ~[com.st.stm32cube.common.mx_6.11.1.202404110753/:?]
+	at com.st.stm32cube.common.mx.core.CubeMxInstance.getInstance(CubeMxInstance.java:91) ~[com.st.stm32cube.common.mx_6.11.1.202404110753/:?]
+	at com.st.stm32cube.common.mx.userauth.UserAuthAdapter.<init>(UserAuthAdapter.java:25) ~[com.st.stm32cube.common.mx_6.11.1.202404110753/:?]
+	at com.st.stm32cube.common.mx.userauth.UserAuthProvider.getUserAuthAdapter(UserAuthProvider.java:16) ~[com.st.stm32cube.common.mx_6.11.1.202404110753/:?]
+	at com.st.stm32cube.common.ecosystemintegration.ui.core.MCUEcoSystemIntegrationUiHelper.getUserAuth(MCUEcoSystemIntegrationUiHelper.java:100) ~[?:?]
+	at com.st.stm32cube.ide.mcu.userauth.UserAuthStartup.earlyStartup(UserAuthStartup.java:41) ~[?:?]
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:79) ~[?:?]
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:55) ~[?:?]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47) ~[org.eclipse.equinox.common_3.18.200.v20231106-1826.jar:?]
+	at org.eclipse.ui.internal.Workbench$39.run(Workbench.java:2762) ~[?:?]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) ~[?:?]
+Caused by: java.lang.ExceptionInInitializerError
+	at org.apache.xerces.impl.xs.traversers.XSDHandler.createTraversers(Unknown Source) ~[STM32CubeMX.jar:?]
+	at org.apache.xerces.impl.xs.traversers.XSDHandler.prepareForTraverse(Unknown Source) ~[STM32CubeMX.jar:?]
+	at org.apache.xerces.impl.xs.traversers.XSDHandler.parseSchema(Unknown Source) ~[STM32CubeMX.jar:?]
+	at org.apache.xerces.impl.xs.XMLSchemaLoader.loadSchema(Unknown Source) ~[STM32CubeMX.jar:?]
+	at org.apache.xerces.impl.xs.XMLSchemaLoader.loadGrammar(Unknown Source) ~[STM32CubeMX.jar:?]
+	at org.apache.xerces.impl.xs.XMLSchemaLoader.loadGrammar(Unknown Source) ~[STM32CubeMX.jar:?]
+	at org.apache.xerces.jaxp.validation.XMLSchemaFactory.newSchema(Unknown Source) ~[STM32CubeMX.jar:?]
+	at javax.xml.validation.SchemaFactory.newSchema(SchemaFactory.java:612) ~[?:?]
+	at com.st.microxplorer.mcu.rtos.api.SupportedApi.loadRequiredInfo(SupportedApi.java:130) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.mcu.rtos.api.SupportedApi.load(SupportedApi.java:71) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.mcu.rtos.RtosManager.<init>(RtosManager.java:531) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.mcu.Mcu.getRtosManager(Mcu.java:7377) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.mcu.Mcu.propertyChange(Mcu.java:1776) ~[STM32CubeMX.jar:?]
+	at java.beans.PropertyChangeSupport.fire(PropertyChangeSupport.java:343) ~[?:?]
+	at java.beans.PropertyChangeSupport.firePropertyChange(PropertyChangeSupport.java:335) ~[?:?]
+	at com.st.microxplorer.util.MXPropertyChangeSupport.refreshing(MXPropertyChangeSupport.java:72) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.mcu.Mcu.refreshingMcu(Mcu.java:6030) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.mxsystem.MxSystem.refreshing(MxSystem.java:922) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.plugins.pinoutconfig.PinoutConfigView.<init>(PinoutConfigView.java:203) ~[?:?]
+	... 21 more
+Caused by: java.lang.IllegalStateException: Module has been uninstalled. osgi.identity; type="osgi.bundle"; version:Version="6.11.1.202404110753"; osgi.identity="com.st.stm32cube.common.mx"; singleton:="true" [id=13]
+	at org.eclipse.osgi.container.Module.checkValid(Module.java:560) ~[?:?]
+	at org.eclipse.osgi.container.Module.start(Module.java:421) ~[?:?]
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:513) ~[?:?]
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117) ~[?:?]
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:570) ~[?:?]
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:335) ~[?:?]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:397) ~[?:?]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:500) ~[?:?]
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416) ~[?:?]
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168) ~[?:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:525) ~[?:?]
+	at org.apache.xerces.impl.xs.traversers.XSAttributeChecker.<clinit>(Unknown Source) ~[STM32CubeMX.jar:?]
+	at org.apache.xerces.impl.xs.traversers.XSDHandler.createTraversers(Unknown Source) ~[STM32CubeMX.jar:?]
+	at org.apache.xerces.impl.xs.traversers.XSDHandler.prepareForTraverse(Unknown Source) ~[STM32CubeMX.jar:?]
+	at org.apache.xerces.impl.xs.traversers.XSDHandler.parseSchema(Unknown Source) ~[STM32CubeMX.jar:?]
+	at org.apache.xerces.impl.xs.XMLSchemaLoader.loadSchema(Unknown Source) ~[STM32CubeMX.jar:?]
+	at org.apache.xerces.impl.xs.XMLSchemaLoader.loadGrammar(Unknown Source) ~[STM32CubeMX.jar:?]
+	at org.apache.xerces.impl.xs.XMLSchemaLoader.loadGrammar(Unknown Source) ~[STM32CubeMX.jar:?]
+	at org.apache.xerces.jaxp.validation.XMLSchemaFactory.newSchema(Unknown Source) ~[STM32CubeMX.jar:?]
+	at javax.xml.validation.SchemaFactory.newSchema(SchemaFactory.java:612) ~[?:?]
+	at com.st.microxplorer.mcu.rtos.api.SupportedApi.loadRequiredInfo(SupportedApi.java:130) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.mcu.rtos.api.SupportedApi.load(SupportedApi.java:71) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.mcu.rtos.RtosManager.<init>(RtosManager.java:531) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.mcu.Mcu.getRtosManager(Mcu.java:7377) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.mcu.Mcu.propertyChange(Mcu.java:1776) ~[STM32CubeMX.jar:?]
+	at java.beans.PropertyChangeSupport.fire(PropertyChangeSupport.java:343) ~[?:?]
+	at java.beans.PropertyChangeSupport.firePropertyChange(PropertyChangeSupport.java:335) ~[?:?]
+	at com.st.microxplorer.util.MXPropertyChangeSupport.refreshing(MXPropertyChangeSupport.java:72) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.mcu.Mcu.refreshingMcu(Mcu.java:6030) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.mxsystem.MxSystem.refreshing(MxSystem.java:922) ~[STM32CubeMX.jar:?]
+	at com.st.microxplorer.plugins.pinoutconfig.PinoutConfigView.<init>(PinoutConfigView.java:203) ~[?:?]
+	... 21 more

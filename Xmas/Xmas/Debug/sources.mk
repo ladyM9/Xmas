@@ -25,5 +25,6 @@ SUBDIRS := \
 Core/Src \
 Core/Startup \
 Drivers/STM32C0xx_HAL_Driver/Src \
+libs/.metadata/.plugins/org.eclipse.cdt.make.core \
 libs \
 
