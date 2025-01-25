@@ -37,15 +37,15 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  16 .debug_macro  00012223  00000000  00000000  0000e979  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   0000a78b  00000000  00000000  00020b9c  2**0
+ 17 .debug_line   0000a790  00000000  00000000  00020b9c  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    0007501c  00000000  00000000  0002b327  2**0
+ 18 .debug_str    0007501c  00000000  00000000  0002b32c  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000043  00000000  00000000  000a0343  2**0
+ 19 .comment      00000043  00000000  00000000  000a0348  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  00002234  00000000  00000000  000a0388  2**2
+ 20 .debug_frame  00002234  00000000  00000000  000a038c  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_line_str 00000063  00000000  00000000  000a25bc  2**0
+ 21 .debug_line_str 00000063  00000000  00000000  000a25c0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -304,12 +304,12 @@ int main(void)
  800026e:	18fb      	adds	r3, r7, r3
  8000270:	2218      	movs	r2, #24
  8000272:	801a      	strh	r2, [r3, #0]
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
-  while (1)
-  {
+	  resetLEDS(leds, 1);
 
-  	  begin(&htim3, TIM_CHANNEL_1, 1, 1, 1, 5);
+	  HAL_TIM_PWM_Start_DMA(&htim3,TIM_CHANNEL_1 , (uint32_t*)leds, );
+	  setLEDS(leds, 1);
+	  */
+  begin(&htim3, TIM_CHANNEL_1, 1, 1, 1, 5);
  8000274:	4808      	ldr	r0, [pc, #32]	@ (8000298 <main+0x78>)
  8000276:	2305      	movs	r3, #5
  8000278:	9301      	str	r3, [sp, #4]
@@ -319,8 +319,14 @@ int main(void)
  8000280:	2201      	movs	r2, #1
  8000282:	2100      	movs	r1, #0
  8000284:	f000 f9cc 	bl	8000620 <begin>
- 8000288:	e7f4      	b.n	8000274 <main+0x54>
- 800028a:	46c0      	nop			@ (mov r8, r8)
+
+  /* USER CODE END 2 */
+
+  /* Infinite loop */
+  /* USER CODE BEGIN WHILE */
+  while (1)
+ 8000288:	46c0      	nop			@ (mov r8, r8)
+ 800028a:	e7fd      	b.n	8000288 <main+0x68>
  800028c:	20000028 	.word	0x20000028
  8000290:	08002790 	.word	0x08002790
  8000294:	080027c0 	.word	0x080027c0
@@ -956,7 +962,7 @@ void begin(TIM_HandleTypeDef *_htim, uint32_t channel, uint32_t num_of_leds, uin
 	 */
 
 	uint32_t buffer[24];
-	uint32_t colorRGB = 0b000111100011111;
+	uint32_t colorRGB = 0b0000011110001111100000000000;
  800062e:	4b2b      	ldr	r3, [pc, #172]	@ (80006dc <begin+0xbc>)
  8000630:	677b      	str	r3, [r7, #116]	@ 0x74
 	__HAL_TIM_SET_PRESCALER(_htim, 5);
@@ -973,7 +979,7 @@ void begin(TIM_HandleTypeDef *_htim, uint32_t channel, uint32_t num_of_leds, uin
  8000644:	2209      	movs	r2, #9
  8000646:	60da      	str	r2, [r3, #12]
 
-	for(int j = 0; j < 2; j++)
+	for(int j = 0; j < 1; j++)
  8000648:	2300      	movs	r3, #0
  800064a:	67fb      	str	r3, [r7, #124]	@ 0x7c
  800064c:	e03d      	b.n	80006ca <begin+0xaa>
@@ -1056,12 +1062,12 @@ void begin(TIM_HandleTypeDef *_htim, uint32_t channel, uint32_t num_of_leds, uin
  80006bc:	0011      	movs	r1, r2
  80006be:	0018      	movs	r0, r3
  80006c0:	f001 f902 	bl	80018c8 <HAL_TIM_PWM_Stop>
-	for(int j = 0; j < 2; j++)
+	for(int j = 0; j < 1; j++)
  80006c4:	6ffb      	ldr	r3, [r7, #124]	@ 0x7c
  80006c6:	3301      	adds	r3, #1
  80006c8:	67fb      	str	r3, [r7, #124]	@ 0x7c
  80006ca:	6ffb      	ldr	r3, [r7, #124]	@ 0x7c
- 80006cc:	2b01      	cmp	r3, #1
+ 80006cc:	2b00      	cmp	r3, #0
  80006ce:	ddbe      	ble.n	800064e <begin+0x2e>
 	}
 
@@ -1074,7 +1080,7 @@ void begin(TIM_HandleTypeDef *_htim, uint32_t channel, uint32_t num_of_leds, uin
  80006d6:	b020      	add	sp, #128	@ 0x80
  80006d8:	bd80      	pop	{r7, pc}
  80006da:	46c0      	nop			@ (mov r8, r8)
- 80006dc:	00000f1f 	.word	0x00000f1f
+ 80006dc:	0078f800 	.word	0x0078f800
 
 080006e0 <Error_Handler>:
 /**

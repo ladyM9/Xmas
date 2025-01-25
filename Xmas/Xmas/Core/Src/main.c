@@ -138,7 +138,7 @@ int main(void)
 	  HAL_TIM_PWM_Start_DMA(&htim3,TIM_CHANNEL_1 , (uint32_t*)leds, );
 	  setLEDS(leds, 1);
 	  */
-
+  begin(&htim3, TIM_CHANNEL_1, 1, 1, 1, 5);
 
 
 
@@ -151,7 +151,7 @@ int main(void)
   while (1)
   {
 
-  	  begin(&htim3, TIM_CHANNEL_1, 1, 1, 1, 5);
+
 
     /* USER CODE END WHILE */
 
@@ -411,11 +411,11 @@ void begin(TIM_HandleTypeDef *_htim, uint32_t channel, uint32_t num_of_leds, uin
 	 */
 
 	uint32_t buffer[24];
-	uint32_t colorRGB = 0b000111100011111;
+	uint32_t colorRGB = 0b0000011110001111100000000000;
 	__HAL_TIM_SET_PRESCALER(_htim, 5);
 	__HAL_TIM_SET_AUTORELOAD(_htim, 9);
 
-	for(int j = 0; j < 2; j++)
+	for(int j = 0; j < 1; j++)
 	{
 	HAL_TIM_PWM_Start(_htim, channel);
 
