@@ -63,7 +63,7 @@ void led_PWM();
 void led_show();
 void timerDmaTransferComplete();
 void begin(TIM_HandleTypeDef *_htim, DMA_HandleTypeDef *_dmahtim ,uint32_t channel, uint32_t num_of_leds, uint32_t pause_Pulse, uint32_t work_Pulse, uint32_t prescaler);
-void setLed();
+uint32_t setLed(uint8_t r, uint8_t g, uint8_t b);
 
 /* USER CODE END PFP */
 
@@ -394,54 +394,28 @@ void begin(TIM_HandleTypeDef *_htim, DMA_HandleTypeDef *_dmahtim  ,uint32_t chan
 {
 
 
-
-	/*
 	uint32_t buffer[24];
-	uint32_t colorRGB = 0b000111100011111;
-	__HAL_TIM_SET_PRESCALER(_htim, 5);
-	__HAL_TIM_SET_AUTORELOAD(_htim, 9);
-	HAL_TIM_PWM_Start(_htim, channel);
-	__HAL_TIM_ENABLE_DMA(_htim, channel);
+//	uint32_t colorRGB = 0b0000000000101100000000000000;
+	uint32_t colorRGB;
+	//uint32_t r = colorRGB
+	uint32_t g = 0000000000;
+	//uint32_t red = ;
+	uint32_t b = colorRGB >> 16 & 0xFF;
 
 
-	for(int i = 0; i < 24 ; i++)
-	{
-		uint32_t bit = (colorRGB >> (26-i));
-		if((bit & 1) == 1)
-		{
-			buffer[i] = 6;
+	colorRGB = setLed(0000000110, 00001111, 0000000000);
+	//colorRGB = setLed(g, red, b);
 
-		}
-		else
-		{
-			buffer[i] = 3;
-		}
-	}
-
-	//bbuffer[24] = 0;
-
-	//HAL_DMA_Start(_htim, channel, (uint32_t*)buffer, 24);
-//	HAL_DMA_Start(&hdma_tim3_ch1, , DstAddress, DataLength)
-	HAL_TIM_PWM_Start_DMA(_htim, channel, (uint32_t*)buffer, 24);
-	HAL_Delay(100);
-	HAL_DMA_PollForTransfer(_hdmaPtr, HAL_DMA_XFER_CPLT_CB_ID, 20);
-	//HAL_TIM_PWM_Stop_DMA(&htim3, TIM_CHANNEL_1);
-	 *
-	 */
-
-	uint32_t buffer[24];
-	uint32_t colorRGB = 0b0000011110001111100000000000;
 	__HAL_TIM_SET_PRESCALER(_htim, 5);
 	__HAL_TIM_SET_AUTORELOAD(_htim, 9);
 
 
-	for(int j = 0; j < 1; j++)
-	{
+
 	HAL_TIM_PWM_Start(_htim, channel);
 
 	for(int i = 0; i < 24 ; i++)
 	{
-		uint32_t bit = (colorRGB >> (23-i));
+		uint8_t bit = (colorRGB >> (23-i+2));
 		if((bit & 1) == 1)
 		{
 			buffer[i] = 6;
@@ -456,14 +430,23 @@ void begin(TIM_HandleTypeDef *_htim, DMA_HandleTypeDef *_dmahtim  ,uint32_t chan
 	}
 
 
-//	HAL_TIM_PWM_Stop(_htim, channel);
-	}
-	HAL_DMA_Start(_dmahtim, (uint32_t*)buffer, (uint32_t)&(_htim->Instance->CCR1), 24);
+	for(int j = 0; j < 12; j++)
+	{
+	HAL_DMA_Start(_dmahtim, (uint32_t)buffer, (uint32_t)&(_htim->Instance->CCR1), 24);
 	__HAL_TIM_ENABLE_DMA(_htim, TIM_DMA_CC1);
 	HAL_DMA_PollForTransfer(_dmahtim,  HAL_DMA_XFER_CPLT_CB_ID, 100);
+//	HAL_TIM_PWM_Stop(_htim, channel);
+	}
 
 
 
+
+}
+
+uint32_t setLed(uint8_t g, uint8_t r, uint8_t b)
+{
+
+	return( g<<16 | r<<8 | b );
 }
 
 
