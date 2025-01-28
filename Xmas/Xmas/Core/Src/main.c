@@ -46,7 +46,7 @@ TIM_HandleTypeDef htim3;
 DMA_HandleTypeDef hdma_tim3_ch1;
 
 /* USER CODE BEGIN PV */
-
+uint32_t buffer[28];
 
 /* USER CODE END PV */
 
@@ -62,7 +62,7 @@ void led(uint8_t r, uint8_t g, uint8_t b);
 void led_PWM();
 void led_show();
 void timerDmaTransferComplete();
-void begin(TIM_HandleTypeDef *_htim, DMA_HandleTypeDef *_dmahtim ,uint32_t channel, uint32_t num_of_leds, uint32_t pause_Pulse, uint32_t work_Pulse, uint32_t prescaler);
+void begin(TIM_HandleTypeDef *_htim, DMA_HandleTypeDef *_dmahtim ,uint32_t channel);
 uint32_t setLed(uint8_t r, uint8_t g, uint8_t b);
 
 /* USER CODE END PFP */
@@ -141,7 +141,7 @@ int main(void)
 	  HAL_TIM_PWM_Start_DMA(&htim3,TIM_CHANNEL_1 , (uint32_t*)leds, );
 	  setLEDS(leds, 1);
 	  */
-  begin(&htim3, &hdma_tim3_ch1 ,TIM_CHANNEL_1, 1, 1, 1, 5);
+  begin(&htim3, &hdma_tim3_ch1 ,TIM_CHANNEL_1);
 
 
 
@@ -303,7 +303,7 @@ static void MX_TIM3_Init(void)
   htim3.Instance = TIM3;
   htim3.Init.Prescaler = 5;
   htim3.Init.CounterMode = TIM_COUNTERMODE_UP;
-  htim3.Init.Period = 12;
+  htim3.Init.Period = 9;
   htim3.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim3.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim3) != HAL_OK)
@@ -390,33 +390,23 @@ static void MX_GPIO_Init(void)
 
 
 
-void begin(TIM_HandleTypeDef *_htim, DMA_HandleTypeDef *_dmahtim  ,uint32_t channel, uint32_t num_of_leds, uint32_t pause_Pulse, uint32_t work_Pulse, uint32_t prescaler)
+void begin(TIM_HandleTypeDef *_htim, DMA_HandleTypeDef *_dmahtim  ,uint32_t channel)
 {
 
 
-	uint32_t buffer[24];
+
 //	uint32_t colorRGB = 0b0000000000101100000000000000;
-	uint32_t colorRGB;
+	uint32_t colorRGB = setLed(0, 0, 50);
 	//uint32_t r = colorRGB
-	uint32_t g = 0000000000;
-	//uint32_t red = ;
-	uint32_t b = colorRGB >> 16 & 0xFF;
 
-
-	colorRGB = setLed(0000000110, 00001111, 0000000000);
 	//colorRGB = setLed(g, red, b);
 
-	__HAL_TIM_SET_PRESCALER(_htim, 5);
-	__HAL_TIM_SET_AUTORELOAD(_htim, 9);
 
 
-
-	HAL_TIM_PWM_Start(_htim, channel);
-
-	for(int i = 0; i < 24 ; i++)
+	for(int i = 0; i < 25 ; i++)
 	{
-		uint8_t bit = (colorRGB >> (23-i+2));
-		if((bit & 1) == 1)
+		uint8_t bit = (colorRGB >> (23-i-2) & 1);
+		if(bit == 1)
 		{
 			buffer[i] = 6;
 
@@ -425,18 +415,20 @@ void begin(TIM_HandleTypeDef *_htim, DMA_HandleTypeDef *_dmahtim  ,uint32_t chan
 		{
 			buffer[i] = 3;
 		}
-//		_htim->Instance->CCR1 = buffer[i];
+	//	_htim->Instance->CCR1 = buffer[i];
+
 	//	while(__HAL_TIM_GET_COUNTER(_htim) < 6);
 	}
+	__HAL_TIM_SET_PRESCALER(_htim, 5);
+	__HAL_TIM_SET_AUTORELOAD(_htim, 9);
+//	HAL_TIM_PWM_Start(_htim, channel);
 
-
-	for(int j = 0; j < 12; j++)
-	{
-	HAL_DMA_Start(_dmahtim, (uint32_t)buffer, (uint32_t)&(_htim->Instance->CCR1), 24);
+	HAL_TIM_PWM_Start_DMA(_htim, channel, (uint32_t*)buffer, 32);
+	//HAL_DMA_Start(_dmahtim, (uint32_t)buffer, (uint32_t)&(_htim->Instance->CCR1), 24);
 	__HAL_TIM_ENABLE_DMA(_htim, TIM_DMA_CC1);
-	HAL_DMA_PollForTransfer(_dmahtim,  HAL_DMA_XFER_CPLT_CB_ID, 100);
-//	HAL_TIM_PWM_Stop(_htim, channel);
-	}
+	HAL_DMA_PollForTransfer(_dmahtim, HAL_DMA_FULL_TRANSFER  , 20);
+
+
 
 
 
@@ -446,7 +438,7 @@ void begin(TIM_HandleTypeDef *_htim, DMA_HandleTypeDef *_dmahtim  ,uint32_t chan
 uint32_t setLed(uint8_t g, uint8_t r, uint8_t b)
 {
 
-	return( g<<16 | r<<8 | b );
+	return( (uint32_t)g<<24 | (uint32_t)r<<16 | b<<8 );
 }
 
 
