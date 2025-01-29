@@ -46,7 +46,7 @@ TIM_HandleTypeDef htim3;
 DMA_HandleTypeDef hdma_tim3_ch1;
 
 /* USER CODE BEGIN PV */
-uint32_t buffer[28];
+uint16_t buffer[28]; //pazi sto ti pise u IOC-u za DMA settings u ovom slucaju je Half Word sto je uint16_t
 
 /* USER CODE END PV */
 
@@ -394,26 +394,20 @@ void begin(TIM_HandleTypeDef *_htim, DMA_HandleTypeDef *_dmahtim  ,uint32_t chan
 {
 
 
-
 //	uint32_t colorRGB = 0b0000000000101100000000000000;
 	uint32_t colorRGB = setLed(0, 0, 50);
-	//uint32_t r = colorRGB
 
-	//colorRGB = setLed(g, red, b);
-
-
-
-	for(int i = 0; i < 25 ; i++)
+	for(int i = 0; i < 24 ; i++)
 	{
-		uint8_t bit = (colorRGB >> (23-i-2) & 1);
+		uint8_t bit = (colorRGB >> (23-i) & 1);
 		if(bit == 1)
 		{
-			buffer[i] = 6;
+			buffer[i + 2] = 6;
 
 		}
 		else
 		{
-			buffer[i] = 3;
+			buffer[i + 2] = 3;
 		}
 	//	_htim->Instance->CCR1 = buffer[i];
 
@@ -421,11 +415,12 @@ void begin(TIM_HandleTypeDef *_htim, DMA_HandleTypeDef *_dmahtim  ,uint32_t chan
 	}
 	__HAL_TIM_SET_PRESCALER(_htim, 5);
 	__HAL_TIM_SET_AUTORELOAD(_htim, 9);
+	__HAL_TIM_ENABLE_DMA(_htim, TIM_DMA_CC1);
 //	HAL_TIM_PWM_Start(_htim, channel);
 
-	HAL_TIM_PWM_Start_DMA(_htim, channel, (uint32_t*)buffer, 32);
+	HAL_TIM_PWM_Start_DMA(_htim, channel, (uint32_t*)buffer, 28);
 	//HAL_DMA_Start(_dmahtim, (uint32_t)buffer, (uint32_t)&(_htim->Instance->CCR1), 24);
-	__HAL_TIM_ENABLE_DMA(_htim, TIM_DMA_CC1);
+
 	HAL_DMA_PollForTransfer(_dmahtim, HAL_DMA_FULL_TRANSFER  , 20);
 
 
@@ -438,7 +433,7 @@ void begin(TIM_HandleTypeDef *_htim, DMA_HandleTypeDef *_dmahtim  ,uint32_t chan
 uint32_t setLed(uint8_t g, uint8_t r, uint8_t b)
 {
 
-	return( (uint32_t)g<<24 | (uint32_t)r<<16 | b<<8 );
+	return( (uint32_t)g<<16 | (uint32_t)r<<8 | b );
 }
 
 
