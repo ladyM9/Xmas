@@ -31,7 +31,9 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-
+#define RED   0
+#define GREEN 1
+#define BLUE  2
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -62,8 +64,9 @@ void led(uint8_t r, uint8_t g, uint8_t b);
 void led_PWM();
 void led_show();
 void timerDmaTransferComplete();
-void begin(TIM_HandleTypeDef *_htim, DMA_HandleTypeDef *_dmahtim ,uint32_t channel);
+void begin(TIM_HandleTypeDef *_htim, DMA_HandleTypeDef *_dmahtim ,uint32_t channel, uint32_t color);
 uint32_t setLed(uint8_t r, uint8_t g, uint8_t b);
+uint32_t setColor(uint8_t color);
 
 /* USER CODE END PFP */
 
@@ -141,7 +144,7 @@ int main(void)
 	  HAL_TIM_PWM_Start_DMA(&htim3,TIM_CHANNEL_1 , (uint32_t*)leds, );
 	  setLEDS(leds, 1);
 	  */
-  begin(&htim3, &hdma_tim3_ch1 ,TIM_CHANNEL_1);
+  begin(&htim3, &hdma_tim3_ch1 ,TIM_CHANNEL_1, BLUE);
 
 
 
@@ -390,12 +393,16 @@ static void MX_GPIO_Init(void)
 
 
 
-void begin(TIM_HandleTypeDef *_htim, DMA_HandleTypeDef *_dmahtim  ,uint32_t channel)
+void begin(TIM_HandleTypeDef *_htim, DMA_HandleTypeDef *_dmahtim  ,uint32_t channel,uint32_t color)
 {
 
 
 //	uint32_t colorRGB = 0b0000000000101100000000000000;
-	uint32_t colorRGB = setLed(0, 0, 50);
+	//uint32_t colorRGB = setLed(0, 0, 50); //blue
+	uint32_t colorRGB;
+	colorRGB = setColor(color);
+
+
 
 	for(int i = 0; i < 24 ; i++)
 	{
@@ -434,6 +441,37 @@ uint32_t setLed(uint8_t g, uint8_t r, uint8_t b)
 {
 
 	return( (uint32_t)g<<16 | (uint32_t)r<<8 | b );
+}
+
+uint32_t setColor(uint8_t color)
+{
+	uint32_t colorRGB;
+	  uint8_t red;
+	    uint8_t green;
+	    uint8_t blue;
+
+	switch(color)
+	{
+	case RED:
+		red =  0xFF;
+		 green =  0x00;
+		   blue =  0x00;
+		return colorRGB = setLed(green, red, blue);
+		break;
+	case GREEN:
+		  red =  0x00;
+		  green =  0xFF;
+		   blue =  0x00;
+		return colorRGB = setLed(green, red, blue);
+		break;
+	case BLUE:
+		red =  0x00;
+		 green =  0x00;
+		   blue =  0xFF;
+		return colorRGB = setLed(green, red, blue);
+		break;
+	}
+	return 0;
 }
 
 
