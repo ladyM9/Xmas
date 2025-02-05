@@ -47,9 +47,11 @@ TIM_HandleTypeDef htim1;
 TIM_HandleTypeDef htim3;
 DMA_HandleTypeDef hdma_tim3_ch1;
 
+UART_HandleTypeDef huart1;
+
 /* USER CODE BEGIN PV */
 uint16_t buffer[28]; //pazi sto ti pise u IOC-u za DMA settings u ovom slucaju je Half Word sto je uint16_t
-
+uint32_t *ledbuff = NULL;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -58,9 +60,9 @@ static void MX_GPIO_Init(void);
 static void MX_DMA_Init(void);
 static void MX_TIM3_Init(void);
 static void MX_TIM1_Init(void);
+static void MX_USART1_UART_Init(void);
 /* USER CODE BEGIN PFP */
 //void begin(TIM_HandleTypeDef *_htim, DMA_HandleTypeDef *_hdmaPtr, uint32_t channel, uint32_t num_of_leds, uint32_t pause_Pulse, uint32_t work_Pulse, uint32_t prescaler);
-void led(uint8_t r, uint8_t g, uint8_t b);
 void led_PWM();
 void led_show();
 void timerDmaTransferComplete();
@@ -112,6 +114,7 @@ int main(void)
   MX_DMA_Init();
   MX_TIM3_Init();
   MX_TIM1_Init();
+  MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
 
   //melody1 is notes of jingle_bells melody  {E4, E4, E4, E4, E4, E4, E4, G4, C4 , D4 , E4, F4, F4, F4, F4, F4, E4, E4, E4, D4, D4, E4, D4, G4}
@@ -144,7 +147,9 @@ int main(void)
 	  HAL_TIM_PWM_Start_DMA(&htim3,TIM_CHANNEL_1 , (uint32_t*)leds, );
 	  setLEDS(leds, 1);
 	  */
-  begin(&htim3, &hdma_tim3_ch1 ,TIM_CHANNEL_1, BLUE);
+  buffer[0] = 0;
+  buffer[1] = 0;
+  begin(&htim3, &hdma_tim3_ch1 ,TIM_CHANNEL_1, RED);
 
 
 
@@ -344,6 +349,54 @@ static void MX_TIM3_Init(void)
 }
 
 /**
+  * @brief USART1 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_USART1_UART_Init(void)
+{
+
+  /* USER CODE BEGIN USART1_Init 0 */
+
+  /* USER CODE END USART1_Init 0 */
+
+  /* USER CODE BEGIN USART1_Init 1 */
+
+  /* USER CODE END USART1_Init 1 */
+  huart1.Instance = USART1;
+  huart1.Init.BaudRate = 115200;
+  huart1.Init.WordLength = UART_WORDLENGTH_8B;
+  huart1.Init.StopBits = UART_STOPBITS_1;
+  huart1.Init.Parity = UART_PARITY_NONE;
+  huart1.Init.Mode = UART_MODE_TX_RX;
+  huart1.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+  huart1.Init.OverSampling = UART_OVERSAMPLING_16;
+  huart1.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
+  huart1.Init.ClockPrescaler = UART_PRESCALER_DIV1;
+  huart1.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
+  if (HAL_UART_Init(&huart1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  if (HAL_UARTEx_SetTxFifoThreshold(&huart1, UART_TXFIFO_THRESHOLD_1_8) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  if (HAL_UARTEx_SetRxFifoThreshold(&huart1, UART_RXFIFO_THRESHOLD_1_8) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  if (HAL_UARTEx_DisableFifoMode(&huart1) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN USART1_Init 2 */
+
+  /* USER CODE END USART1_Init 2 */
+
+}
+
+/**
   * Enable DMA controller clock
   */
 static void MX_DMA_Init(void)
@@ -371,6 +424,8 @@ static void MX_GPIO_Init(void)
 /* USER CODE END MX_GPIO_Init_1 */
 
   /* GPIO Ports Clock Enable */
+  __HAL_RCC_GPIOB_CLK_ENABLE();
+  __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
@@ -399,10 +454,19 @@ void begin(TIM_HandleTypeDef *_htim, DMA_HandleTypeDef *_dmahtim  ,uint32_t chan
 
 //	uint32_t colorRGB = 0b0000000000101100000000000000;
 	//uint32_t colorRGB = setLed(0, 0, 50); //blue
-	uint32_t colorRGB;
-	colorRGB = setColor(color);
 
 
+
+
+		//u datasheetu pise da je memorija na pocetku konfigurirana sa svim 0 za reset
+
+	for(int j = 0; j < 12; j++)
+	{
+
+		uint32_t colorRGB = setLed(0, 50, 150);
+		__HAL_TIM_SET_PRESCALER(_htim, 5);
+		__HAL_TIM_SET_AUTORELOAD(_htim, 9);
+		__HAL_TIM_ENABLE_DMA(_htim, TIM_DMA_CC1);
 
 	for(int i = 0; i < 24 ; i++)
 	{
@@ -420,19 +484,19 @@ void begin(TIM_HandleTypeDef *_htim, DMA_HandleTypeDef *_dmahtim  ,uint32_t chan
 
 	//	while(__HAL_TIM_GET_COUNTER(_htim) < 6);
 	}
-	__HAL_TIM_SET_PRESCALER(_htim, 5);
-	__HAL_TIM_SET_AUTORELOAD(_htim, 9);
-	__HAL_TIM_ENABLE_DMA(_htim, TIM_DMA_CC1);
-//	HAL_TIM_PWM_Start(_htim, channel);
 
+
+//	HAL_TIM_PWM_Start(_htim, channel);
 	HAL_TIM_PWM_Start_DMA(_htim, channel, (uint32_t*)buffer, 28);
 	//HAL_DMA_Start(_dmahtim, (uint32_t)buffer, (uint32_t)&(_htim->Instance->CCR1), 24);
 
 	HAL_DMA_PollForTransfer(_dmahtim, HAL_DMA_FULL_TRANSFER  , 20);
 
+	//HAL_UART_Transmit(&huart1, (uint8_t*)buffer, 50, 100);
 
+	__HAL_TIM_DISABLE_DMA(_htim, TIM_DMA_CC1);
 
-
+	}
 
 
 }
@@ -443,36 +507,7 @@ uint32_t setLed(uint8_t g, uint8_t r, uint8_t b)
 	return( (uint32_t)g<<16 | (uint32_t)r<<8 | b );
 }
 
-uint32_t setColor(uint8_t color)
-{
-	uint32_t colorRGB;
-	  uint8_t red;
-	    uint8_t green;
-	    uint8_t blue;
 
-	switch(color)
-	{
-	case RED:
-		red =  0xFF;
-		 green =  0x00;
-		   blue =  0x00;
-		return colorRGB = setLed(green, red, blue);
-		break;
-	case GREEN:
-		  red =  0x00;
-		  green =  0xFF;
-		   blue =  0x00;
-		return colorRGB = setLed(green, red, blue);
-		break;
-	case BLUE:
-		red =  0x00;
-		 green =  0x00;
-		   blue =  0xFF;
-		return colorRGB = setLed(green, red, blue);
-		break;
-	}
-	return 0;
-}
 
 
 /*void melody(TIM_HandleTypeDef *_htim, uint32_t freq, uint32_t duration_melody)
