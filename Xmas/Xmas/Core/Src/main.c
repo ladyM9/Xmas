@@ -31,9 +31,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define RED   0
-#define GREEN 1
-#define BLUE  2
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -69,9 +67,9 @@ void led(uint8_t r, uint8_t g, uint8_t b);
 void led_PWM();
 void led_show();
 void timerDmaTransferComplete();
-void begin(TIM_HandleTypeDef *_htim, DMA_HandleTypeDef *_dmahtim ,uint32_t channel, uint32_t color);
-void setLed(int ledIndex, uint8_t r, uint8_t g, uint8_t b);
-void setColor();
+void begin(TIM_HandleTypeDef *_htim, DMA_HandleTypeDef *_dmahtim ,uint32_t channel);
+void setLed(uint8_t r, uint8_t g, uint8_t b);
+uint32_t setColor(uint8_t index);
 
 /* USER CODE END PFP */
 
@@ -152,7 +150,7 @@ int main(void)
 	  */
 
 
-  begin(&htim3, &hdma_tim3_ch1 ,TIM_CHANNEL_1, RED);
+  begin(&htim3, &hdma_tim3_ch1 ,TIM_CHANNEL_1);
 
 
 
@@ -451,48 +449,36 @@ static void MX_GPIO_Init(void)
 
 
 
-void begin(TIM_HandleTypeDef *_htim, DMA_HandleTypeDef *_dmahtim  ,uint32_t channel,uint32_t color)
+void begin(TIM_HandleTypeDef *_htim, DMA_HandleTypeDef *_dmahtim  ,uint32_t channel)
 {
-	int j = 10;
+
 	__HAL_TIM_SET_PRESCALER(_htim, 5);
 	__HAL_TIM_SET_AUTORELOAD(_htim, 9);
+
 	for(int i = 0; i < 12; i++)
 	{
-	setLed(i, (j*20)%255, (j*40)%255, (j*60) % 255);
-	j+=5;
 
 	__HAL_TIM_ENABLE_DMA(_htim, TIM_DMA_CC1);
-
-
-
-
-		//u datasheetu pise da je memorija na pocetku konfigurirana sa svim 0 za reset
-
-
-
-//	HAL_TIM_PWM_Start(_htim, channel);
-	HAL_TIM_PWM_Start_DMA(_htim, channel, (uint32_t*)buffer, 28);
-	//HAL_DMA_Start(_dmahtim, (uint32_t)buffer, (uint32_t)&(_htim->Instance->CCR1), 24);
-
-	HAL_DMA_PollForTransfer(_dmahtim, HAL_DMA_FULL_TRANSFER  , 2);
-
-	//HAL_UART_Transmit(&huart1, (uint8_t*)buffer, 50, 100);
-
+	__HAL_TIM_SET_COUNTER(_htim, 0);
+	setLed( g,r,b);
+	HAL_DMA_Start(_dmahtim, (uint32_t)buffer, (uint32_t)&(_htim->Instance->CCR1), 24);
+	HAL_TIM_PWM_Start(_htim, channel);
+	HAL_DMA_PollForTransfer(_dmahtim, HAL_DMA_FULL_TRANSFER  , 5);
+	HAL_TIM_PWM_Stop(_htim, channel);
 	__HAL_TIM_DISABLE_DMA(_htim, TIM_DMA_CC1);
 
 	}
 	HAL_Delay(50);
 
-
-
 }
 
-void setLed(int  ledIndex, uint8_t g, uint8_t r, uint8_t b)
+void setLed( uint8_t g, uint8_t r, uint8_t b)
 {
 
-	uint32_t colorRGB;
+
+	uint32_t colorRGB = setColor(2);
 	//ovaj dio ti opisuje kako upisujes 24bitni podatak u buffer
-	colorRGB = ( (uint32_t)g<<16 | (uint32_t)r<<8 | b );
+	//colorRGB = ( (uint32_t)g<<16 | (uint32_t)r<<8 | b );
 	for(int i = 0; i < 24 ; i++)
 	{
 		uint8_t bit = (colorRGB >> (23-i) & 1);
@@ -509,9 +495,16 @@ void setLed(int  ledIndex, uint8_t g, uint8_t r, uint8_t b)
 	}
 }
 
-void setColor()
+uint32_t setColor(uint8_t index)
 {
-
+  uint8_t RED[3] = {0,200,0};
+  uint8_t GREEN[3] = {200,0,0};
+  uint8_t BLUE[3] = {0,0,200};
+  uint8_t r = RED[index];
+  uint8_t g = GREEN[index];
+  uint8_t b = BLUE[index];
+//uint32_t *c = (uint32_t*)color;
+return ( (uint32_t)g<<16 | (uint32_t)r<<8 | b );
 }
 
 
