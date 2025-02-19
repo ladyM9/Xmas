@@ -18,7 +18,9 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
@@ -49,7 +51,10 @@ UART_HandleTypeDef huart1;
 
 /* USER CODE BEGIN PV */
 uint16_t buffer[28]; //pazi sto ti pise u IOC-u za DMA settings u ovom slucaju je Half Word sto je uint16_t
-uint32_t *ledbuff = NULL;
+
+//buffer za LEDICE
+uint32_t *pwmBuffer;
+
 uint32_t r,g,b;
 
 /* USER CODE END PV */
@@ -63,13 +68,14 @@ static void MX_TIM1_Init(void);
 static void MX_USART1_UART_Init(void);
 /* USER CODE BEGIN PFP */
 //void begin(TIM_HandleTypeDef *_htim, DMA_HandleTypeDef *_hdmaPtr, uint32_t channel, uint32_t num_of_leds, uint32_t pause_Pulse, uint32_t work_Pulse, uint32_t prescaler);
-void led(uint8_t r, uint8_t g, uint8_t b);
+
 void led_PWM();
 void led_show();
 void timerDmaTransferComplete();
-void begin(TIM_HandleTypeDef *_htim, DMA_HandleTypeDef *_dmahtim ,uint32_t channel);
-void setLed(uint8_t r, uint8_t g, uint8_t b);
-uint32_t setColor(uint8_t index);
+void begin(TIM_HandleTypeDef *_htim, DMA_HandleTypeDef *_dmahtim ,uint32_t channel, uint8_t numofleds);
+void setLed( uint8_t index, uint8_t g, uint8_t r, uint8_t b);
+void convertToPWM(uint16_t *buffer, uint32_t pwmbuffer);
+void ledshow();
 
 /* USER CODE END PFP */
 
@@ -129,32 +135,10 @@ int main(void)
 
 
 
-/*
-  __HAL_TIM_SET_PRESCALER(&htim3, 12);
-  __HAL_TIM_SET_AUTORELOAD(&htim3, 50);
-
-  HAL_DMA_RegisterCallback(&hdma_tim3_ch1, HAL_DMA_XFER_CPLT_CB_ID,timerDmaTransferComplete);
-  HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_1);
-  __HAL_TIM_ENABLE_DMA(&htim3, TIM_CHANNEL_1);
-
-	__HAL_TIM_SET_COUNTER(&htim3, 0);
-	__HAL_TIM_ENABLE_DMA(&htim3, TIM_CHANNEL_1);
-	HAL_DMA_Start_IT(&hdma_tim3_ch1, 28, TIM_CHANNEL_1, sizeof(28) / sizeof(uint16_t));
-	while (dmaTimerTransfetCompleteFlag == 0);
-	dmaTimerTransfetCompleteFlag = 0;
-
-	  resetLEDS(leds, 1);
-
-	  HAL_TIM_PWM_Start_DMA(&htim3,TIM_CHANNEL_1 , (uint32_t*)leds, );
-	  setLEDS(leds, 1);
-	  */
-
-
-  begin(&htim3, &hdma_tim3_ch1 ,TIM_CHANNEL_1);
-
-
-
-
+	pwmBuffer = (uint32_t*)malloc(5 * sizeof(uint32_t));
+	memset((uint32_t*)pwmBuffer, 0, sizeof(uint32_t) * 5);
+  	setLed(3, 0, 100 ,0);
+	begin(&htim3, &hdma_tim3_ch1 ,TIM_CHANNEL_1, 4);
 
   /* USER CODE END 2 */
 
@@ -449,39 +433,48 @@ static void MX_GPIO_Init(void)
 
 
 
-void begin(TIM_HandleTypeDef *_htim, DMA_HandleTypeDef *_dmahtim  ,uint32_t channel)
+void begin(TIM_HandleTypeDef *_htim, DMA_HandleTypeDef *_dmahtim  ,uint32_t channel, uint8_t numofleds)
 {
+
+
+
 
 	__HAL_TIM_SET_PRESCALER(_htim, 5);
 	__HAL_TIM_SET_AUTORELOAD(_htim, 9);
 
-	for(int i = 0; i < 12; i++)
-	{
 
+
+	for(int i = 0; i < numofleds; i++)
+	{
+	convertToPWM(buffer, pwmBuffer[i]);
 	__HAL_TIM_ENABLE_DMA(_htim, TIM_DMA_CC1);
 	__HAL_TIM_SET_COUNTER(_htim, 0);
-	setLed( g,r,b);
 	HAL_DMA_Start(_dmahtim, (uint32_t)buffer, (uint32_t)&(_htim->Instance->CCR1), 24);
 	HAL_TIM_PWM_Start(_htim, channel);
 	HAL_DMA_PollForTransfer(_dmahtim, HAL_DMA_FULL_TRANSFER  , 5);
 	HAL_TIM_PWM_Stop(_htim, channel);
 	__HAL_TIM_DISABLE_DMA(_htim, TIM_DMA_CC1);
 
+
 	}
-	HAL_Delay(50);
+	//HAL_Delay(50);
+
 
 }
+void setLed( uint8_t index, uint8_t g, uint8_t r, uint8_t b)
+{
+	if(index < 12)
+	{
+	pwmBuffer[index] = ( (uint32_t)g<<16 | (uint32_t)r<<8 | b );
+	}
+}
 
-void setLed( uint8_t g, uint8_t r, uint8_t b)
+void convertToPWM(uint16_t *buffer, uint32_t pwmBuffer)
 {
 
-
-	uint32_t colorRGB = setColor(2);
-	//ovaj dio ti opisuje kako upisujes 24bitni podatak u buffer
-	//colorRGB = ( (uint32_t)g<<16 | (uint32_t)r<<8 | b );
 	for(int i = 0; i < 24 ; i++)
 	{
-		uint8_t bit = (colorRGB >> (23-i) & 1);
+		uint8_t bit = (pwmBuffer >> (23-i) & 1);
 		if(bit == 1)
 		{
 			buffer[i + 2] = 6;
@@ -493,19 +486,14 @@ void setLed( uint8_t g, uint8_t r, uint8_t b)
 		}
 
 	}
+
+
+
+
 }
 
-uint32_t setColor(uint8_t index)
-{
-  uint8_t RED[3] = {0,200,0};
-  uint8_t GREEN[3] = {200,0,0};
-  uint8_t BLUE[3] = {0,0,200};
-  uint8_t r = RED[index];
-  uint8_t g = GREEN[index];
-  uint8_t b = BLUE[index];
-//uint32_t *c = (uint32_t*)color;
-return ( (uint32_t)g<<16 | (uint32_t)r<<8 | b );
-}
+
+
 
 
 
