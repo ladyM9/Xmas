@@ -53,9 +53,9 @@ UART_HandleTypeDef huart1;
 uint16_t buffer[28]; //pazi sto ti pise u IOC-u za DMA settings u ovom slucaju je Half Word sto je uint16_t
 
 //buffer za LEDICE
-uint32_t *pwmBuffer;
+uint32_t *pwmBuffer = NULL;
 
-uint32_t r,g,b;
+uint8_t g,b,r;
 
 /* USER CODE END PV */
 
@@ -72,7 +72,7 @@ static void MX_USART1_UART_Init(void);
 void led_PWM();
 void led_show();
 void timerDmaTransferComplete();
-void begin(TIM_HandleTypeDef *_htim, DMA_HandleTypeDef *_dmahtim ,uint32_t channel, uint8_t numofleds);
+void begin(TIM_HandleTypeDef *_htim, DMA_HandleTypeDef *_dmahtim ,uint32_t channel, uint16_t numofleds);
 void setLed( uint8_t index, uint8_t g, uint8_t r, uint8_t b);
 void convertToPWM(uint16_t *buffer, uint32_t pwmbuffer);
 void ledshow();
@@ -135,11 +135,16 @@ int main(void)
 
 
 
-	pwmBuffer = (uint32_t*)malloc(5 * sizeof(uint32_t));
-	memset((uint32_t*)pwmBuffer, 0, sizeof(uint32_t) * 5);
-  	setLed(3, 0, 100 ,0);
-	begin(&htim3, &hdma_tim3_ch1 ,TIM_CHANNEL_1, 4);
+	pwmBuffer = (uint32_t*)malloc(12 * sizeof(uint32_t));
+	memset((uint32_t*)pwmBuffer, 0, sizeof(uint32_t) * 12);
+  	setLed(3, 0, 0 , 50);
+	setLed(8, 0, 50 , 0);
 
+	//pwmBuffer[3] = (255<<0);
+
+	begin(&htim3, &hdma_tim3_ch1 ,TIM_CHANNEL_1, 12);
+
+	//free(pwmBuffer);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -433,7 +438,7 @@ static void MX_GPIO_Init(void)
 
 
 
-void begin(TIM_HandleTypeDef *_htim, DMA_HandleTypeDef *_dmahtim  ,uint32_t channel, uint8_t numofleds)
+void begin(TIM_HandleTypeDef *_htim, DMA_HandleTypeDef *_dmahtim  ,uint32_t channel, uint16_t numofleds)
 {
 
 
@@ -449,15 +454,14 @@ void begin(TIM_HandleTypeDef *_htim, DMA_HandleTypeDef *_dmahtim  ,uint32_t chan
 	convertToPWM(buffer, pwmBuffer[i]);
 	__HAL_TIM_ENABLE_DMA(_htim, TIM_DMA_CC1);
 	__HAL_TIM_SET_COUNTER(_htim, 0);
-	HAL_DMA_Start(_dmahtim, (uint32_t)buffer, (uint32_t)&(_htim->Instance->CCR1), 24);
+	HAL_DMA_Start(_dmahtim, (uint32_t)buffer, (uint32_t)&(_htim->Instance->CCR1), sizeof(buffer)/sizeof(uint16_t));
 	HAL_TIM_PWM_Start(_htim, channel);
 	HAL_DMA_PollForTransfer(_dmahtim, HAL_DMA_FULL_TRANSFER  , 5);
 	HAL_TIM_PWM_Stop(_htim, channel);
 	__HAL_TIM_DISABLE_DMA(_htim, TIM_DMA_CC1);
-
-
 	}
-	//HAL_Delay(50);
+	HAL_Delay(50);
+
 
 
 }
@@ -465,7 +469,7 @@ void setLed( uint8_t index, uint8_t g, uint8_t r, uint8_t b)
 {
 	if(index < 12)
 	{
-	pwmBuffer[index] = ( (uint32_t)g<<16 | (uint32_t)r<<8 | b );
+	pwmBuffer[index] = ( (uint32_t)g<<16 | (uint32_t)r<<8 | (uint32_t)b );
 	}
 }
 
