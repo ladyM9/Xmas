@@ -1,0 +1,4 @@
+../libs/WS2812B.c:13:6:begin	1
+../libs/WS2812B.c:22:6:turnOnLed	6
+../libs/WS2812B.c:43:6:setLed	2
+../libs/WS2812B.c:51:6:convertToPWM	4
