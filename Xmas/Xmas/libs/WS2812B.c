@@ -65,10 +65,52 @@ void convertToPWM(uint16_t *bufferLEDs, uint32_t rgbBuffer)
 		}
 
 	}
+}
+
+void X0()
+{
+	for(int i = 0; i <= 8; i++)
+	{
+		if(i <= 2 || (i >= 6 && i <= 8))
+		{
+			setLed(i, 0, 50, 0);
+		}
+	}
+
+	for(int i = 3; i <= 11; i++)
+	{
+		if(i <= 5 || (i >= 9 && i <= 11))
+		{
+			setLed(i, 50, 0, 10);
+		}
+	}
+}
+
+void stars()
+{
 
 
-
-
+	for(int i = 0; i <= 8; i++)
+	{
+		if(i == 0 || i < 2)
+		{
+			setLed(i, 0, 50, 0);
+		}
+		if (i == 7 || i == 8)
+		{
+			setLed(i, 0, 50, 0);
+		}
+	}
+}
+void stars2()
+{
+	for(int i = 3; i <= 11; i++)
+	{
+		if(i == 3 || i == 11)
+		{
+			setLed(i, 0, 50, 0);
+		}
+	}
 }
 
 

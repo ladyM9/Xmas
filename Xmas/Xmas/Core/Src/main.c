@@ -58,6 +58,7 @@ uint32_t *pwmBuffer2 = NULL;
 
 
 
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -129,16 +130,11 @@ int main(void)
 
   uint16_t brmelody = sizeof(melody1)/sizeof(uint16_t);
 
+  uint32_t time = 0;
+  begin(&htim3, &hdma_tim3_ch1 ,TIM_CHANNEL_1, 12);
 
 
 
-  	begin(&htim3, &hdma_tim3_ch1 ,TIM_CHANNEL_1, 4);
-  	setLed(1, 0, 0 , 50);
-	setLed(2, 0, 50 , 0);
-	setLed(3, 50, 0 , 0);
-	//pwmBuffer[3] = (255<<0);
-
-	turnOnLed(&htim3, &hdma_tim3_ch1 ,TIM_CHANNEL_1, 4);
 
 	//free(pwmBuffer);
   /* USER CODE END 2 */
@@ -147,6 +143,62 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+
+		static int animation = 0;
+		switch(animation)
+		{
+		case 0:
+			X0();
+			if(HAL_GetTick() - time >= 1000)
+			  {
+				animation = 1;
+				time = HAL_GetTick();
+
+			  }
+
+			break;
+
+
+		case 1:
+			turnofLEDS();
+			if(HAL_GetTick() - time >= 1000)
+			  {
+				animation = 2;
+				time = HAL_GetTick();
+
+			  }
+			break;
+		case 2:
+			stars();
+			if(HAL_GetTick() - time >= 1000)
+			  {
+				animation = 3;
+				time = HAL_GetTick();
+
+			  }
+			break;
+		case 3:
+			turnofLEDS();
+			if(HAL_GetTick() - time >= 500)
+			  {
+				animation = 4;
+				time = HAL_GetTick();
+
+			  }
+			break;
+		case 4:
+			stars2();
+			if(HAL_GetTick() - time >= 1000)
+			  {
+				animation = 0;
+				time = HAL_GetTick();
+
+			  }
+			break;
+		}
+		//pwmBuffer[3] = (255<<0);
+
+		turnOnLed(&htim3, &hdma_tim3_ch1 ,TIM_CHANNEL_1, 12);
 
 
 
@@ -429,7 +481,18 @@ static void MX_GPIO_Init(void)
 }
 
 /* USER CODE BEGIN 4 */
+void animations()
+{
 
+}
+
+void turnofLEDS()
+{
+	for(int i = 0; i <= 12; i++)
+	{
+		setLed(i, 0, 0, 0);
+	}
+}
 
 /*void melody(TIM_HandleTypeDef *_htim, uint32_t freq, uint32_t duration_melody)
 {

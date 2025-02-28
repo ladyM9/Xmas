@@ -1,4 +1,0 @@
-../libs/WS2812B.c:13:6:begin	8	static
-../libs/WS2812B.c:22:6:turnOnLed	56	static
-../libs/WS2812B.c:43:6:setLed	8	static
-../libs/WS2812B.c:51:6:convertToPWM	16	static
